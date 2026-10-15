@@ -1,0 +1,82 @@
+name: Publish verified result archives
+on:
+  workflow_dispatch:
+    inputs:
+      staging_ref:
+        description: Immutable commit containing multipart archives and manifest
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.staging_ref }}
+          persist-credentials: false
+      - name: Reconstruct archives and verify every part and file
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json
+          out=Path('release-assets');out.mkdir(exist_ok=True)
+          manifest=json.loads(Path('manifest.json').read_text())
+          for item in manifest:
+              target=out/item['name']
+              assert target.parent==out
+              h=hashlib.sha256()
+              with target.open('wb') as f:
+                  for part in item['parts']:
+                      source=Path(part['path'])
+                      assert source.parent==Path('parts')
+                      data=source.read_bytes()
+                      assert hashlib.sha256(data).hexdigest()==part['sha256'],source
+                      h.update(data);f.write(data)
+              assert target.stat().st_size==item['bytes'],target
+              assert h.hexdigest()==item['sha256'],target
+              print('VERIFIED',target,flush=True)
+          PY
+      - name: Upload missing assets and verify GitHub server checksums
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_COMMIT: ${{ github.sha }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,os,subprocess,time
+          repo=os.environ['GH_REPO'];tag='v1.0.0'
+          def run(args):return subprocess.check_output(args,text=True).strip()
+          def release():
+              url=f'repos/{repo}/releases?per_page=100&_verify={time.time_ns()}'
+              return next(r for r in json.loads(run(['gh','api',url])) if r['tag_name']==tag)
+          manifest=json.loads(Path('manifest.json').read_text())
+          current={a['name']:a for a in release()['assets']}
+          checks=[]
+          for item in manifest:
+              name=item['name'];path=Path('release-assets')/name
+              if name not in current:
+                  subprocess.check_call(['gh','release','upload',tag,'--repo',repo,str(path)])
+              a=next(a for a in release()['assets'] if a['name']==name)
+              assert a['size']==item['bytes'],name
+              if a.get('digest'):
+                  assert a['digest']=='sha256:'+item['sha256'],name
+                  method='GitHub server SHA256'
+              else:
+                  folder=Path('remote-check');folder.mkdir(exist_ok=True)
+                  subprocess.check_call(['gh','release','download',tag,'--repo',repo,'--pattern',name,'--dir',str(folder),'--clobber'])
+                  h=hashlib.sha256()
+                  q=folder/name
+                  with q.open('rb') as f:
+                      while b:=f.read(1024*1024):h.update(b)
+                  assert h.hexdigest()==item['sha256'],name
+                  q.unlink();method='Downloaded bytes SHA256'
+              checks.append({'name':name,'bytes':a['size'],'sha256':item['sha256'],'verification':method})
+              print('REMOTE_VERIFIED',name,flush=True)
+          Path('GITHUB_UPLOAD_VERIFICATION.json').write_text(json.dumps({'commit':os.environ['RELEASE_COMMIT'],'assets':checks},indent=2))
+          subprocess.check_call(['gh','release','upload',tag,'--repo',repo,'GITHUB_UPLOAD_VERIFICATION.json','--clobber'])
+          subprocess.check_call(['gh','release','edit',tag,'--repo',repo,'--target',os.environ['RELEASE_COMMIT'],'--draft=false'])
+          PY
