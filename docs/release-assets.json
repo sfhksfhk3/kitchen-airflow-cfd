@@ -1,0 +1,108 @@
+{
+  "repository": "https://github.com/sfhksfhk3/kitchen-airflow-cfd",
+  "release_tag": "v1.0.0",
+  "prepared_utc": "2026-10-15T18:29:47.111274+00:00",
+  "policy": "Latest scientific conclusions are OpenFOAM4000W. Full snapshots also preserve superseded/rejected work, which is not accepted production data. No numerical simulations were rerun for publication.",
+  "assets": [
+    {
+      "name": "kitchen_airflow_results.zip",
+      "kind": "original_delivery_archive",
+      "original_path": "kitchen_sim/deliverables/kitchen_airflow_results.zip",
+      "bytes": 11459678,
+      "sha256": "ffa078195a6aebd844877b93981d114d5f549f6d0563cfa6f31d66ab6c88fe3e"
+    },
+    {
+      "name": "kitchen_comparison_figures_1to1.zip",
+      "kind": "original_delivery_archive",
+      "original_path": "kitchen_compare/deliverables/kitchen_comparison_figures_1to1.zip",
+      "bytes": 3643016,
+      "sha256": "8445613f2bab9c9efa7a066d00966755ea90eff17a7fd42ecfd6a1113322ecb2"
+    },
+    {
+      "name": "kitchen_smoke_full_results.zip",
+      "kind": "original_delivery_archive",
+      "original_path": "kitchen_compare/deliverables/kitchen_smoke_full_results.zip",
+      "bytes": 60363517,
+      "sha256": "5a953724229e3f5173be23c5b8a7c0149dbdab925b25f3436e2ed46c8103a0f1"
+    },
+    {
+      "name": "material_comparison_results.zip",
+      "kind": "original_delivery_archive",
+      "original_path": "kitchen_compare/material_selection/deliverables/material_comparison_results.zip",
+      "bytes": 790459,
+      "sha256": "9872797ecf9068f4d1caa84213e97203e77dc0c2abce48cc95ce9380adfec99c"
+    },
+    {
+      "name": "wall_heat_4000W_results.zip",
+      "kind": "original_delivery_archive",
+      "original_path": "kitchen_compare/wall_analysis_4000W/deliverables/wall_heat_4000W_results.zip",
+      "bytes": 6571524,
+      "sha256": "c6a954a7c6ed28018082749d44fac47c2b6199d709f54f05779a12c1fda74171"
+    },
+    {
+      "name": "openfoam_cases_sources.zip",
+      "kind": "original_delivery_archive",
+      "original_path": "kitchen_openfoam/deliverables/openfoam_cases_sources.zip",
+      "bytes": 97136769,
+      "sha256": "2ba2657d797802c4767294f202bb49af2538d2f33791be7598cba0757c41706b"
+    },
+    {
+      "name": "openfoam_results.zip",
+      "kind": "original_delivery_archive",
+      "original_path": "kitchen_openfoam/deliverables/openfoam_results.zip",
+      "bytes": 171944628,
+      "sha256": "65192ba3d6f6d273843c149425ff444ef7403e1fb2990f0fd61fadf5f2485069"
+    },
+    {
+      "name": "kitchen_oil_openfoam_interactive_3d.html",
+      "kind": "latest_standalone_viewer_or_report",
+      "original_path": "kitchen_openfoam/deliverables/kitchen_oil_openfoam_interactive_3d.html",
+      "bytes": 34801055,
+      "sha256": "599831f89cd4a41a39570cf5e88187385369c3433d12daf91ae51dbb26302864"
+    },
+    {
+      "name": "openfoam_oil_analysis_zh.pdf",
+      "kind": "latest_standalone_viewer_or_report",
+      "original_path": "kitchen_openfoam/deliverables/openfoam_oil_analysis_zh.pdf",
+      "bytes": 4918280,
+      "sha256": "d49e5e7b4a457ba86ebd401eeb25a2ba386bc819a1083cf458187334e5c64b09"
+    },
+    {
+      "name": "all_figures_1to1.pdf",
+      "kind": "latest_standalone_viewer_or_report",
+      "original_path": "kitchen_openfoam/deliverables/all_figures_1to1.pdf",
+      "bytes": 536353,
+      "sha256": "1e89a6ab837ba16788c4c56b225a1afb96dc47d45722ac48a6ee0df9bc7dd382"
+    },
+    {
+      "name": "kitchen_sim_full_snapshot.tar.gz",
+      "kind": "full_work_snapshot",
+      "project": "kitchen_sim",
+      "file_count": 87,
+      "excluded_count": 5,
+      "status": "All archived file contents checked against source SHA256; includes historical/rejected runs for traceability.",
+      "bytes": 19116395,
+      "sha256": "5f07762da959b6825bd4d39c615c7e4997d2eb134354a6be247846c88fc5f354"
+    },
+    {
+      "name": "kitchen_compare_full_snapshot.tar.gz",
+      "kind": "full_work_snapshot",
+      "project": "kitchen_compare",
+      "file_count": 493,
+      "excluded_count": 13,
+      "status": "All archived file contents checked against source SHA256; includes historical/rejected runs for traceability.",
+      "bytes": 161218653,
+      "sha256": "914d0d5cd8b7078f71d79924ce9257fcc62e5c6f2ab16e77dc0f4203950a6996"
+    },
+    {
+      "name": "kitchen_openfoam_full_snapshot.tar.gz",
+      "kind": "full_work_snapshot",
+      "project": "kitchen_openfoam",
+      "file_count": 6872,
+      "excluded_count": 34,
+      "status": "All archived file contents checked against source SHA256; includes historical/rejected runs for traceability.",
+      "bytes": 736130461,
+      "sha256": "608f2eb30b22f97b8ed542a9f66eecefc3499d8ea66edc32eb0b314fb35fe1f6"
+    }
+  ]
+}
