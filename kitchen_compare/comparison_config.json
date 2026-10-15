@@ -1,0 +1,24 @@
+{
+  "layouts": [
+    "corner",
+    "center"
+  ],
+  "cases": [
+    "both_open",
+    "both_closed",
+    "left_open",
+    "right_open"
+  ],
+  "same_heat_W": 4000,
+  "tracer": {
+    "total_release_reference_units_s": 1.0,
+    "source_equal_share": true,
+    "molecular_diffusivity_m2_s": 1e-05,
+    "Sc_t": 0.7,
+    "cooking_duration_s": 120.0,
+    "clearance_duration_s": 900.0,
+    "dt_s": 1.0,
+    "interpretation": "passive gas-like tracer, no droplet deposition, normalized concentration per unit total source rate; hold heat and flow constant during tracer decay"
+  },
+  "original_project_preserved": "/workspace/kitchen_sim"
+}

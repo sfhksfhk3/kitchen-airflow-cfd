@@ -1,0 +1,765 @@
+{
+  "particle_properties_25C": [
+    {
+      "diameter_um": 0.1,
+      "brownian_D_m2_s": 6.903420852172401e-10,
+      "settling_velocity_m_s": 7.311853460773729e-07,
+      "settling_1m_time_s": 1367642.2884631793,
+      "response_time_s": 7.45346937897424e-08
+    },
+    {
+      "diameter_um": 0.3,
+      "brownian_D_m2_s": 1.2456514180161308e-10,
+      "settling_velocity_m_s": 3.5622420003492248e-06,
+      "settling_1m_time_s": 280722.0845473061,
+      "response_time_s": 3.6312354743621047e-07
+    },
+    {
+      "diameter_um": 1.0,
+      "brownian_D_m2_s": 2.774654154077182e-11,
+      "settling_velocity_m_s": 2.938813236709329e-05,
+      "settling_1m_time_s": 34027.340952082,
+      "response_time_s": 2.995732147512058e-06
+    },
+    {
+      "diameter_um": 3.0,
+      "brownian_D_m2_s": 8.365783209440417e-12,
+      "settling_velocity_m_s": 0.00023923983775450642,
+      "settling_1m_time_s": 4179.905860938345,
+      "response_time_s": 2.438734329811482e-05
+    },
+    {
+      "diameter_um": 10.0,
+      "brownian_D_m2_s": 2.4170245454789684e-12,
+      "settling_velocity_m_s": 0.0025600249015781855,
+      "settling_1m_time_s": 390.6212003576712,
+      "response_time_s": 0.0002609607442995092
+    }
+  ],
+  "wall_quadrature_max_abs_relative_error_72": 0.013674685535527975,
+  "wall_quadrature_max_abs_relative_error_144": 0.0034434210112908037,
+  "wall_quadrature_details": [
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.007932226101831086,
+      "vdep144_relative_error": -0.0019945837732081584
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013599540475227045,
+      "vdep144_relative_error": -0.003424353136800451
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013670650865515666,
+      "vdep144_relative_error": -0.0034423967740325745
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.01365112988448891,
+      "vdep144_relative_error": -0.0034374438638450355
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013671301875343378,
+      "vdep144_relative_error": -0.0034425618360611754
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013671345140712443,
+      "vdep144_relative_error": -0.0034425729460626497
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013668880475073641,
+      "vdep144_relative_error": -0.003441947719804883
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013671344644437977,
+      "vdep144_relative_error": -0.003442572772550445
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013671345950955649,
+      "vdep144_relative_error": -0.003442573104321056
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.000302592585376682,
+      "vdep144_relative_error": -9.155901228607988e-05
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013432690770621258,
+      "vdep144_relative_error": -0.0033820209786793454
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013668504723162944,
+      "vdep144_relative_error": -0.003441852669476053
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.01360686761471741,
+      "vdep144_relative_error": -0.0034262121848932514
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013671140897040468,
+      "vdep144_relative_error": -0.0034425211178258364
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013671781104848013,
+      "vdep144_relative_error": -0.003442683595180851
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.01366306988119903,
+      "vdep144_relative_error": -0.003440473628311236
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013671777745842495,
+      "vdep144_relative_error": -0.0034426828023872424
+    },
+    {
+      "diameter_um": 0.1,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.01367178124114976,
+      "vdep144_relative_error": -0.0034426837153782586
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.011728810014858038,
+      "vdep144_relative_error": -0.0029504775111487413
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013650645324840505,
+      "vdep144_relative_error": -0.003437320690826473
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013673427522163384,
+      "vdep144_relative_error": -0.0034431017200043934
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.01366717026114661,
+      "vdep144_relative_error": -0.00344151404736015
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013673636374813669,
+      "vdep144_relative_error": -0.0034431546319863005
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.01367364996650966,
+      "vdep144_relative_error": -0.0034431581229985575
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013672860172302848,
+      "vdep144_relative_error": -0.0034429577437222747
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013673650061194698,
+      "vdep144_relative_error": -0.0034431581051169724
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013673650195720533,
+      "vdep144_relative_error": -0.003443158139289859
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.007773519735766565,
+      "vdep144_relative_error": -0.0019548172018931664
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013605075218515283,
+      "vdep144_relative_error": -0.003425756716812667
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013672940501727182,
+      "vdep144_relative_error": -0.003442978296178234
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.0136551794380817,
+      "vdep144_relative_error": -0.0034384711598470785
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013673700936561506,
+      "vdep144_relative_error": -0.003443171060076078
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013673885390994678,
+      "vdep144_relative_error": -0.0034432178726262475
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.01367137377005534,
+      "vdep144_relative_error": -0.003442580656761396
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.0136738846583625,
+      "vdep144_relative_error": -0.0034432176709403572
+    },
+    {
+      "diameter_um": 0.3,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013673885463083235,
+      "vdep144_relative_error": -0.003443217882634131
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.012956835298237546,
+      "vdep144_relative_error": -0.0032613529328138213
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013665868162405781,
+      "vdep144_relative_error": -0.0034411836950399843
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674255255272771,
+      "vdep144_relative_error": -0.0034433119635601805
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013671951906062296,
+      "vdep144_relative_error": -0.00344272736774065
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674332779840204,
+      "vdep144_relative_error": -0.0034433314463993003
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674337753949772,
+      "vdep144_relative_error": -0.00344333272408881
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674046501792048,
+      "vdep144_relative_error": -0.003443258946634775
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674337346230137,
+      "vdep144_relative_error": -0.0034433327216556453
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.0136743373645134,
+      "vdep144_relative_error": -0.003443332726298709
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.011582859516127364,
+      "vdep144_relative_error": -0.0029135815233487516
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013651476598739887,
+      "vdep144_relative_error": -0.0034375314339888385
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674137360276228,
+      "vdep144_relative_error": -0.0034432820752392512
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013668204658645378,
+      "vdep144_relative_error": -0.003441776405749719
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674392001829738,
+      "vdep144_relative_error": -0.003443346484171106
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674453619348492,
+      "vdep144_relative_error": -0.0034433621220483213
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013673614223002062,
+      "vdep144_relative_error": -0.003443149214410135
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674453173039836,
+      "vdep144_relative_error": -0.0034433620570907264
+    },
+    {
+      "diameter_um": 1.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674453423578314,
+      "vdep144_relative_error": -0.0034433621231659828
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013352235417295799,
+      "vdep144_relative_error": -0.0033616090169368285
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013670746459440886,
+      "vdep144_relative_error": -0.00344242144652529
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.01367452136986591,
+      "vdep144_relative_error": -0.003443379353529008
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013673483909114492,
+      "vdep144_relative_error": -0.0034431162192097853
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674555570619695,
+      "vdep144_relative_error": -0.0034433881230399033
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.01367455780514204,
+      "vdep144_relative_error": -0.0034433886970286487
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674427294731673,
+      "vdep144_relative_error": -0.0034433554893872342
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674558207726673,
+      "vdep144_relative_error": -0.003443388696532823
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674558211433596,
+      "vdep144_relative_error": -0.0034433886974765127
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.012764994938051166,
+      "vdep144_relative_error": -0.0032127361450170477
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013664659323265549,
+      "vdep144_relative_error": -0.0034408766290390247
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674478396924927,
+      "vdep144_relative_error": -0.0034433684503086814
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013671906283771906,
+      "vdep144_relative_error": -0.003442715936577301
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674587698746077,
+      "vdep144_relative_error": -0.0034433963650276622
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674614401841145,
+      "vdep144_relative_error": -0.003443403141990431
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674250999765603,
+      "vdep144_relative_error": -0.0034433108691509506
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674614596435597,
+      "vdep144_relative_error": -0.003443403114138044
+    },
+    {
+      "diameter_um": 3.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674614702759547,
+      "vdep144_relative_error": -0.003443403142200152
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013533912366973544,
+      "vdep144_relative_error": -0.0034076986605623416
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013672992249023297,
+      "vdep144_relative_error": -0.0034429914584972465
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674643176738721,
+      "vdep144_relative_error": -0.0034434103924314563
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674189708990925,
+      "vdep144_relative_error": -0.003443295309352501
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674658405116502,
+      "vdep144_relative_error": -0.003443414227826014
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674659381509136,
+      "vdep144_relative_error": -0.0034434144786378296
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674601802116215,
+      "vdep144_relative_error": -0.00344339995522569
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.01367465905758447,
+      "vdep144_relative_error": -0.0034434144785429055
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 298.15,
+      "vdep72_relative_error": -0.013674659058300898,
+      "vdep144_relative_error": -0.003443414478723539
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013283778127373913,
+      "vdep144_relative_error": -0.003344245461871842
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013670399015968338,
+      "vdep144_relative_error": -0.003442333399764852
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.00125,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674625899636528,
+      "vdep144_relative_error": -0.0034434060759498397
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013673519674946122,
+      "vdep144_relative_error": -0.003443125164939942
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674674039705015,
+      "vdep144_relative_error": -0.0034434180937356063
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.025,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674685535527975,
+      "vdep144_relative_error": -0.0034434210112648245
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.01,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674528594599611,
+      "vdep144_relative_error": -0.0034433812863253754
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 0.1,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674685128934772,
+      "vdep144_relative_error": -0.0034434209993171594
+    },
+    {
+      "diameter_um": 10.0,
+      "distance_m": 0.075,
+      "ustar_m_s": 1.0,
+      "temperature_K": 450.0,
+      "vdep72_relative_error": -0.013674685174284384,
+      "vdep144_relative_error": -0.0034434210112908037
+    }
+  ],
+  "bulk_particle_to_air_mass_flow_ratio_at_0p5m3_s": 4.054310347890452e-07,
+  "interpretation": "quadrature and constitutive scaling checks; not validation against cooking experiments"
+}

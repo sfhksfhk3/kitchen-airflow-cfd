@@ -1,0 +1,1404 @@
+{
+  "primary": {
+    "corner_both_open": {
+      "flow": {
+        "layout": "corner",
+        "layout_label": "靠左角落",
+        "buoyancy_model": "nonlinear ideal-gas density correction with fixed-reference-density incompressible equations",
+        "case": "both_open",
+        "label": "兩門全開",
+        "mesh_target_m": 0.14,
+        "nodes": 4531,
+        "tetrahedra": 19630,
+        "fluid_volume_m3": 9.1828191,
+        "nu_t_m2_s": 0.005,
+        "iterations": 80,
+        "converged": true,
+        "last_relative_velocity_update": 1.5152936268806867e-05,
+        "last_relative_temperature_update": 1.448111076853294e-05,
+        "nonlinear_relative_residual": 2.660233007398393e-06,
+        "thermal_relative_residual": 3.941553243916929e-05,
+        "last_linear_relative_residual": 1.2263205918519082e-15,
+        "runtime_s": 100.11342740058899,
+        "fan_flow_m3_s": 0.49999495850976156,
+        "fan_flow_m3_min": 29.999697510585694,
+        "network_makeup_pressure_drop_Pa": 0.026215617073659124,
+        "physical_makeup_area_m2": 3.9600000000000004,
+        "boundary_flux_m3_s": {
+          "hood": {
+            "net_outward": 0.49999495850976156,
+            "gross_inward": 0.0,
+            "gross_outward": 0.49999495850976156
+          },
+          "left": {
+            "net_outward": -0.26046386810100486,
+            "gross_inward": 0.26046386810100486,
+            "gross_outward": 0.0
+          },
+          "right": {
+            "net_outward": -0.23953109040875653,
+            "gross_inward": 0.23953109040875653,
+            "gross_outward": 0.0
+          },
+          "walls": {
+            "net_outward": 1.5997704579548359e-18,
+            "gross_inward": 7.097209138131948e-18,
+            "gross_outward": 8.696979596086784e-18
+          }
+        },
+        "net_flux_error_m3_s": 1.6813322415172832e-16,
+        "net_flux_relative_error": 3.362698389056773e-16,
+        "divergence_L2_s_inv_m_3_2": 1.1368497808261917,
+        "divergence_gradient_norm_ratio": 0.17083762265738772,
+        "max_nodal_speed_m_s": 4.807927098175391,
+        "mean_speed_m_s": 0.11861980152656379,
+        "occupied_zone_mean_speed_m_s": 0.14042343851904385,
+        "mean_temperature_C": 25.72180826667242,
+        "max_nodal_temperature_C": 147.10972932632106,
+        "min_nodal_temperature_C": 25.0,
+        "occupied_zone_mean_temperature_C": 25.003114937167805,
+        "pressure_reference": "Natural traction at modeled room-side makeup boundary; leakage network pressure drop reported separately.",
+        "FE_pressure_min_Pa": -7.685825107718125,
+        "FE_pressure_max_Pa": -0.01949387097162278,
+        "heat_input_W": 4000.0,
+        "heat_formulation": "conservative_galerkin_edge_diffusion",
+        "advective_heat_flux_W": {
+          "hood": 3809.7682553599443,
+          "left": 6.186397386519803e-21,
+          "right": -7.208293661684055e-24
+        },
+        "wall_heat_loss_W": 190.2301647815434,
+        "door_thermal_reaction_W": 0.00157987842600909,
+        "weak_divergence_heat_correction_W": 0.0,
+        "nonconservative_heat_divergence_diagnostic_W": 170.8474138092173,
+        "discrete_heat_balance_residual_W": 1.991384124266915e-08
+      },
+      "tracer": {
+        "velocity_transport": {
+          "method": "RT0 H(div) least-energy normal-flux reconstruction from P1 FEM velocities",
+          "cell_flux_max_imbalance_m3_s": 4.85722573273506e-17,
+          "relative_RMS_cell_velocity_correction": 0.19483215950021604,
+          "boundary_fixed": "hood normal flux fixed to FEM value, wall flux zero; door and interior fluxes projected",
+          "max_raw_cell_divergence_s_inv": 16.070420088570643,
+          "max_projected_cell_divergence_s_inv": 2.5187332156583713e-11
+        },
+        "layout": "corner",
+        "case": "both_open",
+        "field_dataset": "both_open_refined",
+        "label": "兩門全開",
+        "source_reference_units_s": 0.9999999999999998,
+        "concentration_unit": "s/m³ per unit total emission rate; multiply by actual emission units/s for actual units/m³",
+        "inventory_unit": "equivalent source-seconds; divide by release_duration_s for retained fraction",
+        "cooking_duration_s": 120.0,
+        "clearance_heat_condition": "Hold steady 4000W heat and fan; stop only tracer release",
+        "Sc_t": 0.7,
+        "effective_diffusivity_m2_s": 0.007152857142857143,
+        "dt_s": 0.25,
+        "steady_equivalent_residence_time_s": 1.7068118817358373,
+        "retained_source_seconds_at_120s": 1.7068117337771438,
+        "retained_fraction_at_120s": 0.014223431114809532,
+        "cumulative_hood_removed_fraction_at_120s": 0.9857765688851902,
+        "cumulative_door_escape_fraction_at_120s": 0.0,
+        "occupied_zone_normalized_concentration_at_120s": 0.0002565651789363427,
+        "spill_zone_normalized_concentration_at_120s": 0.05939310813277186,
+        "steady_occupied_zone_normalized_concentration": 0.00025657443920414747,
+        "steady_spill_zone_normalized_concentration": 0.059393117270583565,
+        "clearance_t90_s": 3.25,
+        "clearance_t95_s": 4.0,
+        "clearance_t99_s": 6.25,
+        "mass_balance_max_reference_units": 3.552713678800501e-13,
+        "mass_balance_max_relative_to_emitted": 2.9605947323337513e-15,
+        "steady_outflux_reference_units_s": {
+          "hood": 0.9999999999999993,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "matrix_conservation_column_error": 1.3010426069826053e-17,
+        "min_concentration": 0.0,
+        "note": "Steady total hood fraction may be forced to unity if it is the only tracer outflow; use finite-time retention, occupied-zone concentration and decay instead of calling this real capture efficiency.",
+        "clearance_occupied_zone_t90_s": 3.25,
+        "clearance_occupied_zone_t95_s": 4.75,
+        "clearance_spill_zone_t90_s": 1.5,
+        "clearance_spill_zone_t95_s": 2.25
+      }
+    },
+    "corner_both_closed": {
+      "flow": {
+        "layout": "corner",
+        "layout_label": "靠左角落",
+        "buoyancy_model": "nonlinear ideal-gas density correction with fixed-reference-density incompressible equations",
+        "case": "both_closed",
+        "label": "兩門全關（每門底縫 5 mm）",
+        "mesh_target_m": 0.14,
+        "nodes": 4531,
+        "tetrahedra": 19630,
+        "fluid_volume_m3": 9.1828191,
+        "nu_t_m2_s": 0.005,
+        "iterations": 90,
+        "converged": true,
+        "last_relative_velocity_update": 1.034850207071496e-05,
+        "last_relative_temperature_update": 6.765791558451522e-06,
+        "nonlinear_relative_residual": 1.4339712919707257e-06,
+        "thermal_relative_residual": 2.109680992449967e-05,
+        "last_linear_relative_residual": 2.4537914719293455e-13,
+        "runtime_s": 99.19943976402283,
+        "fan_flow_m3_s": 0.22578048464800066,
+        "fan_flow_m3_min": 13.54682907888004,
+        "network_makeup_pressure_drop_Pa": 1034.9204983109926,
+        "physical_makeup_area_m2": 0.009000000000000001,
+        "boundary_flux_m3_s": {
+          "hood": {
+            "net_outward": 0.22578048464800063,
+            "gross_inward": 0.0,
+            "gross_outward": 0.22578048464800063
+          },
+          "left": {
+            "net_outward": -0.11893821125628244,
+            "gross_inward": 0.11893821125628244,
+            "gross_outward": 0.0
+          },
+          "right": {
+            "net_outward": -0.10684227339176852,
+            "gross_inward": 0.10684227339176852,
+            "gross_outward": 0.0
+          },
+          "walls": {
+            "net_outward": -9.444562946917015e-20,
+            "gross_inward": 4.984312687423555e-18,
+            "gross_outward": 4.8898670579543855e-18
+          }
+        },
+        "net_flux_error_m3_s": -5.0334830824572506e-14,
+        "net_flux_relative_error": 2.2293703064304336e-13,
+        "divergence_L2_s_inv_m_3_2": 2.4107699758110614,
+        "divergence_gradient_norm_ratio": 0.3474856863746069,
+        "max_nodal_speed_m_s": 3.6989336839679945,
+        "mean_speed_m_s": 0.06631110766689059,
+        "occupied_zone_mean_speed_m_s": 0.054083359934526405,
+        "mean_temperature_C": 25.986568358376626,
+        "max_nodal_temperature_C": 164.51751589200995,
+        "min_nodal_temperature_C": 25.0,
+        "occupied_zone_mean_temperature_C": 25.01830199055633,
+        "pressure_reference": "Natural traction at modeled room-side makeup boundary; leakage network pressure drop reported separately.",
+        "FE_pressure_min_Pa": -19.066598723178206,
+        "FE_pressure_max_Pa": -17.030950211068408,
+        "heat_input_W": 4000.0,
+        "heat_formulation": "conservative_galerkin_edge_diffusion",
+        "advective_heat_flux_W": {
+          "hood": 3763.683812095294,
+          "left": -5.213657625281351e-22,
+          "right": -1.966002203279049e-23
+        },
+        "wall_heat_loss_W": 236.31603132958105,
+        "door_thermal_reaction_W": 0.0001565751026076128,
+        "weak_divergence_heat_correction_W": 0.0,
+        "nonconservative_heat_divergence_diagnostic_W": 375.20396535350255,
+        "discrete_heat_balance_residual_W": -2.2282620193436742e-11
+      },
+      "tracer": {
+        "velocity_transport": {
+          "method": "RT0 H(div) least-energy normal-flux reconstruction from P1 FEM velocities",
+          "cell_flux_max_imbalance_m3_s": 1.509751525186065e-16,
+          "relative_RMS_cell_velocity_correction": 0.3016068346523729,
+          "boundary_fixed": "hood normal flux fixed to FEM value, wall flux zero; door and interior fluxes projected",
+          "max_raw_cell_divergence_s_inv": 42.45774067171402,
+          "max_projected_cell_divergence_s_inv": 2.6755771974149632e-11
+        },
+        "layout": "corner",
+        "case": "both_closed",
+        "field_dataset": "both_closed_refined",
+        "label": "兩門全關（每門底縫 5 mm）",
+        "source_reference_units_s": 0.9999999999999998,
+        "concentration_unit": "s/m³ per unit total emission rate; multiply by actual emission units/s for actual units/m³",
+        "inventory_unit": "equivalent source-seconds; divide by release_duration_s for retained fraction",
+        "cooking_duration_s": 120.0,
+        "clearance_heat_condition": "Hold steady 4000W heat and fan; stop only tracer release",
+        "Sc_t": 0.7,
+        "effective_diffusivity_m2_s": 0.007152857142857143,
+        "dt_s": 0.25,
+        "steady_equivalent_residence_time_s": 2.5711529837346268,
+        "retained_source_seconds_at_120s": 2.570814206709572,
+        "retained_fraction_at_120s": 0.02142345172257977,
+        "cumulative_hood_removed_fraction_at_120s": 0.9785765482774198,
+        "cumulative_door_escape_fraction_at_120s": 0.0,
+        "occupied_zone_normalized_concentration_at_120s": 0.002977150566805688,
+        "spill_zone_normalized_concentration_at_120s": 0.117684282146721,
+        "steady_occupied_zone_normalized_concentration": 0.0030136693567048753,
+        "steady_spill_zone_normalized_concentration": 0.1177143432428176,
+        "clearance_t90_s": 4.5,
+        "clearance_t95_s": 5.5,
+        "clearance_t99_s": 8.75,
+        "mass_balance_max_reference_units": 2.8421709430404007e-13,
+        "mass_balance_max_relative_to_emitted": 2.3684757858670013e-15,
+        "steady_outflux_reference_units_s": {
+          "hood": 1.0,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "matrix_conservation_column_error": 5.204170427930421e-18,
+        "min_concentration": 0.0,
+        "note": "Steady total hood fraction may be forced to unity if it is the only tracer outflow; use finite-time retention, occupied-zone concentration and decay instead of calling this real capture efficiency.",
+        "clearance_occupied_zone_t90_s": 33.5,
+        "clearance_occupied_zone_t95_s": 59.25,
+        "clearance_spill_zone_t90_s": 3.25,
+        "clearance_spill_zone_t95_s": 4.5
+      }
+    },
+    "corner_left_open": {
+      "flow": {
+        "layout": "corner",
+        "layout_label": "靠左角落",
+        "buoyancy_model": "nonlinear ideal-gas density correction with fixed-reference-density incompressible equations",
+        "case": "left_open",
+        "label": "左開右關",
+        "mesh_target_m": 0.14,
+        "nodes": 4531,
+        "tetrahedra": 19630,
+        "fluid_volume_m3": 9.1828191,
+        "nu_t_m2_s": 0.005,
+        "iterations": 89,
+        "converged": true,
+        "last_relative_velocity_update": 1.3322234787193885e-05,
+        "last_relative_temperature_update": 1.1863437477950938e-05,
+        "nonlinear_relative_residual": 1.5485273839608138e-06,
+        "thermal_relative_residual": 2.9798527584856155e-05,
+        "last_linear_relative_residual": 1.8836982991047396e-15,
+        "runtime_s": 98.69309401512146,
+        "fan_flow_m3_s": 0.49997983495399534,
+        "fan_flow_m3_min": 29.99879009723972,
+        "network_makeup_pressure_drop_Pa": 0.10485612475306488,
+        "physical_makeup_area_m2": 1.9800000000000002,
+        "boundary_flux_m3_s": {
+          "hood": {
+            "net_outward": 0.49997983495399534,
+            "gross_inward": 0.0,
+            "gross_outward": 0.49997983495399534
+          },
+          "left": {
+            "net_outward": -0.49997983495399567,
+            "gross_inward": 0.49997983495399567,
+            "gross_outward": 0.0
+          },
+          "right": {
+            "net_outward": 0.0,
+            "gross_inward": 0.0,
+            "gross_outward": 0.0
+          },
+          "walls": {
+            "net_outward": 1.8110604800703244e-18,
+            "gross_inward": 7.457131240315491e-18,
+            "gross_outward": 9.268191720385817e-18
+          }
+        },
+        "net_flux_error_m3_s": -3.3125584690747666e-16,
+        "net_flux_relative_error": 6.625384140501516e-16,
+        "divergence_L2_s_inv_m_3_2": 1.1521785492193108,
+        "divergence_gradient_norm_ratio": 0.16931312961280642,
+        "max_nodal_speed_m_s": 4.807781670801871,
+        "mean_speed_m_s": 0.12561498730022586,
+        "occupied_zone_mean_speed_m_s": 0.1518080636862853,
+        "mean_temperature_C": 25.716571976332585,
+        "max_nodal_temperature_C": 146.27503300865527,
+        "min_nodal_temperature_C": 25.0,
+        "occupied_zone_mean_temperature_C": 25.00327573618407,
+        "pressure_reference": "Natural traction at modeled room-side makeup boundary; leakage network pressure drop reported separately.",
+        "FE_pressure_min_Pa": -7.917900417903032,
+        "FE_pressure_max_Pa": -0.061712951551124925,
+        "heat_input_W": 4000.0,
+        "heat_formulation": "conservative_galerkin_edge_diffusion",
+        "advective_heat_flux_W": {
+          "hood": 3812.5000882593095,
+          "left": 7.077001613892385e-22,
+          "right": 0.0
+        },
+        "wall_heat_loss_W": 187.49977312411954,
+        "door_thermal_reaction_W": 0.00013861651459106246,
+        "weak_divergence_heat_correction_W": 0.0,
+        "nonconservative_heat_divergence_diagnostic_W": 299.70707703047975,
+        "discrete_heat_balance_residual_W": -5.638867150992155e-11
+      },
+      "tracer": {
+        "velocity_transport": {
+          "method": "RT0 H(div) least-energy normal-flux reconstruction from P1 FEM velocities",
+          "cell_flux_max_imbalance_m3_s": 7.28583859910259e-17,
+          "relative_RMS_cell_velocity_correction": 0.1816784472156094,
+          "boundary_fixed": "hood normal flux fixed to FEM value, wall flux zero; door and interior fluxes projected",
+          "max_raw_cell_divergence_s_inv": 16.033029062193272,
+          "max_projected_cell_divergence_s_inv": 2.2738563752471406e-11
+        },
+        "layout": "corner",
+        "case": "left_open",
+        "field_dataset": "left_open_refined",
+        "label": "左開右關",
+        "source_reference_units_s": 0.9999999999999998,
+        "concentration_unit": "s/m³ per unit total emission rate; multiply by actual emission units/s for actual units/m³",
+        "inventory_unit": "equivalent source-seconds; divide by release_duration_s for retained fraction",
+        "cooking_duration_s": 120.0,
+        "clearance_heat_condition": "Hold steady 4000W heat and fan; stop only tracer release",
+        "Sc_t": 0.7,
+        "effective_diffusivity_m2_s": 0.007152857142857143,
+        "dt_s": 0.25,
+        "steady_equivalent_residence_time_s": 1.701078516878349,
+        "retained_source_seconds_at_120s": 1.7009755821351946,
+        "retained_fraction_at_120s": 0.014174796517793287,
+        "cumulative_hood_removed_fraction_at_120s": 0.9858252034822055,
+        "cumulative_door_escape_fraction_at_120s": 0.0,
+        "occupied_zone_normalized_concentration_at_120s": 0.00024140969362775212,
+        "spill_zone_normalized_concentration_at_120s": 0.059789744913537286,
+        "steady_occupied_zone_normalized_concentration": 0.0002506896906995228,
+        "steady_spill_zone_normalized_concentration": 0.05980040939252586,
+        "clearance_t90_s": 3.25,
+        "clearance_t95_s": 4.0,
+        "clearance_t99_s": 6.0,
+        "mass_balance_max_reference_units": 3.836930773104541e-13,
+        "mass_balance_max_relative_to_emitted": 3.1974423109204517e-15,
+        "steady_outflux_reference_units_s": {
+          "hood": 0.9999999999999992,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "matrix_conservation_column_error": 1.0842021724855044e-17,
+        "min_concentration": 0.0,
+        "note": "Steady total hood fraction may be forced to unity if it is the only tracer outflow; use finite-time retention, occupied-zone concentration and decay instead of calling this real capture efficiency.",
+        "clearance_occupied_zone_t90_s": 12.25,
+        "clearance_occupied_zone_t95_s": 67.25,
+        "clearance_spill_zone_t90_s": 1.75,
+        "clearance_spill_zone_t95_s": 2.25
+      }
+    },
+    "corner_right_open": {
+      "flow": {
+        "layout": "corner",
+        "layout_label": "靠左角落",
+        "buoyancy_model": "nonlinear ideal-gas density correction with fixed-reference-density incompressible equations",
+        "case": "right_open",
+        "label": "右開左關",
+        "mesh_target_m": 0.14,
+        "nodes": 4531,
+        "tetrahedra": 19630,
+        "fluid_volume_m3": 9.1828191,
+        "nu_t_m2_s": 0.005,
+        "iterations": 75,
+        "converged": true,
+        "last_relative_velocity_update": 1.5075928399557654e-05,
+        "last_relative_temperature_update": 5.650782730973249e-06,
+        "nonlinear_relative_residual": 2.89659891843944e-06,
+        "thermal_relative_residual": 2.2323636013255408e-05,
+        "last_linear_relative_residual": 1.6609081624061365e-15,
+        "runtime_s": 138.27938723564148,
+        "fan_flow_m3_s": 0.49997983495399534,
+        "fan_flow_m3_min": 29.99879009723972,
+        "network_makeup_pressure_drop_Pa": 0.10485612475306488,
+        "physical_makeup_area_m2": 1.9800000000000002,
+        "boundary_flux_m3_s": {
+          "hood": {
+            "net_outward": 0.49997983495399534,
+            "gross_inward": 0.0,
+            "gross_outward": 0.49997983495399534
+          },
+          "left": {
+            "net_outward": 0.0,
+            "gross_inward": 0.0,
+            "gross_outward": 0.0
+          },
+          "right": {
+            "net_outward": -0.49997983495399584,
+            "gross_inward": 0.49997983495399584,
+            "gross_outward": 0.0
+          },
+          "walls": {
+            "net_outward": 1.528519724600664e-18,
+            "gross_inward": 6.962927127991931e-18,
+            "gross_outward": 8.491446852592594e-18
+          }
+        },
+        "net_flux_error_m3_s": -4.980718413567198e-16,
+        "net_flux_relative_error": 9.961838589001272e-16,
+        "divergence_L2_s_inv_m_3_2": 1.1366038851519134,
+        "divergence_gradient_norm_ratio": 0.16881070804058976,
+        "max_nodal_speed_m_s": 4.807781670801871,
+        "mean_speed_m_s": 0.14875969116262275,
+        "occupied_zone_mean_speed_m_s": 0.17966159010100402,
+        "mean_temperature_C": 25.73289029028812,
+        "max_nodal_temperature_C": 151.63055695696002,
+        "min_nodal_temperature_C": 25.0,
+        "occupied_zone_mean_temperature_C": 25.00734146712616,
+        "pressure_reference": "Natural traction at modeled room-side makeup boundary; leakage network pressure drop reported separately.",
+        "FE_pressure_min_Pa": -7.591653375850379,
+        "FE_pressure_max_Pa": -0.06634804879765216,
+        "heat_input_W": 4000.0,
+        "heat_formulation": "conservative_galerkin_edge_diffusion",
+        "advective_heat_flux_W": {
+          "hood": 3807.378542924246,
+          "left": 0.0,
+          "right": 1.0958385114887223e-24
+        },
+        "wall_heat_loss_W": 192.6214562451655,
+        "door_thermal_reaction_W": 8.305885732608184e-07,
+        "weak_divergence_heat_correction_W": 0.0,
+        "nonconservative_heat_divergence_diagnostic_W": 68.18968405310343,
+        "discrete_heat_balance_residual_W": 4.547473508864641e-13
+      },
+      "tracer": {
+        "velocity_transport": {
+          "method": "RT0 H(div) least-energy normal-flux reconstruction from P1 FEM velocities",
+          "cell_flux_max_imbalance_m3_s": 5.724587470723463e-17,
+          "relative_RMS_cell_velocity_correction": 0.17122814663938368,
+          "boundary_fixed": "hood normal flux fixed to FEM value, wall flux zero; door and interior fluxes projected",
+          "max_raw_cell_divergence_s_inv": 16.04426114779463,
+          "max_projected_cell_divergence_s_inv": 1.7841026944246797e-11
+        },
+        "layout": "corner",
+        "case": "right_open",
+        "field_dataset": "right_open_refined",
+        "label": "右開左關",
+        "source_reference_units_s": 0.9999999999999998,
+        "concentration_unit": "s/m³ per unit total emission rate; multiply by actual emission units/s for actual units/m³",
+        "inventory_unit": "equivalent source-seconds; divide by release_duration_s for retained fraction",
+        "cooking_duration_s": 120.0,
+        "clearance_heat_condition": "Hold steady 4000W heat and fan; stop only tracer release",
+        "Sc_t": 0.7,
+        "effective_diffusivity_m2_s": 0.007152857142857143,
+        "dt_s": 0.25,
+        "steady_equivalent_residence_time_s": 1.7214105352173368,
+        "retained_source_seconds_at_120s": 1.7213084437357233,
+        "retained_fraction_at_120s": 0.014344237031131028,
+        "cumulative_hood_removed_fraction_at_120s": 0.9856557629688683,
+        "cumulative_door_escape_fraction_at_120s": 0.0,
+        "occupied_zone_normalized_concentration_at_120s": 0.00046391133673934155,
+        "spill_zone_normalized_concentration_at_120s": 0.061223603065535426,
+        "steady_occupied_zone_normalized_concentration": 0.0004761260503349546,
+        "steady_spill_zone_normalized_concentration": 0.06123248002031164,
+        "clearance_t90_s": 3.25,
+        "clearance_t95_s": 4.25,
+        "clearance_t99_s": 6.25,
+        "mass_balance_max_reference_units": 4.973799150320701e-13,
+        "mass_balance_max_relative_to_emitted": 4.144832625267252e-15,
+        "steady_outflux_reference_units_s": {
+          "hood": 0.9999999999999999,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "matrix_conservation_column_error": 1.9081958235744878e-17,
+        "min_concentration": 0.0,
+        "note": "Steady total hood fraction may be forced to unity if it is the only tracer outflow; use finite-time retention, occupied-zone concentration and decay instead of calling this real capture efficiency.",
+        "clearance_occupied_zone_t90_s": 46.25,
+        "clearance_occupied_zone_t95_s": 82.25,
+        "clearance_spill_zone_t90_s": 1.75,
+        "clearance_spill_zone_t95_s": 2.25
+      }
+    },
+    "center_both_open": {
+      "flow": {
+        "layout": "center",
+        "layout_label": "檯面中央",
+        "buoyancy_model": "nonlinear ideal-gas density correction with fixed-reference-density incompressible equations",
+        "case": "both_open",
+        "label": "兩門全開",
+        "mesh_target_m": 0.14,
+        "nodes": 4583,
+        "tetrahedra": 20019,
+        "fluid_volume_m3": 9.1828191,
+        "nu_t_m2_s": 0.005,
+        "iterations": 85,
+        "converged": true,
+        "last_relative_velocity_update": 1.2729951691440221e-05,
+        "last_relative_temperature_update": 1.4416773120965544e-05,
+        "nonlinear_relative_residual": 1.191923851333168e-06,
+        "thermal_relative_residual": 5.2185168954603864e-05,
+        "last_linear_relative_residual": 1.6364860896556133e-15,
+        "runtime_s": 141.18827533721924,
+        "fan_flow_m3_s": 0.49999495850976156,
+        "fan_flow_m3_min": 29.999697510585694,
+        "network_makeup_pressure_drop_Pa": 0.026215617073659124,
+        "physical_makeup_area_m2": 3.9600000000000004,
+        "boundary_flux_m3_s": {
+          "hood": {
+            "net_outward": 0.49999495850976156,
+            "gross_inward": 0.0,
+            "gross_outward": 0.49999495850976156
+          },
+          "left": {
+            "net_outward": -0.21112864112109736,
+            "gross_inward": 0.21112864112109736,
+            "gross_outward": 0.0
+          },
+          "right": {
+            "net_outward": -0.28886631738866403,
+            "gross_inward": 0.28886631738866403,
+            "gross_outward": 0.0
+          },
+          "walls": {
+            "net_outward": 4.413143091294604e-19,
+            "gross_inward": 6.256815592057311e-18,
+            "gross_outward": 6.698129901186771e-18
+          }
+        },
+        "net_flux_error_m3_s": 1.6697476800290295e-16,
+        "net_flux_relative_error": 3.3395290324640954e-16,
+        "divergence_L2_s_inv_m_3_2": 1.093787289234158,
+        "divergence_gradient_norm_ratio": 0.17167603496246464,
+        "max_nodal_speed_m_s": 4.807330102466208,
+        "mean_speed_m_s": 0.11321466718548619,
+        "occupied_zone_mean_speed_m_s": 0.13359780843124303,
+        "mean_temperature_C": 25.679571022445465,
+        "max_nodal_temperature_C": 152.7082653445317,
+        "min_nodal_temperature_C": 25.0,
+        "occupied_zone_mean_temperature_C": 25.006390892890803,
+        "pressure_reference": "Natural traction at modeled room-side makeup boundary; leakage network pressure drop reported separately.",
+        "FE_pressure_min_Pa": -7.4899344059658395,
+        "FE_pressure_max_Pa": -0.017233312215696992,
+        "heat_input_W": 4000.0,
+        "heat_formulation": "conservative_galerkin_edge_diffusion",
+        "advective_heat_flux_W": {
+          "hood": 3863.742229125675,
+          "left": -2.5331091793309017e-22,
+          "right": -2.009102639544867e-21
+        },
+        "wall_heat_loss_W": 136.2543829643813,
+        "door_thermal_reaction_W": 0.003387897364059094,
+        "weak_divergence_heat_correction_W": 0.0,
+        "nonconservative_heat_divergence_diagnostic_W": 847.8017939401808,
+        "discrete_heat_balance_residual_W": -1.2579675967572257e-08
+      },
+      "tracer": {
+        "velocity_transport": {
+          "method": "RT0 H(div) least-energy normal-flux reconstruction from P1 FEM velocities",
+          "cell_flux_max_imbalance_m3_s": 7.37257477290143e-17,
+          "relative_RMS_cell_velocity_correction": 0.19192524747682335,
+          "boundary_fixed": "hood normal flux fixed to FEM value, wall flux zero; door and interior fluxes projected",
+          "max_raw_cell_divergence_s_inv": 17.59929477208558,
+          "max_projected_cell_divergence_s_inv": 1.3532321724829678e-11
+        },
+        "layout": "center",
+        "case": "both_open",
+        "field_dataset": "both_open_refined",
+        "label": "兩門全開",
+        "source_reference_units_s": 1.0,
+        "concentration_unit": "s/m³ per unit total emission rate; multiply by actual emission units/s for actual units/m³",
+        "inventory_unit": "equivalent source-seconds; divide by release_duration_s for retained fraction",
+        "cooking_duration_s": 120.0,
+        "clearance_heat_condition": "Hold steady 4000W heat and fan; stop only tracer release",
+        "Sc_t": 0.7,
+        "effective_diffusivity_m2_s": 0.007152857142857143,
+        "dt_s": 0.25,
+        "steady_equivalent_residence_time_s": 1.6653638282352408,
+        "retained_source_seconds_at_120s": 1.6653625997002937,
+        "retained_fraction_at_120s": 0.013878021664169115,
+        "cumulative_hood_removed_fraction_at_120s": 0.9861219783358302,
+        "cumulative_door_escape_fraction_at_120s": 0.0,
+        "occupied_zone_normalized_concentration_at_120s": 0.000798288751517763,
+        "spill_zone_normalized_concentration_at_120s": 0.08445369346736722,
+        "steady_occupied_zone_normalized_concentration": 0.0007983682568062957,
+        "steady_spill_zone_normalized_concentration": 0.08445377741798474,
+        "clearance_t90_s": 3.0,
+        "clearance_t95_s": 4.0,
+        "clearance_t99_s": 6.0,
+        "mass_balance_max_reference_units": 5.542233338928781e-13,
+        "mass_balance_max_relative_to_emitted": 4.618527782440651e-15,
+        "steady_outflux_reference_units_s": {
+          "hood": 0.9999999999999994,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "matrix_conservation_column_error": 1.0408340855860843e-17,
+        "min_concentration": 0.0,
+        "note": "Steady total hood fraction may be forced to unity if it is the only tracer outflow; use finite-time retention, occupied-zone concentration and decay instead of calling this real capture efficiency.",
+        "clearance_occupied_zone_t90_s": 5.5,
+        "clearance_occupied_zone_t95_s": 8.75,
+        "clearance_spill_zone_t90_s": 2.0,
+        "clearance_spill_zone_t95_s": 2.75
+      }
+    },
+    "center_both_closed": {
+      "flow": {
+        "layout": "center",
+        "layout_label": "檯面中央",
+        "buoyancy_model": "nonlinear ideal-gas density correction with fixed-reference-density incompressible equations",
+        "case": "both_closed",
+        "label": "兩門全關（每門底縫 5 mm）",
+        "mesh_target_m": 0.14,
+        "nodes": 4583,
+        "tetrahedra": 20019,
+        "fluid_volume_m3": 9.1828191,
+        "nu_t_m2_s": 0.005,
+        "iterations": 92,
+        "converged": true,
+        "last_relative_velocity_update": 1.1351437869594704e-05,
+        "last_relative_temperature_update": 1.117251086755084e-05,
+        "nonlinear_relative_residual": 1.6210756857562088e-06,
+        "thermal_relative_residual": 3.476549199344979e-05,
+        "last_linear_relative_residual": 2.0585923936675086e-13,
+        "runtime_s": 130.14035296440125,
+        "fan_flow_m3_s": 0.22578048464800066,
+        "fan_flow_m3_min": 13.54682907888004,
+        "network_makeup_pressure_drop_Pa": 1034.9204983109926,
+        "physical_makeup_area_m2": 0.009000000000000001,
+        "boundary_flux_m3_s": {
+          "hood": {
+            "net_outward": 0.22578048464800066,
+            "gross_inward": 0.0,
+            "gross_outward": 0.22578048464800066
+          },
+          "left": {
+            "net_outward": -0.1126782998580668,
+            "gross_inward": 0.1126782998580668,
+            "gross_outward": 0.0
+          },
+          "right": {
+            "net_outward": -0.11310218478993918,
+            "gross_inward": 0.11310218478993918,
+            "gross_outward": 0.0
+          },
+          "walls": {
+            "net_outward": -2.980693299845465e-18,
+            "gross_inward": 8.10805847544039e-18,
+            "gross_outward": 5.127365175594926e-18
+          }
+        },
+        "net_flux_error_m3_s": -5.318173423692782e-15,
+        "net_flux_relative_error": 2.3554619576550172e-14,
+        "divergence_L2_s_inv_m_3_2": 2.1472425993019733,
+        "divergence_gradient_norm_ratio": 0.29600261826180285,
+        "max_nodal_speed_m_s": 4.975028324541085,
+        "mean_speed_m_s": 0.08243743599014482,
+        "occupied_zone_mean_speed_m_s": 0.06374983686537081,
+        "mean_temperature_C": 25.86373992928916,
+        "max_nodal_temperature_C": 159.9977620848005,
+        "min_nodal_temperature_C": 25.0,
+        "occupied_zone_mean_temperature_C": 25.022749302169892,
+        "pressure_reference": "Natural traction at modeled room-side makeup boundary; leakage network pressure drop reported separately.",
+        "FE_pressure_min_Pa": -16.04637847851809,
+        "FE_pressure_max_Pa": -14.364963187966488,
+        "heat_input_W": 4000.0,
+        "heat_formulation": "conservative_galerkin_edge_diffusion",
+        "advective_heat_flux_W": {
+          "hood": 3846.894381070462,
+          "left": -6.187070295020656e-23,
+          "right": 1.1338367512194248e-22
+        },
+        "wall_heat_loss_W": 153.10540470602987,
+        "door_thermal_reaction_W": 0.0002142234827928347,
+        "weak_divergence_heat_correction_W": 0.0,
+        "nonconservative_heat_divergence_diagnostic_W": 835.0333570123645,
+        "discrete_heat_balance_residual_W": -2.546585164964199e-11
+      },
+      "tracer": {
+        "velocity_transport": {
+          "method": "RT0 H(div) least-energy normal-flux reconstruction from P1 FEM velocities",
+          "cell_flux_max_imbalance_m3_s": 7.22078646875346e-17,
+          "relative_RMS_cell_velocity_correction": 0.2504715121079217,
+          "boundary_fixed": "hood normal flux fixed to FEM value, wall flux zero; door and interior fluxes projected",
+          "max_raw_cell_divergence_s_inv": 38.20015634137955,
+          "max_projected_cell_divergence_s_inv": 2.6155051478762926e-11
+        },
+        "layout": "center",
+        "case": "both_closed",
+        "field_dataset": "both_closed_refined",
+        "label": "兩門全關（每門底縫 5 mm）",
+        "source_reference_units_s": 1.0,
+        "concentration_unit": "s/m³ per unit total emission rate; multiply by actual emission units/s for actual units/m³",
+        "inventory_unit": "equivalent source-seconds; divide by release_duration_s for retained fraction",
+        "cooking_duration_s": 120.0,
+        "clearance_heat_condition": "Hold steady 4000W heat and fan; stop only tracer release",
+        "Sc_t": 0.7,
+        "effective_diffusivity_m2_s": 0.007152857142857143,
+        "dt_s": 0.25,
+        "steady_equivalent_residence_time_s": 2.347233963328298,
+        "retained_source_seconds_at_120s": 2.3461890764283955,
+        "retained_fraction_at_120s": 0.019551575636903296,
+        "cumulative_hood_removed_fraction_at_120s": 0.9804484243630964,
+        "cumulative_door_escape_fraction_at_120s": 0.0,
+        "occupied_zone_normalized_concentration_at_120s": 0.0053816748074632555,
+        "spill_zone_normalized_concentration_at_120s": 0.1621454884661201,
+        "steady_occupied_zone_normalized_concentration": 0.005526023910453256,
+        "steady_spill_zone_normalized_concentration": 0.16227251308129356,
+        "clearance_t90_s": 4.25,
+        "clearance_t95_s": 5.5,
+        "clearance_t99_s": 9.75,
+        "mass_balance_max_reference_units": 2.2737367544323206e-13,
+        "mass_balance_max_relative_to_emitted": 1.8947806286936005e-15,
+        "steady_outflux_reference_units_s": {
+          "hood": 0.9999999999999997,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "matrix_conservation_column_error": 5.637851296924623e-18,
+        "min_concentration": 0.0,
+        "note": "Steady total hood fraction may be forced to unity if it is the only tracer outflow; use finite-time retention, occupied-zone concentration and decay instead of calling this real capture efficiency.",
+        "clearance_occupied_zone_t90_s": 43.5,
+        "clearance_occupied_zone_t95_s": 79.25,
+        "clearance_spill_zone_t90_s": 3.5,
+        "clearance_spill_zone_t95_s": 5.0
+      }
+    },
+    "center_left_open": {
+      "flow": {
+        "layout": "center",
+        "layout_label": "檯面中央",
+        "buoyancy_model": "nonlinear ideal-gas density correction with fixed-reference-density incompressible equations",
+        "case": "left_open",
+        "label": "左開右關",
+        "mesh_target_m": 0.14,
+        "nodes": 4583,
+        "tetrahedra": 20019,
+        "fluid_volume_m3": 9.1828191,
+        "nu_t_m2_s": 0.005,
+        "iterations": 85,
+        "converged": true,
+        "last_relative_velocity_update": 9.371255163787471e-06,
+        "last_relative_temperature_update": 1.474924040931928e-05,
+        "nonlinear_relative_residual": 9.592791516962625e-07,
+        "thermal_relative_residual": 4.405766889561631e-05,
+        "last_linear_relative_residual": 1.7809940351270195e-15,
+        "runtime_s": 176.2865695953369,
+        "fan_flow_m3_s": 0.49997983495399534,
+        "fan_flow_m3_min": 29.99879009723972,
+        "network_makeup_pressure_drop_Pa": 0.10485612475306488,
+        "physical_makeup_area_m2": 1.9800000000000002,
+        "boundary_flux_m3_s": {
+          "hood": {
+            "net_outward": 0.49997983495399534,
+            "gross_inward": 0.0,
+            "gross_outward": 0.49997983495399534
+          },
+          "left": {
+            "net_outward": -0.49997983495399534,
+            "gross_inward": 0.49997983495399534,
+            "gross_outward": 0.0
+          },
+          "right": {
+            "net_outward": 0.0,
+            "gross_inward": 0.0,
+            "gross_outward": 0.0
+          },
+          "walls": {
+            "net_outward": 4.348132330436466e-19,
+            "gross_inward": 6.537891510966309e-18,
+            "gross_outward": 6.972704744009954e-18
+          }
+        },
+        "net_flux_error_m3_s": 4.348132330436466e-19,
+        "net_flux_relative_error": 8.696615396172029e-19,
+        "divergence_L2_s_inv_m_3_2": 1.1031067483048045,
+        "divergence_gradient_norm_ratio": 0.1686606836244501,
+        "max_nodal_speed_m_s": 4.807184693150266,
+        "mean_speed_m_s": 0.1522957659592806,
+        "occupied_zone_mean_speed_m_s": 0.1911286585850992,
+        "mean_temperature_C": 25.68627407010594,
+        "max_nodal_temperature_C": 151.35829731912378,
+        "min_nodal_temperature_C": 25.0,
+        "occupied_zone_mean_temperature_C": 25.00825086916683,
+        "pressure_reference": "Natural traction at modeled room-side makeup boundary; leakage network pressure drop reported separately.",
+        "FE_pressure_min_Pa": -7.594882924526785,
+        "FE_pressure_max_Pa": -0.0698965995122583,
+        "heat_input_W": 4000.0,
+        "heat_formulation": "conservative_galerkin_edge_diffusion",
+        "advective_heat_flux_W": {
+          "hood": 3863.3761978617385,
+          "left": -5.430075445810379e-25,
+          "right": 0.0
+        },
+        "wall_heat_loss_W": 136.62380186811015,
+        "door_thermal_reaction_W": 2.7014969146892274e-07,
+        "weak_divergence_heat_correction_W": 0.0,
+        "nonconservative_heat_divergence_diagnostic_W": 854.1454888205607,
+        "discrete_heat_balance_residual_W": -1.8189894035458565e-12
+      },
+      "tracer": {
+        "velocity_transport": {
+          "method": "RT0 H(div) least-energy normal-flux reconstruction from P1 FEM velocities",
+          "cell_flux_max_imbalance_m3_s": 5.572799166575493e-17,
+          "relative_RMS_cell_velocity_correction": 0.16623150959158303,
+          "boundary_fixed": "hood normal flux fixed to FEM value, wall flux zero; door and interior fluxes projected",
+          "max_raw_cell_divergence_s_inv": 17.55142943587056,
+          "max_projected_cell_divergence_s_inv": 1.5606768030669857e-11
+        },
+        "layout": "center",
+        "case": "left_open",
+        "field_dataset": "left_open_refined",
+        "label": "左開右關",
+        "source_reference_units_s": 1.0,
+        "concentration_unit": "s/m³ per unit total emission rate; multiply by actual emission units/s for actual units/m³",
+        "inventory_unit": "equivalent source-seconds; divide by release_duration_s for retained fraction",
+        "cooking_duration_s": 120.0,
+        "clearance_heat_condition": "Hold steady 4000W heat and fan; stop only tracer release",
+        "Sc_t": 0.7,
+        "effective_diffusivity_m2_s": 0.007152857142857143,
+        "dt_s": 0.25,
+        "steady_equivalent_residence_time_s": 1.6779164381661436,
+        "retained_source_seconds_at_120s": 1.6778129256539556,
+        "retained_fraction_at_120s": 0.013981774380449629,
+        "cumulative_hood_removed_fraction_at_120s": 0.9860182256195493,
+        "cumulative_door_escape_fraction_at_120s": 0.0,
+        "occupied_zone_normalized_concentration_at_120s": 0.0010030693435028079,
+        "spill_zone_normalized_concentration_at_120s": 0.08682517032454307,
+        "steady_occupied_zone_normalized_concentration": 0.0010109872011234424,
+        "steady_spill_zone_normalized_concentration": 0.08683354018972113,
+        "clearance_t90_s": 3.25,
+        "clearance_t95_s": 4.0,
+        "clearance_t99_s": 6.25,
+        "mass_balance_max_reference_units": 4.973799150320701e-13,
+        "mass_balance_max_relative_to_emitted": 4.144832625267251e-15,
+        "steady_outflux_reference_units_s": {
+          "hood": 1.0,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "matrix_conservation_column_error": 1.0408340855860843e-17,
+        "min_concentration": 0.0,
+        "note": "Steady total hood fraction may be forced to unity if it is the only tracer outflow; use finite-time retention, occupied-zone concentration and decay instead of calling this real capture efficiency.",
+        "clearance_occupied_zone_t90_s": 19.25,
+        "clearance_occupied_zone_t95_s": 45.5,
+        "clearance_spill_zone_t90_s": 2.0,
+        "clearance_spill_zone_t95_s": 2.75
+      }
+    },
+    "center_right_open": {
+      "flow": {
+        "layout": "center",
+        "layout_label": "檯面中央",
+        "buoyancy_model": "nonlinear ideal-gas density correction with fixed-reference-density incompressible equations",
+        "case": "right_open",
+        "label": "右開左關",
+        "mesh_target_m": 0.14,
+        "nodes": 4583,
+        "tetrahedra": 20019,
+        "fluid_volume_m3": 9.1828191,
+        "nu_t_m2_s": 0.005,
+        "iterations": 88,
+        "converged": true,
+        "last_relative_velocity_update": 1.0010586809896768e-05,
+        "last_relative_temperature_update": 1.3288509816500174e-05,
+        "nonlinear_relative_residual": 9.959860012769993e-07,
+        "thermal_relative_residual": 3.150104740627994e-05,
+        "last_linear_relative_residual": 1.7643482281911038e-15,
+        "runtime_s": 113.67508816719055,
+        "fan_flow_m3_s": 0.49997983495399534,
+        "fan_flow_m3_min": 29.99879009723972,
+        "network_makeup_pressure_drop_Pa": 0.10485612475306488,
+        "physical_makeup_area_m2": 1.9800000000000002,
+        "boundary_flux_m3_s": {
+          "hood": {
+            "net_outward": 0.49997983495399534,
+            "gross_inward": 0.0,
+            "gross_outward": 0.49997983495399534
+          },
+          "left": {
+            "net_outward": 0.0,
+            "gross_inward": 0.0,
+            "gross_outward": 0.0
+          },
+          "right": {
+            "net_outward": -0.4999798349539951,
+            "gross_inward": 0.4999798349539951,
+            "gross_outward": 0.0
+          },
+          "walls": {
+            "net_outward": 4.286789633963922e-19,
+            "gross_inward": 6.315549105191509e-18,
+            "gross_outward": 6.744228068587901e-18
+          }
+        },
+        "net_flux_error_m3_s": 2.224732838884277e-16,
+        "net_flux_relative_error": 4.449645132366151e-16,
+        "divergence_L2_s_inv_m_3_2": 1.100487809985774,
+        "divergence_gradient_norm_ratio": 0.1703230912051678,
+        "max_nodal_speed_m_s": 4.807184693150266,
+        "mean_speed_m_s": 0.11843125509508436,
+        "occupied_zone_mean_speed_m_s": 0.13900105694724066,
+        "mean_temperature_C": 25.686945970587384,
+        "max_nodal_temperature_C": 154.0551511574104,
+        "min_nodal_temperature_C": 25.0,
+        "occupied_zone_mean_temperature_C": 25.00862392770224,
+        "pressure_reference": "Natural traction at modeled room-side makeup boundary; leakage network pressure drop reported separately.",
+        "FE_pressure_min_Pa": -7.56373555894915,
+        "FE_pressure_max_Pa": -0.0532863312944007,
+        "heat_input_W": 4000.0,
+        "heat_formulation": "conservative_galerkin_edge_diffusion",
+        "advective_heat_flux_W": {
+          "hood": 3862.0930190473655,
+          "left": 0.0,
+          "right": -7.492281954295026e-23
+        },
+        "wall_heat_loss_W": 137.90499775854664,
+        "door_thermal_reaction_W": 0.001983194648185055,
+        "weak_divergence_heat_correction_W": 0.0,
+        "nonconservative_heat_divergence_diagnostic_W": 844.1045186422177,
+        "discrete_heat_balance_residual_W": 5.602487362921238e-10
+      },
+      "tracer": {
+        "velocity_transport": {
+          "method": "RT0 H(div) least-energy normal-flux reconstruction from P1 FEM velocities",
+          "cell_flux_max_imbalance_m3_s": 5.2909066017292616e-17,
+          "relative_RMS_cell_velocity_correction": 0.1777119897548128,
+          "boundary_fixed": "hood normal flux fixed to FEM value, wall flux zero; door and interior fluxes projected",
+          "max_raw_cell_divergence_s_inv": 17.588445092188046,
+          "max_projected_cell_divergence_s_inv": 1.1520120331822791e-11
+        },
+        "layout": "center",
+        "case": "right_open",
+        "field_dataset": "right_open_refined",
+        "label": "右開左關",
+        "source_reference_units_s": 1.0,
+        "concentration_unit": "s/m³ per unit total emission rate; multiply by actual emission units/s for actual units/m³",
+        "inventory_unit": "equivalent source-seconds; divide by release_duration_s for retained fraction",
+        "cooking_duration_s": 120.0,
+        "clearance_heat_condition": "Hold steady 4000W heat and fan; stop only tracer release",
+        "Sc_t": 0.7,
+        "effective_diffusivity_m2_s": 0.007152857142857143,
+        "dt_s": 0.25,
+        "steady_equivalent_residence_time_s": 1.6799161438372723,
+        "retained_source_seconds_at_120s": 1.679059510317337,
+        "retained_fraction_at_120s": 0.013992162585977807,
+        "cumulative_hood_removed_fraction_at_120s": 0.9860078374140223,
+        "cumulative_door_escape_fraction_at_120s": 0.0,
+        "occupied_zone_normalized_concentration_at_120s": 0.0010103706976613016,
+        "spill_zone_normalized_concentration_at_120s": 0.08513772421103036,
+        "steady_occupied_zone_normalized_concentration": 0.0011054957017692507,
+        "steady_spill_zone_normalized_concentration": 0.08521071748723977,
+        "clearance_t90_s": 3.25,
+        "clearance_t95_s": 4.0,
+        "clearance_t99_s": 6.25,
+        "mass_balance_max_reference_units": 4.973799150320701e-13,
+        "mass_balance_max_relative_to_emitted": 4.144832625267251e-15,
+        "steady_outflux_reference_units_s": {
+          "hood": 1.0000000000000004,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "matrix_conservation_column_error": 4.553649124439119e-18,
+        "min_concentration": 0.0,
+        "note": "Steady total hood fraction may be forced to unity if it is the only tracer outflow; use finite-time retention, occupied-zone concentration and decay instead of calling this real capture efficiency.",
+        "clearance_occupied_zone_t90_s": 79.75,
+        "clearance_occupied_zone_t95_s": 149.25,
+        "clearance_spill_zone_t90_s": 2.0,
+        "clearance_spill_zone_t95_s": 2.75
+      }
+    }
+  },
+  "primary_rows": [
+    {
+      "layout": "corner",
+      "door_state": "both_open",
+      "estimated_flow_m3_min": 29.999697510585694,
+      "mean_source_weighted_residence_s": 1.7068118817358373,
+      "retained_fraction_at120s": 0.014223431114809532,
+      "occupied_zone_c_per_R_s_m3_at120s": 0.0002565651789363427,
+      "global_clearance_t95_s": 4.0,
+      "occupied_zone_clearance_t95_s": 4.75
+    },
+    {
+      "layout": "corner",
+      "door_state": "both_closed",
+      "estimated_flow_m3_min": 13.54682907888004,
+      "mean_source_weighted_residence_s": 2.5711529837346268,
+      "retained_fraction_at120s": 0.02142345172257977,
+      "occupied_zone_c_per_R_s_m3_at120s": 0.002977150566805688,
+      "global_clearance_t95_s": 5.5,
+      "occupied_zone_clearance_t95_s": 59.25
+    },
+    {
+      "layout": "corner",
+      "door_state": "left_open",
+      "estimated_flow_m3_min": 29.99879009723972,
+      "mean_source_weighted_residence_s": 1.701078516878349,
+      "retained_fraction_at120s": 0.014174796517793287,
+      "occupied_zone_c_per_R_s_m3_at120s": 0.00024140969362775212,
+      "global_clearance_t95_s": 4.0,
+      "occupied_zone_clearance_t95_s": 67.25
+    },
+    {
+      "layout": "corner",
+      "door_state": "right_open",
+      "estimated_flow_m3_min": 29.99879009723972,
+      "mean_source_weighted_residence_s": 1.7214105352173368,
+      "retained_fraction_at120s": 0.014344237031131028,
+      "occupied_zone_c_per_R_s_m3_at120s": 0.00046391133673934155,
+      "global_clearance_t95_s": 4.25,
+      "occupied_zone_clearance_t95_s": 82.25
+    },
+    {
+      "layout": "center",
+      "door_state": "both_open",
+      "estimated_flow_m3_min": 29.999697510585694,
+      "mean_source_weighted_residence_s": 1.6653638282352408,
+      "retained_fraction_at120s": 0.013878021664169115,
+      "occupied_zone_c_per_R_s_m3_at120s": 0.000798288751517763,
+      "global_clearance_t95_s": 4.0,
+      "occupied_zone_clearance_t95_s": 8.75
+    },
+    {
+      "layout": "center",
+      "door_state": "both_closed",
+      "estimated_flow_m3_min": 13.54682907888004,
+      "mean_source_weighted_residence_s": 2.347233963328298,
+      "retained_fraction_at120s": 0.019551575636903296,
+      "occupied_zone_c_per_R_s_m3_at120s": 0.0053816748074632555,
+      "global_clearance_t95_s": 5.5,
+      "occupied_zone_clearance_t95_s": 79.25
+    },
+    {
+      "layout": "center",
+      "door_state": "left_open",
+      "estimated_flow_m3_min": 29.99879009723972,
+      "mean_source_weighted_residence_s": 1.6779164381661436,
+      "retained_fraction_at120s": 0.013981774380449629,
+      "occupied_zone_c_per_R_s_m3_at120s": 0.0010030693435028079,
+      "global_clearance_t95_s": 4.0,
+      "occupied_zone_clearance_t95_s": 45.5
+    },
+    {
+      "layout": "center",
+      "door_state": "right_open",
+      "estimated_flow_m3_min": 29.99879009723972,
+      "mean_source_weighted_residence_s": 1.6799161438372723,
+      "retained_fraction_at120s": 0.013992162585977807,
+      "occupied_zone_c_per_R_s_m3_at120s": 0.0010103706976613016,
+      "global_clearance_t95_s": 4.0,
+      "occupied_zone_clearance_t95_s": 149.25
+    }
+  ],
+  "placement_comparison": [
+    {
+      "case": "both_open",
+      "center_vs_corner_residence_change_percent": -2.428390260468749,
+      "center_vs_corner_occupied_concentration_ratio": 3.1114462018083495,
+      "center_vs_corner_occupied_concentration_change_percent": 211.14462018083495
+    },
+    {
+      "case": "both_closed",
+      "center_vs_corner_residence_change_percent": -8.708895263053694,
+      "center_vs_corner_occupied_concentration_ratio": 1.8076596015892754,
+      "center_vs_corner_occupied_concentration_change_percent": 80.76596015892754
+    },
+    {
+      "case": "left_open",
+      "center_vs_corner_residence_change_percent": -1.3616113825662968,
+      "center_vs_corner_occupied_concentration_ratio": 4.155049983409185,
+      "center_vs_corner_occupied_concentration_change_percent": 315.5049983409185
+    },
+    {
+      "case": "right_open",
+      "center_vs_corner_residence_change_percent": -2.4104878256031803,
+      "center_vs_corner_occupied_concentration_ratio": 2.177939225979726,
+      "center_vs_corner_occupied_concentration_change_percent": 117.7939225979726
+    }
+  ],
+  "grid_comparison": [
+    {
+      "layout": "corner",
+      "case": "both_open",
+      "coarse_h_m": 0.18,
+      "primary_h_m": 0.14,
+      "residence_relative_change_percent": 7.173010726572593,
+      "occupied_concentration_relative_change_percent": -31.55309323429999,
+      "coarse_occupied_clearance_t95_s": 3.0,
+      "primary_occupied_clearance_t95_s": 4.75
+    },
+    {
+      "layout": "corner",
+      "case": "both_closed",
+      "coarse_h_m": 0.18,
+      "primary_h_m": 0.14,
+      "residence_relative_change_percent": 0.419573080786817,
+      "occupied_concentration_relative_change_percent": -10.059364284873261,
+      "coarse_occupied_clearance_t95_s": 81.25,
+      "primary_occupied_clearance_t95_s": 59.25
+    },
+    {
+      "layout": "corner",
+      "case": "left_open",
+      "coarse_h_m": 0.18,
+      "primary_h_m": 0.14,
+      "residence_relative_change_percent": 7.7907598910887055,
+      "occupied_concentration_relative_change_percent": -31.09985636888828,
+      "coarse_occupied_clearance_t95_s": 3.75,
+      "primary_occupied_clearance_t95_s": 67.25
+    },
+    {
+      "layout": "corner",
+      "case": "right_open",
+      "coarse_h_m": 0.18,
+      "primary_h_m": 0.14,
+      "residence_relative_change_percent": 6.460702856225042,
+      "occupied_concentration_relative_change_percent": -20.23885116483719,
+      "coarse_occupied_clearance_t95_s": 76.5,
+      "primary_occupied_clearance_t95_s": 82.25
+    },
+    {
+      "layout": "center",
+      "case": "both_open",
+      "coarse_h_m": 0.18,
+      "primary_h_m": 0.14,
+      "residence_relative_change_percent": 11.12926186095371,
+      "occupied_concentration_relative_change_percent": -31.37825994480651,
+      "coarse_occupied_clearance_t95_s": 7.25,
+      "primary_occupied_clearance_t95_s": 8.75
+    },
+    {
+      "layout": "center",
+      "case": "both_closed",
+      "coarse_h_m": 0.18,
+      "primary_h_m": 0.14,
+      "residence_relative_change_percent": 1.0116086837206772,
+      "occupied_concentration_relative_change_percent": -9.326597140489689,
+      "coarse_occupied_clearance_t95_s": 45.25,
+      "primary_occupied_clearance_t95_s": 79.25
+    },
+    {
+      "layout": "center",
+      "case": "left_open",
+      "coarse_h_m": 0.18,
+      "primary_h_m": 0.14,
+      "residence_relative_change_percent": 11.59722735104296,
+      "occupied_concentration_relative_change_percent": -23.687754622745615,
+      "coarse_occupied_clearance_t95_s": 26.5,
+      "primary_occupied_clearance_t95_s": 45.5
+    },
+    {
+      "layout": "center",
+      "case": "right_open",
+      "coarse_h_m": 0.18,
+      "primary_h_m": 0.14,
+      "residence_relative_change_percent": 10.534097116564944,
+      "occupied_concentration_relative_change_percent": -32.854219967761686,
+      "coarse_occupied_clearance_t95_s": 135.25,
+      "primary_occupied_clearance_t95_s": 149.25
+    }
+  ],
+  "tracer_diffusion_sensitivity": [
+    {
+      "layout": "corner",
+      "case": "both_open",
+      "Sc_t": 0.5,
+      "mean_residence_s": 1.6498838273225196,
+      "occupied_c_per_R_s_m3": 0.0006646404387858437,
+      "occupied_clearance_t95_s": 9.5
+    },
+    {
+      "layout": "corner",
+      "case": "both_open",
+      "Sc_t": 0.7,
+      "mean_residence_s": 1.7068118817358373,
+      "occupied_c_per_R_s_m3": 0.0002565651789363427,
+      "occupied_clearance_t95_s": 4.75
+    },
+    {
+      "layout": "corner",
+      "case": "both_open",
+      "Sc_t": 1.0,
+      "mean_residence_s": 1.754110115384295,
+      "occupied_c_per_R_s_m3": 0.0001256639372137077,
+      "occupied_clearance_t95_s": 3.0
+    },
+    {
+      "layout": "corner",
+      "case": "both_closed",
+      "Sc_t": 0.5,
+      "mean_residence_s": 2.54252959575005,
+      "occupied_c_per_R_s_m3": 0.009319380532109841,
+      "occupied_clearance_t95_s": 75.0
+    },
+    {
+      "layout": "corner",
+      "case": "both_closed",
+      "Sc_t": 0.7,
+      "mean_residence_s": 2.5711529837346268,
+      "occupied_c_per_R_s_m3": 0.002977150566805688,
+      "occupied_clearance_t95_s": 59.25
+    },
+    {
+      "layout": "corner",
+      "case": "both_closed",
+      "Sc_t": 1.0,
+      "mean_residence_s": 2.6205175523447535,
+      "occupied_c_per_R_s_m3": 0.000938990415418774,
+      "occupied_clearance_t95_s": 30.5
+    },
+    {
+      "layout": "corner",
+      "case": "left_open",
+      "Sc_t": 0.5,
+      "mean_residence_s": 1.6476293001940703,
+      "occupied_c_per_R_s_m3": 0.0007159360728543302,
+      "occupied_clearance_t95_s": 123.5
+    },
+    {
+      "layout": "corner",
+      "case": "left_open",
+      "Sc_t": 0.7,
+      "mean_residence_s": 1.701078516878349,
+      "occupied_c_per_R_s_m3": 0.00024140969362775212,
+      "occupied_clearance_t95_s": 67.25
+    },
+    {
+      "layout": "corner",
+      "case": "left_open",
+      "Sc_t": 1.0,
+      "mean_residence_s": 1.7464175714579233,
+      "occupied_c_per_R_s_m3": 0.00011557027856669641,
+      "occupied_clearance_t95_s": 4.0
+    },
+    {
+      "layout": "corner",
+      "case": "right_open",
+      "Sc_t": 0.5,
+      "mean_residence_s": 1.6682340107734182,
+      "occupied_c_per_R_s_m3": 0.001519215800456521,
+      "occupied_clearance_t95_s": 96.5
+    },
+    {
+      "layout": "corner",
+      "case": "right_open",
+      "Sc_t": 0.7,
+      "mean_residence_s": 1.7214105352173368,
+      "occupied_c_per_R_s_m3": 0.00046391133673934155,
+      "occupied_clearance_t95_s": 82.25
+    },
+    {
+      "layout": "corner",
+      "case": "right_open",
+      "Sc_t": 1.0,
+      "mean_residence_s": 1.7689547832374242,
+      "occupied_c_per_R_s_m3": 0.00017195368124957615,
+      "occupied_clearance_t95_s": 14.0
+    },
+    {
+      "layout": "center",
+      "case": "both_open",
+      "Sc_t": 0.5,
+      "mean_residence_s": 1.6415845259803064,
+      "occupied_c_per_R_s_m3": 0.002099544485621994,
+      "occupied_clearance_t95_s": 18.5
+    },
+    {
+      "layout": "center",
+      "case": "both_open",
+      "Sc_t": 0.7,
+      "mean_residence_s": 1.6653638282352408,
+      "occupied_c_per_R_s_m3": 0.000798288751517763,
+      "occupied_clearance_t95_s": 8.75
+    },
+    {
+      "layout": "center",
+      "case": "both_open",
+      "Sc_t": 1.0,
+      "mean_residence_s": 1.6888924294809924,
+      "occupied_c_per_R_s_m3": 0.00031248468990720474,
+      "occupied_clearance_t95_s": 5.0
+    },
+    {
+      "layout": "center",
+      "case": "both_closed",
+      "Sc_t": 0.5,
+      "mean_residence_s": 2.4392256140185964,
+      "occupied_c_per_R_s_m3": 0.016388927716279433,
+      "occupied_clearance_t95_s": 102.75
+    },
+    {
+      "layout": "center",
+      "case": "both_closed",
+      "Sc_t": 0.7,
+      "mean_residence_s": 2.347233963328298,
+      "occupied_c_per_R_s_m3": 0.0053816748074632555,
+      "occupied_clearance_t95_s": 79.25
+    },
+    {
+      "layout": "center",
+      "case": "both_closed",
+      "Sc_t": 1.0,
+      "mean_residence_s": 2.3250680169534785,
+      "occupied_c_per_R_s_m3": 0.0018492899098983256,
+      "occupied_clearance_t95_s": 31.75
+    },
+    {
+      "layout": "center",
+      "case": "left_open",
+      "Sc_t": 0.5,
+      "mean_residence_s": 1.6622251217468897,
+      "occupied_c_per_R_s_m3": 0.0029279574750128326,
+      "occupied_clearance_t95_s": 62.25
+    },
+    {
+      "layout": "center",
+      "case": "left_open",
+      "Sc_t": 0.7,
+      "mean_residence_s": 1.6779164381661436,
+      "occupied_c_per_R_s_m3": 0.0010030693435028079,
+      "occupied_clearance_t95_s": 45.5
+    },
+    {
+      "layout": "center",
+      "case": "left_open",
+      "Sc_t": 1.0,
+      "mean_residence_s": 1.6990905573335755,
+      "occupied_c_per_R_s_m3": 0.0003579182744939634,
+      "occupied_clearance_t95_s": 11.25
+    },
+    {
+      "layout": "center",
+      "case": "right_open",
+      "Sc_t": 0.5,
+      "mean_residence_s": 1.6683012459454853,
+      "occupied_c_per_R_s_m3": 0.0032003851056523645,
+      "occupied_clearance_t95_s": 167.0
+    },
+    {
+      "layout": "center",
+      "case": "right_open",
+      "Sc_t": 0.7,
+      "mean_residence_s": 1.6799161438372723,
+      "occupied_c_per_R_s_m3": 0.0010103706976613016,
+      "occupied_clearance_t95_s": 149.25
+    },
+    {
+      "layout": "center",
+      "case": "right_open",
+      "Sc_t": 1.0,
+      "mean_residence_s": 1.7003560396305082,
+      "occupied_c_per_R_s_m3": 0.00034519430263097014,
+      "occupied_clearance_t95_s": 47.5
+    }
+  ],
+  "time_step_comparison": [
+    {
+      "layout": "corner",
+      "case": "both_open",
+      "dt_coarse_s": 0.25,
+      "dt_fine_s": 0.125,
+      "retained_fraction_difference": 2.7349313785896e-11,
+      "global_clearance_t95_difference_s": -0.125,
+      "occupied_clearance_t95_difference_s": -0.125
+    },
+    {
+      "layout": "corner",
+      "case": "both_closed",
+      "dt_coarse_s": 0.25,
+      "dt_fine_s": 0.125,
+      "retained_fraction_difference": 1.1401576655023504e-08,
+      "global_clearance_t95_difference_s": -0.125,
+      "occupied_clearance_t95_difference_s": 0.0
+    },
+    {
+      "layout": "center",
+      "case": "both_open",
+      "dt_coarse_s": 0.25,
+      "dt_fine_s": 0.125,
+      "retained_fraction_difference": 2.1232160647699505e-10,
+      "global_clearance_t95_difference_s": -0.25,
+      "occupied_clearance_t95_difference_s": -0.375
+    },
+    {
+      "layout": "center",
+      "case": "both_closed",
+      "dt_coarse_s": 0.25,
+      "dt_fine_s": 0.125,
+      "retained_fraction_difference": 2.4508636498749015e-08,
+      "global_clearance_t95_difference_s": -0.375,
+      "occupied_clearance_t95_difference_s": -0.25
+    }
+  ],
+  "grid_independence_demonstrated": false,
+  "experimentally_validated": false
+}

@@ -1,0 +1,89 @@
+{
+  "room": {
+    "length": 3.3,
+    "depth": 1.65,
+    "height": 2.2
+  },
+  "counter": {
+    "x0": 0.6,
+    "depth": 0.6,
+    "height": 0.9
+  },
+  "hood": {
+    "x0": 0.6,
+    "x1": 1.5,
+    "y0": 0.0,
+    "y1": 0.6,
+    "z": 1.6,
+    "width": 0.9,
+    "depth_assumed": 0.6
+  },
+  "burners": [
+    [
+      0.85,
+      0.3,
+      0.9
+    ],
+    [
+      1.25,
+      0.3,
+      0.9
+    ]
+  ],
+  "doors": {
+    "width": 0.9,
+    "height": 2.2,
+    "y0": 0.7,
+    "y1": 1.6,
+    "closed_gap_m": 0.005,
+    "homogenized_inlet_height_m": 0.1
+  },
+  "fan": {
+    "free_delivery_m3_s": 0.5,
+    "max_static_Pa": 1300,
+    "curve_assumption": "p=1300*(1-(Q/0.5)^2)",
+    "discharge_coefficient_assumed": 0.6
+  },
+  "physics": {
+    "rho": 1.184,
+    "cp": 1006.0,
+    "ambient_C": 25.0,
+    "gravity": 9.81,
+    "beta": 0.003354,
+    "nu_molecular": 1.56e-05,
+    "nu_t_assumed": 0.005,
+    "Pr_t": 0.85,
+    "alpha_molecular": 2.2e-05,
+    "sensible_heat_each_W": 600.0,
+    "wall_heat_transfer_W_m2K": 3.0
+  },
+  "cases": [
+    "both_open",
+    "both_closed",
+    "left_open",
+    "right_open"
+  ],
+  "case_labels": {
+    "both_open": "兩門全開",
+    "both_closed": "兩門全關（每門底縫 5 mm）",
+    "left_open": "左開右關",
+    "right_open": "右開左關"
+  },
+  "assumptions_zh": [
+    "廚房高 2.2 m；已確認頂吸煙機與灶面相距 0.70 m，兩個燃氣爐頭同時使用。",
+    "左端高櫃寬 0.6 m、門沿深度方向位置 y=0.7–1.6 m，由草圖估計。",
+    "煙機吸入口以完整 0.9×0.6 m 底面代表，實機濾網有效面積未知。",
+    "兩個燃氣爐頭功率未知，各向室內空氣釋放 600 W 顯熱作為估計熱負荷，非額定燃氣功率。",
+    "採固定有效渦黏性，不解析火焰、燃燒、油滴與小尺度湍流。",
+    "關門的 5 mm 門縫以阻力網路處理，室內入口鋪展至底部 0.10 m 帶，不能解讀門縫局部噴流。",
+    "風機曲線採二次假設；全關風量取決於此假設，未計排煙管與濾網阻力。",
+    "無室外風壓；牆壁以 3 W/m²K 向 25°C 環境散熱。"
+  ],
+  "numerics": {
+    "element": "P1/P1 tetrahedral",
+    "momentum": "SUPG/PSPG + grad-div 0.5 m²/s + energy backflow stabilization",
+    "heat": "Galerkin with symmetric conservative algebraic edge diffusion",
+    "mesh_target_m": 0.16,
+    "purpose": "preliminary conditional scenario comparison"
+  }
+}

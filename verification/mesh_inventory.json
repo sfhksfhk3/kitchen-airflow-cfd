@@ -1,0 +1,50 @@
+[
+  {
+    "case": "cases/corner_both_closed",
+    "log": "verification/checkMesh_corner_primary.log",
+    "purpose": "accepted production mesh or graded late-stage sensitivity mesh; other checkMesh logs may be rejected pilots",
+    "cells": 12573.0,
+    "small_determinant_cells": 524.0,
+    "max_nonorthogonality_deg": 39.33003007,
+    "minimum_face_interpolation_weight": 0.02312182664,
+    "strict_failed_check_count": 2,
+    "basic_log": "verification/checkMesh_corner_primary_basic.log",
+    "basic_mesh_check_passed": true
+  },
+  {
+    "case": "cases/center_both_closed",
+    "log": "verification/checkMesh_center_primary.log",
+    "purpose": "accepted production mesh or graded late-stage sensitivity mesh; other checkMesh logs may be rejected pilots",
+    "cells": 12982.0,
+    "small_determinant_cells": 539.0,
+    "max_nonorthogonality_deg": 39.33003007,
+    "minimum_face_interpolation_weight": 0.02312182664,
+    "strict_failed_check_count": 2,
+    "basic_log": "verification/checkMesh_center_primary_basic.log",
+    "basic_mesh_check_passed": true
+  },
+  {
+    "case": "sensitivity/center_both_closed_grid",
+    "log": "verification/checkMesh_center_graded.log",
+    "purpose": "accepted production mesh or graded late-stage sensitivity mesh; other checkMesh logs may be rejected pilots",
+    "cells": 31351.0,
+    "small_determinant_cells": 3796.0,
+    "max_nonorthogonality_deg": 36.92193882,
+    "minimum_face_interpolation_weight": 0.1900474864,
+    "strict_failed_check_count": 1,
+    "basic_log": "verification/checkMesh_center_graded_basic.log",
+    "basic_mesh_check_passed": true
+  },
+  {
+    "case": "sensitivity/corner_both_closed_grid",
+    "log": "verification/checkMesh_corner_graded.log",
+    "purpose": "accepted production mesh or graded late-stage sensitivity mesh; other checkMesh logs may be rejected pilots",
+    "cells": 31351.0,
+    "small_determinant_cells": 3796.0,
+    "max_nonorthogonality_deg": 36.92193882,
+    "minimum_face_interpolation_weight": 0.1900474864,
+    "strict_failed_check_count": 1,
+    "basic_log": "verification/checkMesh_corner_graded_basic.log",
+    "basic_mesh_check_passed": true
+  }
+]

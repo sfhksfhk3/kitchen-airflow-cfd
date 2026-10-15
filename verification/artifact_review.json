@@ -1,0 +1,103 @@
+{
+  "summary_case_count": 8,
+  "independent_size_case_count": 40,
+  "mixture_mass_fraction_closure": {
+    "corner_both_open": 1.1939338406818933e-12,
+    "corner_both_closed": 4.233280392895722e-13,
+    "corner_left_open": 3.75832698296108e-12,
+    "corner_right_open": 4.242273199395186e-12,
+    "center_both_open": 3.4827185579899833e-10,
+    "center_both_closed": 3.4677516413950116e-10,
+    "center_left_open": 7.756240094636269e-12,
+    "center_right_open": 9.14823772291129e-14
+  },
+  "square_figures": [
+    {
+      "file": "00_geometry_comparison_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    },
+    {
+      "file": "01_oil_both_open_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    },
+    {
+      "file": "02_oil_both_closed_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    },
+    {
+      "file": "03_oil_left_open_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    },
+    {
+      "file": "04_oil_right_open_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    },
+    {
+      "file": "05_inventory_exposure_comparison_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    },
+    {
+      "file": "06_clearance_four_panels_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    },
+    {
+      "file": "07_normalized_clearance_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    },
+    {
+      "file": "08_size_deposition_1to1.png",
+      "pixels": [
+        3600,
+        3600
+      ]
+    }
+  ],
+  "report_pages": 16,
+  "pdf_chinese_text_extractable": true,
+  "offline_viewer_cases": 8,
+  "viewer_door_field_combinations_checked": 16,
+  "viewer_sizes_checked": 6,
+  "viewer_time_ticks_checked": [
+    0,
+    120,
+    240
+  ],
+  "javascript_errors": [],
+  "external_network_requests": [],
+  "note": "Automated structure and interaction checks; screenshots and selected scientific figures also need visual inspection.",
+  "report_intro_and_separate_markdown_tables_verified": true,
+  "oil_colormap_explicit_and_checked": true,
+  "visual_inspection_completed": true,
+  "visual_inspection_scope": [
+    "all nine scientific figures, including five in a contact sheet",
+    "final offline oil viewer and prior velocity preview",
+    "final report title/results and numerical validation pages"
+  ],
+  "final_report_sha256": "d49e5e7b4a457ba86ebd401eeb25a2ba386bc819a1083cf458187334e5c64b09",
+  "final_viewer_sha256": "599831f89cd4a41a39570cf5e88187385369c3433d12daf91ae51dbb26302864",
+  "reviewed_utc": "2026-10-15T12:50:54.239134+00:00"
+}

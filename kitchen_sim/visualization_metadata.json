@@ -1,0 +1,26 @@
+{
+  "source_files": [
+    "results/both_open.npz",
+    "results/both_closed.npz",
+    "results/left_open.npz",
+    "results/right_open.npz"
+  ],
+  "interpolation": "Barycentric interpolation on original FEM tetrahedra; missing/solid regions masked.",
+  "streamlines": "Midpoint integration of computed steady velocity, 0.01 m spatial step; direction only, not particle tracking.",
+  "common_display_ranges": {
+    "speed": [
+      0,
+      1.4
+    ],
+    "temperature": [
+      25,
+      64.87687041629445
+    ],
+    "pressure": [
+      -5.379538840250753,
+      -0.015513960888651274
+    ]
+  },
+  "temperature_is": "Air temperature, not flame or pan temperature.",
+  "pressure_is": "FE room-side relative field; network makeup pressure drop is separate."
+}

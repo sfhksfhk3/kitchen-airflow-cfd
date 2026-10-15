@@ -1,0 +1,1502 @@
+Article
+
+Simulation Study of the Capture and Purification Performance
+of Exhaust Fume Systems in Chinese Commercial
+Kitchens—Case Study in Tianjin
+Awen Zhang 1, Na Deng 1,*, Zhengwei Long 1, Ruisen Hao 1, Changyu Shen 1 and Guoqing Cao 2
+
+                                           1 Tianjin Key Laboratory of Indoor Air Environmental Quality Control, School of Environmental Science and
+                                             Engineering, Tianjin University, Tianjin 300072, China
+                                           2 Institute of Building Environment and Energy, China Academy of Building Research, Beijing 100013, China
+
+                                           * Correspondence: denglouna@tju.edu.cn
+
+
+                                           Abstract: A Chinese commercial kitchen fume exhaust (CCKEF) system mainly consists of a
+                                           wall‐mounted canopy hood, air duct and terminal electrostatic purifiers, the capture and purifica‐
+                                           tion performance of which should be guaranteed to obtain satisfactory indoor and outdoor air en‐
+                                           vironment in engineering applications. However, few studies have focused on the operation per‐
+                                           formance of CCKEF systems. This study was aimed at providing a simulation method to investi‐
+                                           gate the operation performance of such systems. The simulation model of a representative CCKEF
+                                           system was established using CFD software and validated with measured temperature, air velocity
+                                           and purification efficiency with a deviation within 10%. The validated model was used to predict
+                                           the indoor air environment and purification efficiency of the CCKEF system under different
+                                           working conditions. The results showed that the temperature of transfer air from adjacent rooms
+                                           had a greater impact on the thermal environment of the cooking area than the surface temperature
+Citation: Zhang, A.; Deng, N.;             of stoves. The exhaust air volume had a significant influence on both the indoor air environment
+Long, Z.; Hao, R.; Shen, C.; Cao, G.       and purification efficiency. CCKEF system was suggested to be operated at the optimum airflow
+Simulation Study of the Capture and        according to the simultaneous coefficient of stoves as the energy consumption of the system can be
+Purification Performance of Exhaust        saved by 3.75%.
+Fume Systems in Chinese
+Commercial Kitchens—Case Study             Keywords: Chinese commercial kitchen; exhaust fume system; capture and purification
+in Tianjin. Appl. Sci. 2022, 12, 8896.     performance; simulation study
+https://doi.org/10.3390/app12178896
+
+Academic Editor: Andrea Frazzica
+
+Received: 26 July 2022
+                                           1. Introduction
+Accepted: 1 September 2022
+Published: 5 September 2022                      Chinese cooking, which is characterized by stir‐frying and braising, can produce
+                                           large amounts of heat and cooking fumes during the cooking process, especially in Chi‐
+Publisher’s Note: MDPI stays neu‐
+                                           nese commercial kitchens (CCKs), where there is intensive cooking equipment and a
+tral with regard to jurisdictional
+                                           large volume. Cooking pollutants are not only harmful to the productivity and health of
+claims in published maps and insti‐
+                                           employees in CCKs [1,2] but are also a significant source of atmospheric particulate
+tutional affiliations.
+                                           matter [3,4]. An efficient CCK fume exhaust (CCKEF) system is required to capture and
+                                           purify pollutants to guarantee that the indoor air environment and outdoor emissions
+                                           meet the relevant requirements of current standards [5–8].
+Copyright: © 2022 by the authors.                At present, many studies have been carried out on the capture or purification per‐
+Licensee MDPI, Basel, Switzerland.         formance of cooking fumes in kitchens. In terms of the capture performance, the hood
+This article is an open access article     type and its geometric features, the supply air distribution strategy, exhaust air volume
+distributed under the terms and            and airflow disturbances had significant effects on hood capture efficiency [9]. Zhao et al.
+conditions of the Creative Commons         [10] studied the impact of hood shape, side panel and exhaust duct arrangement on hood
+Attribution     (CC      BY)     license   capture performance through CFD simulations. Wang et al. [11] numerically investigated
+(https://creativecommons.org/license       the influence of the exhaust hood position on ultrafine particles and found that it did not
+s/by/4.0/).                                significantly reduce the concentration of ultrafine particles. Zhou et al. [12], Lu et al. [13],
+
+
+
+Appl. Sci. 2022, 12, 8896. https://doi.org/10.3390/app12178896                                                        www.mdpi.com/journal/applsci
+Appl. Sci. 2022, 12, 8896                                                                                           2 of 23
+
+
+
+
+                            Chen et al. [14] and Liu et al. [15] indicated that the use of air curtains could effectively
+                            increase exhaust performance in terms of both pollutants and heat. Lv et al. [16] and Song
+                            et al. [17] investigated factors that affect the function of the air curtain range hood, such
+                            as the exhaust rate, air curtain velocity, slot width and angle. The results showed that the
+                            exhaust rate was the main factor affecting the performance of the air curtain range hood.
+                            Lal Pal and Netam [18] carried out a numerical investigation of the temperature distri‐
+                            bution and exhaust gas motion under different natural make‐up air conditions and
+                            showed that the ventilation condition of windows and doors has a direct impact on
+                            temperature distribution and particle motion. Lv et al. [19] and Mahaki et al. [20] inves‐
+                            tigated the effect of disturbing the airflow caused by humans walking on the perfor‐
+                            mance of a range hood in a residential kitchen. They found that the capture efficiency had
+                            a decrement of 0.5 under the most unfavorable conditions, and an air curtain could pre‐
+                            vent the effect induced by humans walking with a smaller increment in air volume.
+                                  With regard to the purification of cooking fumes, the technologies used in the ca‐
+                            tering industry in China currently include mechanical separation, filtration, washing and
+                            absorption and electrostatic deposition [21]. The electrostatic deposition is the most
+                            common technology, with the proportion of terminal two‐stage electrostatic purifiers
+                            used to purify cooking fume in Chinese commercial kitchens as high as 98.04% [22]. The
+                            influence of structural (diameter, spacing and quantity of corona wire) and operating
+                            (applied voltage and airflow velocity) parameters on the performance of a two‐stage
+                            electrostatic precipitator were widely investigated. Gao et al. [23] studied the effects of
+                            geometric size, voltage parameters and working conditions on the dust‐removal per‐
+                            formance of a two‐stage electrostatic precipitator. The results showed that for particles
+                            with large size, the dust removal performance was proportional to the particle diameter
+                            and inversely proportional to the inlet wind speed. Li et al. [24] studied the effects of
+                            various parameters on the collecting efficiency of a two‐stage electrostatic module for oil
+                            mist particles and found that the degree of influence from high to low was as follows: the
+                            voltage applied to the precharger, the heteropolar distance of the precharger, the veloci‐
+                            ty, the heteropolar distance of the collector, the voltage applied to the collector, the length
+                            of the collector plate and the length of the precharger grounding plate. Zhu et al. [25]
+                            investigated the factors influencing the removal of PM2.5 in a two‐stage electrostatic pre‐
+                            cipitator.
+                                  A literature review showed that most of the previous studies on the capture and
+                            purification of cooking fume mainly focused on certain parts of the kitchen fume exhaust
+                            system. For example, studies on the capture of cooking fumes mainly considered the
+                            kitchen and hood part and investigated the kitchen indoor air environment or the capture
+                            efficiency of the hood, while studies on the purification of cooking fume considered the
+                            purifier module and explored the factors affecting purification efficiency. This kind of
+                            research was helpful in optimizing the design parameters of local structures. However, in
+                            practical application, the Chinese commercial kitchen fume exhaust (CCKEF) system
+                            encompasses the kitchen, exhaust hood, air duct and purifier. Compared with simplified
+                            local kitchen exhaust hood or purifier modules, the airflow characteristics in a complete
+                            CCKEF system are more complicated, which may result in capture and purification per‐
+                            formance that is inconsistent with the design requirements of each module. Therefore,
+                            the operation performance of the CCKEF system should be examined. However, there
+                            have been few related studies.
+                                  A previous survey study conducted by Zhang et al. [22] showed that the proportions
+                            of wall‐mounted canopy hood, rectangular air duct and terminal electrostatic purifier
+                            used to capture, transport and purify the cooking fume in Chinese commercial kitchens
+                            were 94.12%, 100% and 98.04%, respectively. That is to say, most of the CCKEF systems
+                            were composed of wall‐mounted canopy hoods, rectangular air ducts and terminal elec‐
+                            trostatic purifiers. In order to study the actual operating performance of such systems,
+                            this study developed a simulation method. First, a geometric model of a representative
+                            CCKEF system, including kitchen stoves, personnel, exhaust hood, air duct, terminal
+Appl. Sci. 2022, 12, 8896                                                                                         3 of 23
+
+
+
+
+                            electrostatic purifier and make‐up air, was established and discretized with an unstruc‐
+                            tured grid using CFD software. The types of boundary conditions were determined
+                            based on the literature and actual measurement. The MHD potential model with gener‐
+                            alized convection diffusion equation was coupled with the RNG k‐ε turbulence model
+                            and species transport model to calculate the steady‐state continuous‐phase flow, tem‐
+                            perature, pollutants and electric fields. After calculation convergence, the DPM model in
+                            the Lagrange frame was introduced to track the particles entrained in the gas phase and
+                            calculate the purification efficiency of the purifier. In order to verify the accuracy of the
+                            model, the temperature, air velocity and purification efficiency of the CCKEF system
+                            were measured at several measurement points. The validated model was used to predict
+                            the indoor air environment and purification efficiency of the CCKEF system under dif‐
+                            ferent working conditions (simultaneous coefficient of stove, surface temperature of
+                            stoves, replacement air parameters and exhaust air volume) to understand the actual
+                            operation of the case system and offer suggestions for improvement.
+
+                            2. Numerical Simulation Methodology
+                            2.1. Geometric Model and Grid Generation
+                            2.1.1. Geometric Model
+                                  Based on the actual dimensions and layout of the exhaust fume system of a canteen
+                            kitchen in Tianjin, the geometric model of the representative CCKEF system, including
+                            kitchen stoves, lamps, personnel, exhaust hood, air duct and terminal electrostatic puri‐
+                            fier together with make‐up air was established in this paper using CFD software.
+                                  The case kitchen was a large cooking room, with length, width and height of 8.1, 8.6
+                            and 3.0 m, respectively. The kitchen was located in the interior of the building, without
+                            exterior doors or windows, and was connected to a dining area and a preparation area
+                            through two doors (door 1: 1.4 m × 2.0 m; door 2: 1.4 m × 3.0 m). The cooktop was 5.7 m
+                            long, 1.2 m wide and 0.74 m above the ground, and it consisted of four cauldron stoves
+                            (S1 to S4 from left to right) and one stockpot (S5) located in a line against the wall. All
+                            burners used natural gas, consuming five cubic meters per hour. The cauldron stove had
+                            a rectangular combustion exhaust vent 0.35 m × 0.12 m in size. During cooking, there
+                            were often three chefs standing about 0.10 m in front of the cooktop. The kitchen was
+                            equipped with six 130 W lamps and a 3.6 m × 0.74 m × 0.8 m shelf in the middle of the
+                            kitchen. The refrigerators and washing basins were located far from the working area, so
+                            they had little effect on the indoor flow field and were not considered when modeling.
+                            The exhaust fume system was composed of a wall‐mounted canopy hood, terminal
+                            two‐zone static purifier, rectangular duct, centrifugal fan and mechanical make‐up air.
+                            The dimension of the canopy hood was 5.74 m in length, 1.2 m in width and 0.5 m in
+                            height, and it was located against the wall on three sides. The vertical distance between
+                            the front lower edge of the hood and the cooktop was 1.06 m. There were three suction
+                            vents 0.46 m × 0.24 m in size connecting the hood and air duct. The size of the outlet was
+                            1.03 m × 1.0 m. The air diffusers (1.2 m × 1.2 m) of the mechanical make‐up air system
+                            were located on the ceiling, 1.2 m from the edge of the exhaust hood.
+                                  The structures of the stoves, personnel and electrostatic purifier were relatively
+                            complex, so they were reasonably simplified when modeling. Cauldron stoves and
+                            stockpots were simplified to cylinders with diameters of 850 mm and 350 mm and a
+                            height of 60 mm. Three cooks were simplified to rectangular block models (1.7 m height,
+                            18% head ratio, 40% upper body proportion, 42% lower body proportion) [11]. The ge‐
+                            ometric model of stoves and personnel is shown in Figure 1a. The model of the electro‐
+                            static fume purifier was simplified, as shown in Figure 1b. The diameter of the wire plate
+                            was 10 mm, with 45 mm between plates all around. The length of the collecting plate in
+                            the collection region was about 650 mm, with 45 mm between plates on both sides. The
+                            geometric model of the CCKEF system is displayed in Figure 1c.
+Appl. Sci. 2022, 12, 8896                                                                                          4 of 23
+
+
+
+
+                                                 (a)                                            (b)
+
+
+
+
+                                                                       (c)
+                            Figure 1. The geometric model of the CCKEF system. (a) Stoves and personnel; (b) Electrostatic
+                            purifier; (c) CCKEF system.
+
+                            2.1.2. Grid Generation
+                                 The geometric model was discretized by unstructured grids using Workbench
+                            software. In order to increase the calculation accuracy, local grid refinement was applied
+                            around the stoves, lamps, human bodies, exhaust hood and fume purifier. The number of
+                            grids was critical to the simulation results. A coarse grid might lead to a larger discreti‐
+                            zation error. However, the over‐refined mesh would enlarge the computation expense.
+                            Thus, a proper grid resolution should be conducted to achieve the balance between the
+                            computation expense and computational accuracy. The computational grid is shown in
+                            Figure 2.
+Appl. Sci. 2022, 12, 8896                                                                                                               5 of 23
+
+
+
+
+                            Figure 2. Mesh division of the CCKEF system.
+
+                                 A grid independence test was carried out using three meshes with 200,000, 350,000
+                            and 600,000 cells. The calculated average air temperature and air velocity at three suction
+                            vents shown in Figure 1c under different grid numbers is displayed in Figure 3. As
+                            shown, the calculated average air velocity and temperature of the solution with 350,000
+                            grid cells were consistent with that of 600,000 grid cells. By considering the balance be‐
+                            tween the computation expense and computational accuracy, the 350,000 cell mesh was
+                            chosen for the simulation.
+
+                                                         20                                           40
+                                                                                      Suction vent1
+                                                         18                           Suction vent2
+                                                                                      Suction vent3   38
+                                                                                                           Average air temperature(℃)
+                                                         16
+                             Average air velocity(m/s)
+
+
+
+
+                                                         14                                           36
+                                                         12
+
+                                                         10                                           34
+
+                                                         8
+                                                                                                      32
+                                                         6
+
+                                                         4                                            30
+                                                              200,000    400,000          600,000
+                                                                        Grid number
+                            Figure 3. Grid independence test.
+
+                            2.2. Definition of Materials and Boundary Conditions
+                            2.2.1. Materials
+                                 In Chinese commercial kitchens, the flowing fluid is a complex mixture of gas
+                            (VOCs and exhaust gases) and solid (particles). In this paper, to investigate the kitchen
+                            indoor air quality, benzene (C6H6) and CO2 were considered to represent the VOCs in
+                            cooking fume and combustion exhaust gas, respectively. The oil particles were dispersed
+                            in the gas phase. Firstly, cooking emissions can result in human exposure to both coarse
+Appl. Sci. 2022, 12, 8896                                                                                         6 of 23
+
+
+
+
+                            particles (2.5–10 μm) and ultrafine particles (UFPs) (<0.1 μm) [26]. In order to understand
+                            the volume‐based size distribution during the Chinese cooking process, Gao et al. [27]
+                            indicated that the typical Chinese‐style cooking process, such as frying, can be simplified
+                            as a 2 min oil heating stage, and they found that the volume frequency of fume particles
+                            in the range of 1.0–4.0 μm accounts for nearly 100% of PM 0.1–10 μm with the mode
+                            diameter around 2.5μm during the heating stage. Secondly, the purification performance
+                            of electrostatic purifiers is also often evaluated by the removal efficiency of PM2.5 in the
+                            literature [25,28]. As a result, PM2.5 was selected as the representative cooking particulate
+                            in this study. As the surrounding temperature near the gas stove was quite high, the
+                            Boussinesq approximation was not suitable for buoyancy‐driven flows with large density
+                            differences in the flow field inside the kitchen. The incompressible ideal gas equation was
+                            applied to obtain the variation in fluid density with different temperatures in this study
+                            according to Equation (1).
+                                                                                𝑃𝑀
+                                                                          𝜌                                           (1)
+                                                                                𝑛𝑅𝑇
+                            where 𝜌 is the density of fluid [kg/m3]; P is the pressure [Pa]; M is the mass of fluid [kg];
+                            n is the amount of substance [mol]; T is the temperature [K]; R is a constant, 8.314
+                            [J/(mol∙K)].
+
+                            2.2.2. Boundary Conditions
+                                 In order to study the actual operating performance of the CCKEF system, the
+                            boundary conditions were defined reasonably according to the literature and actual sit‐
+                            uations and included three parts: (1) kitchen: envelope including ceiling, walls and floor,
+                            lamps, personnel, cooktop and stoves; (2) exhaust fume system: exhaust hood, exhaust
+                            air duct, electrostatic purifier and outlet; and (3) make‐up air: door 1, door 2, mechanical
+                            fresh air inlet and supply air duct.
+                                 As for the kitchen part, exterior walls can be defined as the wall boundary with
+                            constant temperature [29], while the ceiling, interior walls and floor were often set as
+                            adiabatic walls [30,31]. The lamps were set as wall boundaries with a heat flux of 130.6
+                            W/m2. The body surface of cooks in a residential kitchen was previously defined as a wall
+                            boundary with a heat flux of 27.7 W/m2 [11], 50 W/m2 [13], or 58.15 W/m2 [14] or with a
+                            constant temperature of 32 °C [16], 31 °C [32], or 30 °C [29]. In this paper, the metabolic
+                            rate of cooking personnel in the commercial kitchen was set as 115 W/m2 [7]. The cooktop
+                            was set as an adiabatic wall boundary [15]. The particulate boundary of the above was
+                            “reflect”. The boundary condition of stoves was a difficult point in the simulation of the
+                            CCKEF system, as the cooking process is very complex and difficult to simulate accu‐
+                            rately. The boundary conditions of stoves given in the literature were not uniform (Table
+                            1).
+
+                            Table 1. Boundary conditions of stoves given in the literature.
+
+                               Position            Type           Pollutant Detail Parameters               Reference
+                                                                       Release rate = 3.3 × 10−7 kg/s;
+                                                                   Aerosol
+                                 Emit      Mass‐flow inlet                                                     [33]
+                                                                   particle     T = 210 °C
+                                                                       Release rate = 4.7 × 10−3 kg/s;
+                            Stove burner Mass‐flow inlet      CO2               T = 127 °C;                    [30]
+                                                                          Mass fraction = 100%
+                                Boiler      Velocity inlet Water vapor     V = 2 m/s; T = 70 °C                [14]
+                            Pot (exterior)      Wall            ‐               T = 120 °C
+                                                                                                               [15]
+                              Pot (top)         Wall            ‐               T = 310 °C
+                                                            Ultrafine
+                                 Emit      Velocity‐inlet                 V = 0.1 m/s; T = 210 °C              [11]
+                                                            particles
+                            Pollutant/heat Mass‐flow inlet    CO2               T = 1400 K;                    [13]
+Appl. Sci. 2022, 12, 8896                                                                                           7 of 23
+
+
+
+
+                               source                                    Release rate = 1.28 × 10−3 kg/s
+                            Pot (exterior)        Wall            ‐                T = 100 °C
+                                                                          Release rate = 10−7 kg/s; T =          [29]
+                               Pot (top)     Mass‐flow inlet    PM2.5
+                                                                                     100 °C
+                                                                                 V = 0.29 m/s;
+                                  Pot         Velocity inlet     SF6              T = 100 °C;                    [19]
+                                                                             Mass fraction = 10%
+                                                                                 V = 1.714 m/s;
+                             Gas burner       Velocity inlet Exhaust gas                                         [18]
+                                                                                  T = 1200 K
+                                                                         V = 0.161–0.192 m/s; T = 200–
+                                  Pot         Velocity inlet      ‐                                              [31]
+                                                                                     300 °C
+
+                                 In this paper, the boundary condition of stoves was determined based on the type of
+                            stove according to the heat and mass transfer process. In CCKs, cauldron stoves, frying
+                            stoves and stockpots are commonly used, the heat and mass transfer processes of which
+                            are shown in Figure 4. As displayed, the burner of a cauldron stove is located inside the
+                            cooktop. The heat of combustion is directly transferred to the pot to heat the oil and in‐
+                            gredients. Cooking fumes are generated from the top surface, and exhaust gas is dis‐
+                            charged from a special smoke outlet. For a frying stove or stockpot, the burner is located
+                            above the cooktop. The heat of combustion is partly transferred to the pot and partly
+                            exchanged with the air near the burner through convection. The heat transferred to the
+                            pot is used to heat the food. The exhaust gas from the burner is discharged into the air.
+
+
+                             Exhaust gas
+                                                                               Cooking oil fume
+
+                                                     Cooking oil fume
+
+
+
+
+                                                                                                  Exhaust gas
+
+
+
+
+                                               (a)                                       (b)
+                            Figure 4. Schematic diagram of heat and mass transfer process of different stoves. (a) Cauldron
+                            stove; (b) Frying stove or stockpot.
+
+                                 As indicated in Table 1 and Figure 4, the top surface of cauldron stoves is regarded
+                            as the source of cooking fume. Spherical particles with a diameter of 2.5 um are released
+                            from the top surface with an estimated emission rate and temperature of 0.12 mg/s and 70
+                            °C, respectively [32]. The particle boundary of the top surface of cauldron stoves was
+                            “escape”. The exterior surface of cauldron stoves was set as a wall boundary condition,
+                            and the temperature was set with the measured value. The smoke outlet of the burner
+                            was considered as a mass‐flow inlet with a velocity of 0.012 kg/s, and the flue gas frac‐
+                            tions were calculated as 9.2% CO2, 18.3% H2O and 72.5% N2. The temperature of exhaust
+                            gas was set with a measured value. The top surface of frying stoves or stockpots was also
+                            regarded as a source of thermal plumes, while the exterior surface (smoke outlet) was set
+                            as the mass‐flow inlet. The boundary parameters were similar to those of the cauldron
+                            stove. The radiation heat transfer between the stove and the human body can increase the
+                            human shell temperature directly. However, this paper mainly focused on the distribu‐
+                            tion of indoor air temperature in the kitchen, which is mainly determined by convective
+Appl. Sci. 2022, 12, 8896                                                                                                8 of 23
+
+
+
+
+                                    heat transfer. In addition, the area of the stove surface is small compared with the kitchen
+                                    volume. Therefore, radiation heat exchanges were not included in this paper [29].
+                                         For the exhaust fume system and make‐up air parts, the boundaries of the exhaust
+                                    hood, ESP plates and air duct were set as adiabatic and non‐slip wall boundary condi‐
+                                    tions [34]. The voltage of the ESP collecting plate and wire plate was set as 5 and 25 kV,
+                                    and the other wall boundaries were regarded as insulation. The particulate boundary of
+                                    the collecting plate and wire plate was “trap”, and that of the others was “reflect” [34]. A
+                                    reverse velocity‐inlet was imposed at the discharge outlet [11,13,17,31]. A pressure‐outlet
+                                    boundary condition was imposed at the doors and fresh air inlet [11,16]. Fluent could
+                                    automatically treat them as pressure‐inlet boundaries if the velocity vectors are pointed
+                                    inside there. Zero‐gauge pressure was given at all pressure‐outlet boundaries. The
+                                    boundary conditions of the turbulence specification were specified by the intensity and
+                                    hydraulic diameter. The particulate boundary of outlet and doors was “escape”.
+                                         The boundary condition types and parameters for the case CCKEF system are
+                                    shown in Table 2.
+
+                                    Table 2. Boundary conditions for case CCKEF system.
+
+                                                                                    Parameters
+Position                    Type                                                                                Electric
+                                               Velocity          Temperature    Mole Fraction       Particle
+                                                                                                                Potential
+Envelop/counter             Wall               No slip           Adiabatic      ‐               Reflect         Insulation
+Lamps                       Wall               No slip           130.6 W/m2     ‐               Reflect         Insulation
+Personnel                   Wall               No slip           115 W/m2       ‐               Reflect         Insulation
+                                                                                0.2% C6H6, 99.8%
+Pot(top)                    Wall               No slip           Measured                       Escape          Insulation
+                                                                                H2O
+                                                                 value
+Pot(exterior)               Wall               No slip                          ‐               Reflect         Insulation
+                                                                 Measured       9.2% CO2, 18.3%
+Smoke outlet                Mass flow inlet    0.012 kg/s                                       Escape              =0
+                                                                 value          H2O, 72.5% N2
+Hood/duct                   Wall               No slip           Adiabatic      ‐               Reflect         Insulation
+Wire plate                                                                      ‐               Reflect         25 kV
+Collecting plate            Wall               No slip           Adiabatic      ‐               Trap            5 kV
+Other plates                                                                    ‐               Reflect         0 kV
+                   Reverse                     Measured
+Outlet                                                           ‐              ‐                   Escape          =0
+                   velocity‐inlet              value
+Door 1/door 2/Fresh                                              Measured
+                   Pressure‐inlet              0                                23.1% O2, 76.9% N2 Escape           =0
+air inlet                                                        value
+
+                                    2.3. Numerical Methods
+                                    2.3.1. Calculation Process
+                                          In order to evaluate the operating performance of the CCKEF system, the air veloc‐
+                                    ity, temperature and pollutant concentration distribution in the kitchen and the particle
+                                    purification efficiency of the electrical purifier should all be calculated. Therefore, the
+                                    turbulence model, species transport model, MHD model and DPM model were com‐
+                                    bined in this paper. As the fluid in the kitchen ventilation system was in a turbulent state
+                                    and contained curved near‐wall flows and swirl flow at the elbow and electrostatic puri‐
+                                    fier, the flow field was computed with a three‐dimensional, steady‐state RNG k‐ε model
+                                    combined with buoyancy effect and standard wall function. The temperature distribution
+                                    was determined by solving the energy equations. The concentration of gas pollutants was
+                                    predicted by solving the species transport equation. After the flow field calculation con‐
+                                    verged, the MHD model was opened. A generalized convection diffusion equation was
+                                    employed to describe the electric potential distribution and the ion migration induced by
+Appl. Sci. 2022, 12, 8896                                                                                                    9 of 23
+
+
+
+
+                            corona discharge in the purifier. After obtaining the convergence solution of the steady
+                            flow field and electric field, the DPM model in the Lagrange frame was opened to track
+                            the movement trajectory of particles and calculate the number of particles captured by
+                            the purifier.
+
+                            2.3.2. Governing Equation
+                                 For convenience, the main equations used in the mathematical model are described
+                            as follows.
+                                 Continuity equation:
+                                                             ∂ 𝜌𝑢           ∂ 𝜌𝑣           ∂ 𝜌𝑤
+                                                                                                         0                      (2)
+                                                              ∂𝑥             ∂𝑦              ∂𝑧
+                                Momentum equation:
+                                                                       𝜕𝑝        𝜕𝜏         𝜕𝜏           𝜕𝜏
+                                                     ∇ ∙ 𝜌𝑢𝒖                                                          𝐹         (3)
+                                                                       𝜕𝑥         𝜕𝑥         𝜕𝑦           𝜕𝑧
+                                                                       𝜕𝑝        𝜕𝜏         𝜕𝜏           𝜕𝜏
+                                                     ∇ ∙ 𝜌𝑣𝒖                                                          𝐹         (4)
+                                                                       𝜕𝑦         𝜕𝑥         𝜕𝑦           𝜕𝑧
+                                                                       𝜕𝑝        𝜕𝜏         𝜕𝜏           𝜕𝜏
+                                                     ∇ ∙ 𝜌𝑤𝒖                                                          𝐹         (5)
+                                                                       𝜕𝑧         𝜕𝑥         𝜕𝑦           𝜕𝑧
+                                Energy equation:
+                                                                                     𝑘
+                                                           ∇ ∙ 𝜌 𝒖𝑇             ∇∙     𝑔𝑟𝑎𝑑 𝑇                𝑆                  (6)
+                                                                                     𝑐
+                                Concentration equation:
+                                                        ∇ ∙ 𝜌 𝒖𝑐            ∇ ∙ 𝐷 𝑔𝑟𝑎𝑑 𝜌 𝑐                       𝑆              (7)
+                                Turbulent energy equation:
+                                                     ∇ ∙ 𝜌 𝒖𝑘          ∇∙ 𝛼 𝜇             𝑔𝑟𝑎𝑑𝑘          𝐺           𝜌 𝜀        (8)
+                                Dissipation rate equation:
+                                                                                                   𝜀     ∗
+                                                ∇ ∙ 𝜌 𝒖𝜀       ∇∙ 𝛼 𝜇           𝑔𝑟𝑎𝑑𝜀                𝐶       𝐺       𝐶 𝜌 𝜀      (9)
+                                                                                                   𝑘
+                                                                        𝜇             𝜇    𝜇                                   (10)
+                                                                                         𝑘
+                                                                        𝜇            𝜌 𝐶                                       (11)
+                                                                                          𝜀
+                                                                   ∗                  𝜂 1 𝜂/𝜂
+                                                               𝐶            𝐶                                                  (12)
+                                                                                        1 𝛽𝜂
+
+                                                                                               /
+                                                                                                   𝑘
+                                                                   𝜂        2𝐸 ∙ 𝐸                                             (13)
+                                                                                                   𝜀
+                                                                                1 𝜕𝑢        𝜕𝑢
+                                                                   𝐸                                                           (14)
+                                                                                2 𝜕𝑥        𝜕𝑥
+                            where u is the fluid velocity vector and u, v, w is the component of the velocity vector in
+                            the x, y, z direction [m/s]; μ is the dynamic viscosity of the gas [Pa∙s]; P is the pressure
+                            [Pa]; 𝜌 is the mass density of fluid [kg/m3]; 𝐹 is the body force [N]; 𝑐 is the component
+                            volume fraction; 𝑆 is the heat source term; 𝑆 is the mass source term; 𝐷 is the mass
+                            diffusion coefficient of the component; 𝐶 = 0.085; 𝛼 = 𝛼 = 1.39; 𝐶 = 1.42; 𝐶 = 1.68;
+                            𝜂 = 4.38; 𝛽 = 0.012.
+                                 In the ESP, the electrostatic field caused by the corona discharge process was solved
+                            with Poisson’s equation and current continuity equation, which are expressed as follows.
+Appl. Sci. 2022, 12, 8896                                                                                             10 of 23
+
+
+
+
+                                                                            ∇      𝜀 𝜑    𝜌                              (15)
+                                                             ∇∙ 𝜌           𝑘    𝑬   𝒖      𝐷 ∇𝜌           0             (16)
+                            where φ is the electric potential [V]; ε0 is the permittivity of free space, 8.85 × 10−12 [C2/(N ∙
+                            m2)]; 𝜌 is the ion charge density [C/m3], E is the electric field strength [V/m], u is the
+                            fluid velocity [m/s], 𝑘    is the mobility of ions, and 𝐷 is the ion diffusion coefficient.
+                                 The corona onset electric strength on the electrode surface can be calculated ac‐
+                            cording to Peek’s law using the equation.
+
+                                                            𝐸         3.1       10 𝑚𝛿 1     0.03/     𝛿𝑟                 (17)
+                            where 𝐸 is the electric field strength of discharge wire surface [V/m]; 𝑚 is the dimen‐
+                            sionless surface parameter; r is the wire radius [m]; δ is the relative density compared
+                            with the standard condition, with the value set to 1 at 273 K and 0.1 MPa.
+                                 Particle charging is an integral process in ESP, which occurs once particles enter the
+                            ionization zone. There are actually two mechanisms by which particles become charged
+                            in an ESP: field charging and diffusion charging. For particles with a diameter greater
+                            than 2 um, field charging takes hold. The particles are assumed to be charged and satu‐
+                            rated in a short time after entering the ionization zone. The saturation charge was calcu‐
+                            lated as follows:
+                                                                                  3𝜀 𝜋𝜀
+                                                                            𝑞           𝑑 𝐸                              (18)
+                                                                                  𝜀   2
+                            where 𝑞 is the saturation charge [C]; 𝜀 is the permittivity of free space, 8.85×10−12
+                            [C2/(N ∙ m2)]; 𝜀 is the relative permittivity of the particles [C2/(N ∙ m2)]; 𝑑 is the diameter
+                            of the particles [m]; 𝐸 is the electric field strength [V/m].
+                                 The oil particles entrained in the gas phase were tracked by the DPM method in the
+                            Lagrange frame. The equation for particle motion can be described as follows [35].
+                                                           𝑑𝒖         3𝐶 𝜌                            6𝑞 𝑬
+                                                                           𝒖         𝒖𝒑 𝒖     𝒖𝒑                         (19)
+                                                            𝑑𝑡        4𝜌 𝑑                            𝜋𝜌 𝑑
+                                                                                    24
+                                                                 ⎧                       ,𝑅     0.1
+                                                                 ⎪                 𝐶𝑅
+                                                       𝐶             24 1       0.15𝑅 .                                  (20)
+                                                                 ⎨                          , 0.1 𝑅        800
+                                                                 ⎪              𝑅
+                                                                 ⎩                 0.44, 𝑅     800
+                            where 𝑅 is the Reynolds number of fluid; 𝐶 is the coefficient of fluid drag; 𝐶 is the
+                            Cunningham correction factor; 𝜌 is the mass density of airflow [kg/m3]; 𝒖𝒑 is the par‐
+                            ticle velocity [m/s]; 𝒖 is the fluid velocity [m/s]; 𝑑 is the particle diameter [m]; 𝜌 is
+                            the mass density of particle [kg/m3]; 𝑞 is the particle charging.
+
+                            2.3.3. Details of the Computational Method
+                                  The finite volume method (FVM) was applied to transform the differential equations
+                            described above into discrete equations. A second‐order upwind scheme was used for
+                            differential derivatives. The semi‐implicit method for the pressure‐linked equations
+                            (SIMPLE) algorithm was adopted to couple the pressure and velocity fields to provide
+                            accurate gas phase parameters, while discretized equations were solved by the least
+                            squares cell‐based method. Under‐relaxation factors of 0.3 for pressure, 0.7 for momen‐
+                            tum, 0.8 for k and ε, 0.9 for electrical potential and 1 for energy and the pollutant were
+                            used for the convergence of all variables. The convergence criteria were set as follows:
+                            residuals for both velocity and continuity reaching 10−4, and energy residual reaching
+                            10−6.
+Appl. Sci. 2022, 12, 8896                                                                                                                                                                          11 of 23
+
+
+
+
+                                                     3. Field Measurement
+                                                          In order to verify the accuracy of the model in this paper, the temperature and air
+                                                     velocity of multiple measurement points and the system purification efficiency were
+                                                     tested during peak cooking hours (10:55–11:05) on three typical working days. The layout
+                                                     of the measurement points is displayed in Figure 5.
+
+
+                  I                                                          Y–Z                                                 I                     X–Z
+
+
+
+
+                                                                       F1         F2       F3
+                                                                                                                                           F   A1–A3
+
+
+
+
+                                                                                                                                3.0m
+                                                               E                      G                                                    EG
+                                                                                                                                       J
+
+
+
+
+                                                                                                                             1.5m
+                                             H1                 D                                        H2
+                                                               C1 C2              C3                                                         D C B2–B3 B1 B4–B5 H1/H2
+
+
+                                                                             X–Y
+                        I
+                                                                                                                  J
+                                                              E             F1        F2        F3
+                                                                   D
+                                        1.5 m 0.1m
+
+
+
+
+                                                              C1       C2        C3                                          Line a: Y=2.1~8.1 m, the section line of plane X=1.3 m and Z=1.5 m,
+                                                              A1       A2        A3                      Line a              the breathing height of cooking area
+
+                                                               B2
+                                                                                           B3             Preparation area
+                              Dining area
+                      8.6 m
+
+
+
+
+                                        2.6 m
+
+
+
+
+                                                                             B1
+
+
+                                                              B4                           B5
+                                                     H1                                            H2
+                                                     Door 1                                     Door 2
+                                                                   Kitchen area
+
+                                                                       8.1m
+
+
+                                                     Figure 5. Layout of measurement points.
+
+                                                           As shown in Figure 5, the measurement points A1–A3 were 0.1 m from the edge of
+                                                     the cooktop and 1.5 m above the ground, and they were used to measure the temperature
+                                                     and air velocity of the kitchen cooking area. Points B1–B5 were 1.6–4.0 m from the cook‐
+                                                     top and 1.0 m above the ground, and they were used to measure the temperature and air
+                                                     velocity of the kitchen zone far from the stoves. Points C1–C3 were located at the edge of
+                                                     the cooktop and 0.75 m above the ground to measure the temperature and air velocity of
+                                                     the control point of the exhaust system. Points D and E were located on the pot surface
+                                                     and the burner smoke outlet, and they were used to measure the temperature of the pot
+                                                     surface and exhaust gas, respectively. Points F1–F3 were located at the suction vents
+                                                     connecting the hood and air duct to measure the temperature, air velocity and fume
+                                                     concentration at the suction vents. Point G was used to measure the temperature and air
+                                                     velocity of the hood opening. Points H1 and H2 were located at the doors to measure the
+                                                     temperature of transfer air from adjacent rooms. Point I was located at the discharge
+                                                     outlet to measure the exhaust air rate, temperature and discharge fume concentration.
+                                                     Point J was located outside the building without direct sunlight, 0.5 m from the exterior
+                                                     wall and 1.5 m above the ground, to measure the outdoor temperature.
+                                                           The air temperature and velocity of the measurement points in the kitchen (points A
+                                                     and B) and outside (point I) were measured by a self‐recording temperature instrument
+                                                     and hot‐wire anemometer. The temperature of points D and E were measured through a
+                                                     thermocouple. The air velocity and temperature of measuring points C, F, G, H, and I
+                                                     were measured by a hot‐wire anemometer. The cooking fume concentration at points F
+                                                     and I were measured by an infrared spectrophotometer (GB18483, 2001). The average of
+                                                     test results during peak cooking hours (10:55–11:05) was taken as the final value of each
+                                                     measurement point and the measurement error (U) was calculated by the following
+                                                     formula.
+Appl. Sci. 2022, 12, 8896                                                                                               12 of 23
+
+
+
+
+                                                                          𝑈    𝑠/√𝑛                                        (21)
+                            where s is the standard deviation and n is the sample number. Field test pictures of typ‐
+                            ical parameters are shown in Figure 6. The test results are given in Tables 3 and 4.
+
+
+
+
+                                      (a)                       (b)                       (c)                     (d)
+                            Figure 6. Field test pictures of typical parameters. (a) Exhaust gas temperature; (b) Stove surface
+                            temperature; (c) Exhaust air rate; (d) Cooking fume concentration.
+
+                            Table 3. Measured temperature and air velocity at measurement points.
+
+                                                 30‐April                      30‐August                   11‐September
+                             Points
+                                          T (°C)          V (m/s)        T (°C)        V (m/s)         T (°C)       V (m/s)
+                               A1       31.0 ± 0.16    0.35 ± 0.01    36.2 ± 0.07    0.54 ± 0.02     35.7 ± 0.06   0.48 ± 0.02
+                               A2       29.1 ± 0.12    0.67 ± 0.02    36.4 ± 0.06    0.77 ± 0.03     28.8 ± 0.02   0.57 ± 0.01
+                               A3       28.0 ± 0.10    0.57 ± 0.01    35.3 ± 0.09    0.59 ± 0.01     33.4 ± 0.07   0.48 ± 0.03
+                               B1       25.4 ± 0.05    0.32 ± 0.01    31.4 ± 0.04    0.33 ± 0.02     31.3 ± 0.04   0.22 ± 0.06
+                               B2       25.5 ± 0.11    0.22 ± 0.01    31.3 ± 0.01    0.40 ± 0.003    30.6 ± 0.10   0.18 ± 0.01
+                               B3       23.8 ± 0.02    0.27 ± 0.02    31.0 ± 0.01    0.10 ± 0.01     30.1 ± 0.02   0.16 ± 0.01
+                               B4       25.1 ± 0.03    0.09 ± 0.03    32.9 ± 0.04    0.14 ± 0.08     31.2 ± 0.04   0.18 ± 0.01
+                               B5       23.4 ± 0.02    0.16 ± 0.02    29.8 ± 0.04    0.30 ± 0.005    29.5 ± 0.02   0.25 ± 0.03
+                               C1          32.4        0.55 ± 0.02         35        0.48 ± 0.01        34.6       0.26 ± 0.06
+                               C2          32.9        0.66 ± 0.04        35.2       0.53 ± 0.02        33.1       0.46 ± 0.03
+                               C3          33.3        0.68 ± 0.03        35.8       0.51 ± 0.04        33.5       0.42 ± 0.03
+                               D             /               /              /              /            365.8           /
+                               E             /               /              /              /            339.5           /
+                               F1       35.1 ± 0.75    11.28 ± 0.28   34.48 ± 1.11 11.98 ± 0.14     43.83 ± 1.04 11.95 ± 0.16
+                               F2       35.6 ± 1.67    9.03 ± 0.22    35.08 ± 1.06   9.04 ± 0.13     33.6 ± 0.39   8.69 ± 0.07
+                               F3       36.4 ± 1.97    6.94 ± 0.16    32.75 ± 0.24   6.35 ± 0.13    34.65 ± 0.89   6.60 ± 0.19
+                               G        30.5 ± 0.40    0.35 ± 0.04    32.8 ± 0.18    0.35 ± 0.11     32.7 ± 0.16   0.31 ± 0.01
+                                I       34.6 ± 0.50    4.23 ± 0.20    44.47 ± 0.18   4.73 ± 0.16     39.6 ± 0.08   4.09 ± 0.10
+                               H1       24.1 ± 0.02    0.66 ± 0.01    31.8 ± 0.02    0.69 ± 0.01     30.6 ± 0.02   0.73 ± 0.03
+                               H2       22.3 ± 0.01    0.15 ± 0.02    29.7 ± 0.01    0.31 ± 0.02     29.2 ± 0.02   0.22 ± 0.01
+                                J       27.3 ± 0.07          /        32.5 ± 0.04          /         23.4 ± 0.06        /
+
+                            Table 4. Measured purification efficiency of the CCKEF system.
+
+                                                   Cooking Fume Concentration (mg/m3)
+                                 Date                                                               Purification Efficiency (%)
+                                                      Point F1                  Point I
+                                30‐April             14.99 ± 0.49             2.59 ± 0.27                     82.72
+                              30‐August              12.24 ± 0.52             1.81 ± 0.29                     85.21
+                             11‐September            12.22 ± 0.55             1.74 ± 0.19                     85.76
+
+                                 The measured temperature values of points D, E, H1, and H2 were used for the
+                            temperature boundary conditions of stove surface, smoke outlet, door 1 and door 2, re‐
+                            spectively. The measured air velocity of point I was used for the velocity boundary con‐
+                            ditions of the outlet. The measured temperature and air velocity of points A1–A3, B1–B5,
+                            C1–C3, F1–F3 and G were used to verify the temperature and velocity fields of the
+Appl. Sci. 2022, 12, 8896                                                                                                                                                                                                                             13 of 23
+
+
+
+
+                                                            CCKEF system. The fume concentration measured at points F1 and I were used to verify
+                                                            the purification efficiency of the system.
+
+                                                            4. Results and Discussion
+                                                            4.1. Model Validation from Experimental Data
+                                                            4.1.1. Temperature
+                                                                 The comparison of simulated and measured temperature of the measurement points
+                                                            in the kitchen (A1–A3, B1–B5) and exhaust fume system (C1–C3, F1–F3 and G) is shown
+                                                            in Figure 7. It can be seen in the figure that the simulated temperatures of points in the
+                                                            kitchen were slightly lower than the measured values, with a deviation of 10%. The sim‐
+                                                            ulated temperatures of points in the exhaust system were closer to the measured values,
+                                                            with deviation generally within 5%.
+
+                                               Temperature of points A1~A3 and B1~B5
+                                    40                                                                                                                                                         Temperature of points C1~C3, F1~F3 and G
+                                                                                                                                                                   40
+                                    38         A1~A3                                            +5%                                                                                                 C1~C3                      +5%
+                                               B1~B5                                                                                                               38                               F1~F3
+                                    36                                                                                                                                                              G
+                                                                                                      −5%
+             Measuring results(℃)
+
+
+
+
+                                                                                                                                                                                                                                           −5%
+
+
+
+
+                                                                                                                                            Measuring results(℃)
+                                    34                                                                                                                             36
+                                                         +10%                                                                                                                                                +10%
+                                    32
+                                                                                                                                                                   34
+                                    30
+                                                                                                                                                                   32
+                                    28
+                                                                                       −10%
+                                                                                                                                                                                                                          −10%
+                                    26                                                                                                                             30
+                                    24
+                                                                                                                                                                   28
+                                    22
+                                    20                                                                                                                             26
+                                     20   22   24   26 28 30 32 34                               36    38   40                                                      26                         28        30    32      34     36      38         40
+                                                     Simulation results(℃)                                                                                                                                Simulation results(℃)
+
+                                                           (a)                                                                                                                                                    (b)
+                                                            Figure 7. Validation of temperature field of CCKEF system. (a) Measurement points in kitchen (b)
+                                                            Measurement points in exhaust fume system.
+
+                                                            4.1.2. Velocity
+                                                                 The comparison of simulated and measured air velocity of points in the kitchen (A1–
+                                                            A3, B1–B5) and the exhaust fume system (C1–C3, F1–F3 and G) is shown in Figure 8. As
+                                                            shown, the values of simulated air velocity of points in the kitchen were closer to the
+                                                            measured values, while the simulated air velocity of points in the exhaust system had
+                                                            slightly higher values than the measured values. The deviation in all cases was within
+                                                            10%.
+
+                                                                                              Velocity of points A1~A3 and B1~B5                                                                        Velocity of points C1~C3, F1~F3 and G
+                                                                                      1.0                                                                                                    13
+                                                                                                   A1~A3                                                                                     12              C1~C3
+                                                                                                   B1~B5                                                                                     11              F1~F3
+                                                                                      0.8                                                                                                                    G
+                                                                                                                                                                                             10
+                                                                                                                                                                    Measuring results(m/s)
+                                                             Measuring results(m/s)
+
+
+
+
+                                                                                                                                                                                              9
+                                                                                      0.6                                                                                                     8
+                                                                                                                                                                                                                        +10%
+                                                                                                       +10%
+                                                                                                                                                                                              7
+                                                                                                                                                                                              6
+                                                                                      0.4                                                                                                     5                                −10%
+                                                                                                                 −10%
+                                                                                                                                                                                              4
+                                                                                      0.2                                                                                                     3
+                                                                                                                                                                                              2
+                                                                                                                                                                                              1
+                                                                                      0.0                                                                                                     0
+                                                                                        0.0     0.2       0.4        0.6        0.8   1.0                                                      0    1    2    3     4 5 6 7 8 9 10 11 12 13
+                                                                                                      Simulation results(m/s)                                                                                       Simulation results(m/s)
+                                                                                                              (a)                                                                                                       (b)
+                                                            Figure 8. Validation of velocity field of CCKEF system. (a) Measurement points in kitchen; (b)
+                                                            Measurement points in exhaust fume system.
+Appl. Sci. 2022, 12, 8896                                                                                                   14 of 23
+
+
+
+
+                            4.1.3. Purification Efficiency
+                                  The simulated and measured purification efficiency of the CCKEF system on three
+                            test days is shown in Figure 9.
+
+
+                                                                   simulated result     measured result    designed value
+                                                          100
+                                                                90.4   90             89.35 90            89.38 90
+                                                                                         85.21               85.76
+                                                                  82.72
+
+                             purification efficiency(%)
+                                                          80
+
+
+                                                          60
+
+
+                                                          40
+
+
+                                                          20
+
+
+                                                           0
+                                                                 30.Apr                30.Aug               11.Sep
+                                                                                        Date
+
+                            Figure 9. Comparison of simulated, measured and designed values of system purification effi‐
+                            ciency.
+
+                                 In engineering applications, grease is deposited in the grease purifier, especially
+                            before system cleaning (the case kitchen was cleaned at the beginning of August). Grease
+                            accumulation reduces the purification efficiency of the electrostatic purifier. As a result,
+                            the measured purification efficiency was as low as 82.72% on April 30 and increased to
+                            about 85% on August 30 and September 11, as shown in Figure 9. The measured purifi‐
+                            cation efficiency of the CCKEF system was lower than the designed value. The simulated
+                            purification efficiency was slightly higher than the measured value, with a deviation
+                            between 4.86% and 9.28% but close to the designed value.
+                                 By comparing the simulated and measured values of air temperature, air velocity at
+                            different measurement points and the purification efficiency of the CCKEF system, it was
+                            found that the simulated and measured deviations were all within 10%, indicating that
+                            the established numerical model can better reflect the actual operation of the system and
+                            can be used for performance prediction of CCKEF system in engineering practice.
+
+                            4.2. Performance Prediction of Case CCKEF System under Various Conditions
+                            4.2.1. Different Surface Temperatures of Stoves
+                                 During cooking, there were mainly four flame states, as shown in Figure 10.
+                            Changming Fire state (state “a”) means that the stove has been turned on, but the fuel gas
+                            valve of the stove is set to the minimum, which is often used in the gap between two sets
+                            of cooking to keep the stove at the open status. Thus this section only focuses on the latter
+                            three flame states (states “b–d”). Different flame states corresponded to different stove
+                            surface temperatures, as shown in Table 5. This section investigated the air velocity,
+                            temperature, pollutant concentration distribution of the kitchen cooking area and the
+                            system purification efficiency under different stove surface temperature conditions (T =
+                            100, 200, 365 °C), as shown in Figure 11.
+Appl. Sci. 2022, 12, 8896                                                                                                         15 of 23
+
+
+
+
+               (a)                                (b)                               (c)                                (d)
+                                     Figure 10. Four flame states during cooking. (a) Changming Fire; (b) Small fire; (c) Medium fire; (d)
+                                     Big fire.
+
+                                     Table 5. Stove surface temperature with different flame status.
+
+                                            Fire Status                    Small Fire       Medium Fire                Big Fire
+                                        Surface temperature                 100 °C            210 °C                    365 °C
+
+
+
+
+                            T=100℃                                                 T=200℃
+
+
+
+
+                                                T=365℃
+
+
+                                                                     (a)
+
+
+
+
+                            T=100℃                                                 T=200℃
+
+
+
+
+                                                T=365℃
+
+
+
+                                                                     (b)
+Appl. Sci. 2022, 12, 8896                                                                                                       16 of 23
+
+
+
+
+                            T=100℃                                                                           T=200℃
+
+
+
+
+                                                              T=365℃
+
+
+
+                                                                                        (c)
+
+                                                         100
+
+
+
+                                                              95
+                                  purification efficency(%)
+
+
+
+
+                                                              90
+
+
+                                                                                                    minimum limit value
+                                                              85
+
+
+
+                                                              80
+                                                                   100   150      200         250      300     350        400
+                                                                               cooking temperature(℃)
+
+                                                                                        (d)
+
+                            Figure 11. The air velocity, temperature, pollution concentration of cooking area (X = 1.3 m) and
+                            system purification efficiency under different stove surface temperature conditions (Qex = 11726
+                            m3/h). (a) Velocity; (b) Temperature; (c) C6H6 concentration; (d) Purification efficiency.
+
+                                 As seen in Figure 11a, the change in stove surface temperature had no effect on the
+                            air velocity in the kitchen since the exhaust air volume was constant. Figure 11b shows
+                            that the temperature in the head area of the third cook was higher than that of the two
+                            other cooks and a thermal fume overflowed from the hood edge near the left side of the
+                            third cook. The overflow flowed upward and eventually accumulated at the ceiling. This
+                            indicates that the distribution of suction vents connecting the hood and air duct may not
+                            be proper, which leads to uneven air distribution around the stoves and cooks. As shown
+                            in Figure 11a, there was a vortex area above the head zone of the third cook, and the air‐
+                            flow velocity was small, which could not remove the convective heat effectively. When
+                            the surface temperature of the stove increased from 100 to 200 °C, the thermal fume
+                            overflow was slightly aggravated, but the overall change in temperature was not signif‐
+                            icant. The reason for the aggravation of hot smoke overflow with the increase in stove
+                            surface temperature can be explained from two aspects. On the one hand, due to the in‐
+                            crease in stove surface temperature, the temperature of cooking thermal fumes was in‐
+                            creased, and the molecular thermal motion was intensified. On the other hand, the in‐
+                            crease in temperature difference between the hot thermal fume and ambient air increases
+                            the airflow disturbance and then aggravates the fume spillover. Figure 11c illustrates that
+Appl. Sci. 2022, 12, 8896                                                                                                                                                                                                         17 of 23
+
+
+
+
+                            some pollutants spilled from the left wall of the exhaust hood due to the nature of the
+                            thermal fume flowing against the wall. Figure 11d indicates that the purification effi‐
+                            ciency was about 91% when the surface temperature was 100 and 200 °C and increased to
+                            93% when the surface temperature was 365 °C.
+
+                            4.2.2. Different Simultaneity Coefficient of Stoves
+                                  There are generally 4–6 stoves in CCKs, but not all of them are burning at the same
+                            time during cooking. By taking the case kitchen with four cauldron stoves and one
+                            stockpot as an example, the percentage of simultaneity coefficient of stoves (φ) is shown
+                            in Table 6. In this part, the air velocity, temperature and pollutant distribution of the
+                            kitchen cooking area at breathing height (in Figure 5, Line a) and the system purification
+                            efficiency were studied under four simultaneity coefficient values (φ = 0.2, 0.6, 0.8, 1). The
+                            results are shown in Figure 12.
+
+                            Table 6. The use state of stoves in the case kitchen during brunch cooking.
+
+                              Number of                      Usage State of Stoves
+                                                                                                 Simultaneity Percentage
+                                 Stoves
+                                                S1       S2         S3          S4         S5     Factor (φ)         (%)
+                                Burning
+                                  One         Frying     Off        Off         Off       Off          0.2           16.9
+                                 Three        Frying   Frying     Frying        Off       Off          0.6           46.1
+                                  Four        Frying   Frying     Frying     Stewing      Off          0.8           33.8
+                                  Five        Frying   Frying     Frying     Stewing    Stewing         1             3.2
+                            Note: Cooking process during lunch and dinner in canteen‐type kitchens is similar, so only the use
+                            state of stoves during brunch cooking was surveyed in this paper.
+
+                                                                         32
+                                                                                                                 One(φ=0.2)
+                                                                                                                                                                      0.8                                          One(φ=0.2)
+                                                                                                                 Three(φ=0.6)
+                                                                         30                                                                                                                                        Three(φ=0.6)
+                                                                                                                 Four(φ=0.8)
+                                                                                                                                                                                                                   Four(φ=0.8)
+                                                                                                                 Five(φ=1)                                            0.7
+                                                                                                                                                                                                                   Five(φ=1)
+                                                                         28
+                                                    Air Temperature(℃)
+
+
+
+
+                                                                                                                                                                      0.6
+                                                                                                                                                  Air velocity(m/s)
+
+
+
+
+                                                                         26
+                                                                                                                                                                      0.5
+
+                                                                         24                                                                                           0.4
+
+                                                                         22                                                                                           0.3
+
+                                                                         20                                                                                           0.2
+
+                                                                                                                                                                      0.1
+                                                                         18                                                                                              2.0 2.5 3.0 3.5 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0
+                                                                           2.0 2.5 3.0 3.5 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0
+                                                                                                                                                                                                  Y(m)
+                                                                                                    Y(m)
+
+                                                                                                  (a)                                                                                          (b)
+                                                           1.0×10−8                                                                                                100
+                                                                                                                     One(φ=0.2)
+                                                                                                                     Three(φ=0.6)
+                                                                                                                     Four(φ=0.8)
+                                                           8.0×10−9
+                             C6H6 concentration(kmol/m3)
+
+
+
+
+                                                                                                                     Five(φ=1)                                        95
+                                                                                                                                      Purification efficiency(%)
+
+
+
+
+                                                           6.0×10−9
+                                                                                                                                                                      90
+
+
+                                                           4.0×10−9
+                                                                                                                                                                                                       minimum limit value
+                                                                                                                                                                      85
+
+                                                           2.0×10−9
+
+                                                                                                                                                                      80
+                                                                          0.0                                                                                                    One         Three        Four        Five
+                                                                                2.0 2.5 3.0 3.5 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0                                             (φ=0.2)     (φ=0.6)      (φ=0.8)     (φ=1)
+                                                                                                                                                                                          Number of stoves on fire
+                                                                                                        Y(m)
+
+                                                                                                  (c)                                                                                          (d)
+                            Figure 12. The indoor air environment of cooking area and system purification efficiency under
+                            different simultaneity coefficient of stoves (Qex = 11726 m3/h). (a) Air temperature; (b) Air velocity;
+                            (c) C6H6 concentration; (d) Purification efficiency.
+Appl. Sci. 2022, 12, 8896                                                                                                                                                                          18 of 23
+
+
+
+
+                                                                         Figure 12a–c shows that the change in simultaneity coefficient of stoves affected the
+                                                                    air velocity, temperature and pollutant concentration distribution of the cooking area.
+                                                                    When the simultaneity coefficient was 0.2, the temperature of the cooking area near the
+                                                                    stove was high at 24–28 °C, while the temperature of other areas was about 24 °C. When
+                                                                    the simultaneity usage factor ranged from 0.6 to 1, the temperature of the cooking area
+                                                                    with personnel standing was high at 24–30 °C, while that of other areas was about 24 °C.
+                                                                    This was because the presence of personnel decreased the air velocity (0.2–0.3 m/s) near
+                                                                    the burning stoves, and the generated cooking heat could not be eliminated effectively.
+                                                                    Due to its wall‐hugging characteristics, the heat plume flowed leftward and upward. The
+                                                                    larger the simultaneity coefficient was, the more serious the pollutant spillage. As shown
+                                                                    in Figure 12d, the purification efficiency of the electrostatic purifier decreased as the
+                                                                    simultaneity coefficient of stoves increased. The purification efficiency also met the re‐
+                                                                    quirement of the minimum limit (85%) when all stoves were burning.
+
+                                                                    4.2.3. Different Scenarios of Natural Transfer Air from Adjacent Rooms
+                                                                          The replacement air of the case kitchen was natural to transfer air from the adjacent
+                                                                    rooms, which is common in CCKs. The natural replacement air parameters (NRAP) may
+                                                                    be various in different seasons. Therefore, this section predicted the air velocity, temper‐
+                                                                    ature and pollutant distribution of the kitchen cooking area and the system purification
+                                                                    efficiency based on measured replacement air temperature and velocity (Table 7), and the
+                                                                    results are shown in Figure 13.
+
+                                                                    Table 7. Temperature and velocity of natural transfer air from adjacent rooms in four seasons.
+
+                                                                                                                                        NRAP−2                      NRAP−3                NRAP−4
+                                                                           Case         NRAP−1 (Spring)
+                                                                                                                                       (Summer)                    (Autumn)               (Winter)
+                                                                             T1 (°C)           24.4                                       30.3                       25.8                   17.9
+                                                                      1
+                                                                             V1 (m/s)          0.47                                       0.41                       0.40                   0.41
+                                                                             T2 (°C)           22.3                                       29.3                       24.3                   12.9
+                                                                       2
+                                                                             V2 (m/s)          0.46                                       0.40                       0.39                   0.51
+
+
+
+                                                                                                                                             1.2
+                                         40                                       min−max                                                                                               min−max
+                                                             38                   mean                                                                                                  mean
+                                                                                                                                             1.0
+        Temperature of cooking area(℃)
+
+
+
+
+                                         36
+                                                                                                             Velocity in cooking area(m/s)
+
+
+
+
+                                         32                                                                                                  0.8                                           0.811
+                                                             31                                                                                        0.749                   0.752
+                                                  30.2                     30                                                                                      0.723
+                                                             29.3
+                                         28
+                                                                                                                                             0.6
+                                         24       24.6                     24.6                                                                        0.488       0.504                   0.494
+                                                                                                                                                                               0.474
+                                                  22.7                                                                                       0.4
+                                                                           21.4
+                                         20                                             20.3
+
+                                                                                                                                             0.2       0.171       0.182                   0.199
+                                         16                                             15.5                                                                                   0.141
+                                                                                        13.8
+                                         12                                                                                                  0.0
+                                              NRAP−1     NRAP−2        NRAP−3     NRAP−4                                                           NRAP−1      NRAP−2      NRAP−3      NRAP−4
+                                              (spring)   (summer)      (autumn)   (winter)                                                         (spring)    (summer)    (autumn)    (winter)
+
+                                                               (a)                                                                                                  (b)
+Appl. Sci. 2022, 12, 8896                                                                                                                                                                                  19 of 23
+
+
+
+
+                                                     2.5×10−8                                                                                             100
+      C6H6 concentration of cooking area (kmol/m3)
+
+                                                                      min−max
+                                                                                                            2.13×10−8
+                                                                      mean
+                                                     2.0×10−8
+                                                                                                                                                           95
+
+
+
+
+                                                                                                                              purification efficency(%)
+                                                     1.5×10−8
+                                                                  1.21×10−8
+
+                                                     1.0×10−8                                                                                              90
+
+
+                                                     5.0×10−9
+                                                                                                                                                                                     minimum limit value
+                                                                                                                                                           85
+                                                          0.0
+                                                                  1.50×10−10    1.39×10−13     4.86×10−14     2.73×10−10
+
+                                              −5.0×10−9                                                                                                    80
+                                                                NRAP−1         NRAP−2        NRAP−3         NRAP−4                                              NRAP−1 NRAP−2 NRAP−3         NRAP−4
+                                                                (spring)       (summer)      (autumn)       (winter)                                            (spring) (summer) (autumn)   (winter)
+                                                                                   (c)                                                                                      (d)
+                                                                                     Figure 13. The indoor air environment of cooking area and system purification efficiency under
+                                                                                     different natural replacement air temperatures (Qex = 11726 m3/h) (a) Air temperature; (b) Air ve‐
+                                                                                     locity; (c) C6H6 concentration; (d) Purification efficiency.
+
+                                                                                           As seen in Figure 13a, the natural replacement air temperature had a greater effect
+                                                                                     on the kitchen indoor air temperature than the stove surface temperature. When the re‐
+                                                                                     placement air temperature was 22–26 °C (spring and autumn), the cooking area temper‐
+                                                                                     ature was in the range of 22–30 °C, meeting the standard temperature requirements (18–
+                                                                                     32 °C). When the adjacent room temperature was 30 °C (summer), the temperature of the
+                                                                                     cooking area was within 29–38 °C, exceeding the high limit requirement in many places.
+                                                                                     When the make‐up air temperature was 13–18 °C (winter), the temperature of the cook‐
+                                                                                     ing area was in the range of 13–20 °C, and many places did not meet the low limit re‐
+                                                                                     quirements. Therefore, commercial kitchens with only transfer air from adjacent rooms
+                                                                                     have a poor indoor thermal environment in summer and winter, and air‐conditioned air
+                                                                                     needs to be installed to improve the thermal environment. As shown in Figure 13b, when
+                                                                                     the exhaust air volume was constant, the change in air velocity distribution of the cook‐
+                                                                                     ing area under different seasonal scenarios was not obvious. The range of air velocity in
+                                                                                     the cooking area was 0.2–0.8 m/s, with an average of 0.5 m/s. The air velocity under the
+                                                                                     NRAP‐4 scenario was a little higher, as the replacement air volume from door 2 was
+                                                                                     larger in the winter due to the higher temperature difference. It was deduced that the
+                                                                                     indoor air velocity was mainly influenced by the exhaust air volume. Figure 13c showed
+                                                                                     that pollutants spilled over and the concentration of C6H6 in the cooking area exceeded
+                                                                                     the standard limit (1.49 × 10−9 kmol/m3) under NRAP‐1 (spring) and NRAP‐4 (winter)
+                                                                                     scenarios. Combined with Table 7, the transfer air velocity from adjacent rooms in these
+                                                                                     two scenarios was higher than in the other two scenarios. High transfer air velocity in‐
+                                                                                     tensified the airflow disturbances, which was adverse for the hood capture performance,
+                                                                                     and then led to the overflow of cooking fumes. As seen in Figure 13d, the purification
+                                                                                     efficiency of the exhaust fume system was higher in summer than in other seasons, which
+                                                                                     may be due to the higher inlet temperature of the purifier in summer, which is conducive
+                                                                                     to trapping particles in the electrical purifier.
+
+                                                                                     4.2.4. Different Exhaust Air Volumes
+                                                                                          The analysis results in Sections 4.2.1–4.2.3 show that when the system was operated
+                                                                                     at 11,726 m3/h (65% of the rated air volume), the purification efficiency met the standard
+                                                                                     requirements while the temperature in the cooking area was beyond the comfort range
+                                                                                     and pollutants spilled out on the left side against the wall. It was deduced that 11,726
+                                                                                     m3/h was not the optimal operating air volume for the case CCKEF system. In this part,
+                                                                                     the effects of four sets of airflow conditions (50, 65, 80 and 100% rated airflow) on the
+                                                                                     indoor kitchen environment and the system purification efficiency were studied for three
+Appl. Sci. 2022, 12, 8896                                                                                                                                                                                                                                                                                                            20 of 23
+
+
+
+
+                                                                                             main simultaneous coefficient of stoves values (φ = 0.2, 0.6, 0.8). The results are shown in
+                                                                                             Figure 14.
+
+                                                              40                                                              26                                                                                                               1.3                                                                                 1.2
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                         air velocity of zone far from cooking area(m/s)
+                                                                                                                                   temperature of zone far from cooking area(℃)
+                                                              38                                                                                                                                                                               1.2                                                                                 1.1
+                                                                                                                              25                                                                                                                                                φ=0.2
+                                                              36                                                                                                                                                                               1.1                                                                                 1.0
+
+
+
+
+                                                                                                                                                                                                     air velocity of cooking area(m/s)
+                            temperature of cooking area(℃)
+
+
+
+
+                                                                                                                                                                                                                                                                                φ=0.6
+                                                                                                                              24                                                                                                               1.0                                                                                 0.9
+                                                              34                                                                                                                                                                                                                φ=0.8
+                                                                                                                                                                                                                                               0.9                                                                                 0.8
+                                                              32                                                              23                                                                                                               0.8
+                                                                                                                                                                                                                                                                                                                                   0.7
+                                                              30                                                                                                                                                                               0.7
+                                                                                                                              22                                                                                                                                                                                                   0.6
+                                                              28                                                                                                                                                                               0.6
+                                                                                                                                                                                                                                                                                                                                   0.5
+                                                              26                                                              21                                                                                                               0.5
+                                                                                                                                                                                                                                               0.4                                                                                 0.4
+                                                              24                                                              20                                                                                                                                                                                                   0.3
+                                                                           φ=0.2                                                                                                                                                               0.3
+                                                              22           φ=0.6                                                                                                                                                                                                                                                   0.2
+                                                                                                                                                                                                                                               0.2
+                                                                           φ=0.8                                              19
+                                                              20                                                                                                                                                                               0.1                                                                                 0.1
+                                                              18                                                              18                                                                                                               0.0                                                                                 0.0
+                                                               8000      10,000     12,000     14,000 16,000      18,000                                                                                                                          8000                        10,000      12,000     14,000 16,000     18,000
+                                                                                     exhaust air rate(m3/h)                                                                                                                                                                                exhaust air rate(m3/h)
+                                                                                            (a)                                                                                                                                                                                                  (b)
+                                                                                                                                                                                                                                                                 100
+                                                             1.5×10−8                                                   2.0×10−15
+                                                                                                                                                   C6H6 concentration of kitchen zone (km ol/m 3 )
+
+
+                                                                                                               φ=0.2                                                                                                                                                                                      designed value
+     C6H6 concentration of cooking area(kmol/m 3 )
+
+
+
+
+                                                                                                               φ=0.6                                                                                                                                                                                      operated value（ φ=0.2）
+                                                                                                               φ=0.8                                                                                                                                                                                      operated value（ φ=0.6）
+                                                             1.0×10−8                                                   1.6×10−15                                                                                                                                95                                       operated value（ φ=0.8）
+
+                                                                                                                                                                                                                                    purification efficiency(%)
+                                                             5.0×10−9                                                   1.2×10−15
+                                                                                                                                                                                                                                                                 90
+
+                                                                   0.0                                                  8.0×10−16
+
+                                                                                                                                                                                                                                                                 85
+                                                     −5.0×10−9                                                          4.0×10−16
+
+
+                                                                                                                                                                                                                                                                 80
+                                                     −1.0×10−8                                                          0.0                                                                                                                                            8000      10,000     12,000 14,000         16,000   18,000
+                                                             8000          10,000    12,000 14,000 16,000      18,000
+                                                                                                                                                                                                                                                                                           exhaust air rate(m3/h)
+                                                                                      exhaust air rate(m3/h)
+                                                                                            (c)                                                                                                                                                                                                  (d)
+                                                                                             Figure 14. Indoor temperature, air velocity, pollutant concentration and system purification effi‐
+                                                                                             ciency under different exhaust air volume. (a) Air temperature; (b) Air velocity; (c) C6H6 concen‐
+                                                                                             tration; (d) Purification efficiency.
+
+                                                                                                   As seen in Figure 14, exhaust air volume had a significant effect on the temperature,
+                                                                                             air velocity, pollutant concentration and system purification efficiency.
+                                                                                                   When the exhaust air volume was increased from 50% (9000 m3/h) to 100% (18,000
+                                                                                             m3/h) of the rated air volume, the temperature in the cooking area decreased by about 4.5
+                                                                                             °C, and the C6H6 concentration decreased from 8 × 10−9 to 1.49 × 10−9 kmol/m3. In the
+                                                                                             kitchen zone far from the cooking area, the temperature change was smaller, and the
+                                                                                             C6H6 concentration decreased from 3 × 10−16 to 4 × 10−18 kmol/m3 or less. The indoor air
+                                                                                             velocity increased significantly, with the increased rate of cooking area and kitchen zone
+                                                                                             far from the cooking area at 69.2% and 50%, respectively. The system purification effi‐
+                                                                                             ciency decreased from about 93% to about 85%. Considering the indoor environment and
+                                                                                             system purification efficiency together, when the simultaneous coefficient of stoves was
+                                                                                             0.2, and the exhaust air volume was 80% of the rated air volume, the indoor temperature
+                                                                                             of the kitchen was comfortable, the pollutant concentration met the standard limit, and
+                                                                                             the purification efficiency was relatively high (90%). When the simultaneous coefficient
+                                                                                             of stoves was greater than 0.6, the exhaust air volume should be 100% of the rated air
+                                                                                             volume to keep the indoor temperature comfortable and guarantee the pollutant con‐
+                                                                                             centration, as well as the purification efficiency, meet the standard requirements. There‐
+                                                                                             fore, in order to ensure the indoor and outdoor air environments meet the standards re‐
+Appl. Sci. 2022, 12, 8896                                                                                                                                                            21 of 23
+
+
+
+
+                                  quired under various working conditions, the case CCKEF system should operate at
+                                  100% of the rated air volume. The control of exhaust air volume under three scenarios
+                                  (scenario a: CCKEF system is operated at constant measured airflow; scenario b: CCKEF
+                                  system is operated at optimum airflow according to the simultaneous coefficient of
+                                  stoves; scenario b: CCKEF system is operated at constant rated airflow) is shown in Fig‐
+                                  ure 15.
+
+                                                                                                                                         2.0
+                                                                                  scenario a: measured airflow
+                                                                    120           scenario b: optimum airflow                            1.8
+                                                                                  scenario c: rated air flow
+
+
+
+
+                                                                                                                                               simultaneous usage factor of stoves
+                            The operated airflow(% rated airflow)
+
+                                                                                                                                         1.6
+                                                                    100
+                                                                                                                                         1.4
+                                                                     80                                                                  1.2
+                                                                                                                                         1.0
+                                                                     60
+                                                                                                                                         0.8
+                                                                     40                                                                  0.6
+                                                                                                                                         0.4
+                                                                     20             simultaneous usage factor of stoves
+                                                                                                                                         0.2
+                                                                     0                                                                   0.0
+                                                                          07:00    08:00     09:00    10:00      11:00   12:00   13:00
+                                                                                                     Time
+                                  Figure 15. The control of exhaust air volume under three scenarios.
+
+                                        As shown in Figure 15, in actual operation, the case CCKEF system was operated at
+                                  65% of rated airflow constantly (scenario a). The energy consumption of scenario “a” was
+                                  the lowest among the three scenarios, while the indoor environment was unsatisfactory
+                                  from the above analysis. If the case CCKEF system was operated at the rated airflow
+                                  constantly (scenario c), though the indoor and outdoor air environment can be guaran‐
+                                  teed, the energy consumption was the highest. By contrast, it was better for the case
+                                  CCKEF system to operate at the optimum airflow according to the simultaneous coeffi‐
+                                  cient of stoves (scenario b: also called demand control). The demand control of the
+                                  CCKEF system can not only provide a comfortable indoor environment and eligible pu‐
+                                  rification efficiency but also reduce the system energy consumption by 3.75% compared
+                                  with the other two scenarios.
+
+                                  5. Conclusions
+                                       This study proposed a simulation method to predict the operation performance, in‐
+                                  cluding indoor air environment and purification efficiency of the Chinese commercial
+                                  kitchen exhaust fume (CCKEF) system. The simulation model was validated with meas‐
+                                  ured data with a deviation within 10%. The validated model was used to predict the in‐
+                                  door air environment and purification efficiency of the exhaust system under different
+                                  working conditions (simultaneous coefficient of stoves, stove surface temperature,
+                                  make‐up air parameters and exhaust air volumes) to understand the actual operation of
+                                  the case CCKEF system and give suggestions for improvement. The main conclusions are
+                                  as follows:
+                                  (1) The change in simultaneity coefficient of stoves affected the air velocity, tempera‐
+                                      ture and pollutant concentration distribution of the cooking area near the cooking
+                                      stoves. Compared with the surface temperature of stoves, the temperature of natural
+                                      transfer air from adjacent rooms had a greater impact on the thermal environment of
+                                      the cooking area, and high airflow from adjacent rooms may disturb the hood cap‐
+                                      ture performance. In order to improve the indoor kitchen environment,
+Appl. Sci. 2022, 12, 8896                                                                                                          22 of 23
+
+
+
+
+                                       air‐conditioned air was suggested to be introduced into the kitchen in summer and
+                                       winter;
+                                   (2) The exhaust air volume had a significant influence on both the indoor air environ‐
+                                       ment and purification efficiency. The measured air volume for the case CCKEF sys‐
+                                       tem, 65% of the rated air volume, was not the optimal operating air volume. The
+                                       optimal operating air volume varied with the simultaneous coefficient of stoves,
+                                       which was 80% and 100% of the rated air volume when the simultaneous coefficient
+                                       of stoves was 0.2 and greater than 0.6, respectively;
+                                   (3) On the premise of providing a comfortable indoor environment and eligible purifi‐
+                                       cation efficiency, the CCKEF system was suggested to be operated at the optimum
+                                       airflow according to the simultaneous coefficient of stoves as the energy consump‐
+                                       tion of the system can be saved by 3.75% during the brunch cooking period.
+
+                                   Author Contributions: Conceptualization, N.D.; Data curation, A.Z., R.H. and C.S.; Formal analy‐
+                                   sis, A.Z.; Investigation, A.Z.; Methodology, A.Z.; Supervision, N.D.; Validation, A.Z.; Writ‐
+                                   ing—original draft, A.Z.; Writing—review and editing, N.D., Z.L. and G.C. All authors have read
+                                   and agreed to the published version of the manuscript.
+                                   Funding: The research was supported by the National Key Research and Development Program of
+                                   China (No. 2017YFC0211502).
+                                   Institutional Review Board Statement: Not applicable.
+                                   Informed Consent Statement: Not applicable.
+                                   Data Availability Statement: The data presented in this study are available in the article.
+                                   Conflicts of Interest: The authors declare no conflict of interest.
+
+Reference
+1.    Huang, L.; Cheng, H.N.; Ma, S.T.; The exposures and health effects of benzene, toluene and naphthalene for Chinese chefs in
+      multiple cooking styles of kitchens. Environ. Int. 2021, 156, 106721.
+2.    Zhang, W.; Bai, Z., Shi, L.B.; Son, J.H.; Li, L.; Wang, L.; Chen, J. Investigating aldehyde and ketone compounds produced from
+      indoor cooking emissions and assessing their health risk to human beings. J. Environ. Sci. 2023, 127, 389–398.
+3.    Liu, Z.H.; Su, J.B.; Ma A.J.; Liu, P. Study on emission characteristics of tracer pollutants in cooking oil fumes. Atmos. Pollut. Res.
+      2022, 13, 101409.
+4.    Lin, C.S.; Huang R.J.; Duan, J.; Zhong, H. Polycyclic aromatic hydrocarbons from cooking emissions. Sci. Total Environ. 2022,
+      818, 151700.
+5.    EN 16282; Equipment For Commercial Kitchens–Components for Ventilation in Commercial Kitchens. Part 1: General Re‐
+      quirements Including Calculation Method. European Committee for Standardization: Bruxelles, Belgium, 2017.
+6.    ANSI/ASHRAE 62.1‐2019; Ventilation For Acceptable Indoor Air Quality. The American Society of Heating, Refrigeration, and
+      Air‐Conditioning Engineers: Atlanta, GA, USA, 2019.
+7.    ANSI/ASHRAE 55‐2020; Refrigeration, and Air‐Conditioning Engineers. The American Society of Heating, Thermal Environ‐
+      mental Conditions for Human Occupancy: Atlanta, GA, USA, 2020.
+8.    GB18483; Emission Standard of Cooking Fume. National Environment Protection Bureau: Washington, DC, USA; China En‐
+      vironmental Science Press: Beijing, China, 2019.
+9.    Han, O.; Li, A.G.; Kosonen, R. Hood performance and capture efficiency of kitchens: A review. Build. Environ. 2019, 161,
+      106221.
+10.   Zhao, Y.J.; Li A.G.; Tao, P.; Gao, R. The impact of various hood shapes, and side panel and exhaust duct arrangements, on the
+      performance of typical Chinese style cooking hoods. Build. Simul. 2012, 6, 139–149.
+11.   Wang, Y.B.; Li, H.X.; Feng, G.H. Simulating the influence of exhaust hood position on ultrafine particles during a cooking
+      process in the residential kitchen. Build. Simul. 2020, 13, 1339–1352.
+12.   Zhou, B.; Wei, P.; Tan, M.; Xu, Y.; Lili, D.; Xinyue, M.; Zhao, Y.; Kosonen, R. Capture efficiency and thermal comfort in Chinese
+      residential kitchen with push‐pull ventilation system in winter‐a field study. Build. Environment. 2019, 149, 182–195.
+13.   Lu, S.; Zhou, B.; Zhang, J.Z.; Hou, M.; Jiang, J.; Li, F.; Wang, Y. Performance evaluation of make‐up air systems for pollutant
+      removal from gas stove in residential kitchen by using a push‐pull ventilation system. Energy Build. 2021, 240, 110907.
+14.   Chen, Z.L.; Xin, J.J.; Liu, P.Y. Air quality and thermal comfort analysis of kitchen environment with CFD simulation and ex‐
+      perimental calibration. Build. Environ. 2020, 172, 106691.
+15.   Liu, S.M.; Cao, Q.; Zhao, X.W.; Lu, Z.; Deng, Z.; Dong, J.; Lin, X.; Qing, K.; Zhang, W.; Chen, Q. Improving indoor air quality
+      and thermal comfort in residential kitchens with a new ventilation system. Build. Environ. 2020, 180, 107016.
+Appl. Sci. 2022, 12, 8896                                                                                                       23 of 23
+
+
+
+
+16.   Lv, L.; Gao, J.; Zeng, L.J.; Cao, C.; Zhang, J.; He, L. Performance assessment of air curtain range hood using contaminant re‐
+      moval efficiency: An experimental and numerical study. Build. Environ. 2021, 188, 107456.
+17.   Song, Y.L.; Chen, X.; Zhang, Z.; Cao, S.; Du, T.; Guo, H. Studies on the control of kitchen pollutants by exhaust hood with
+      air‐filled slots. J. Build. Eng. 2022, 48, 103891.
+18.   Lal, Pal.; C., Netam, N. Analysis of temperature and exhaust gases distribution in residential kitchen of LIG house. Mater.
+      Today: Proc. 2021, 44, 3025–3031.
+19.   Lv, L.; Zeng, L.J.; Wu, Y.H.; Gao, J.; Xie, W.; Cao, C.; Chen, Y.; Zhang, J. Effects of human walking on the capture efficiency of
+      range hood in residential kitchen. Build. Environ. 2021, 196, 107821.
+20.   Mahaki, M.; Mattsson, M.; Salmanzadeh, M.; Hayati, A. Experimental and numerical simulations of human movement effect
+      on the capture efficiency of a local exhaust ventilation system. J. Build. Eng. 2022, 52, 104444.
+21.   Zhao, D.F.; You, X.Y. Cooking grease particles purification review and technology combination strategy evaluation for com‐
+      mercial kitchens. Build. Simul. 2021, 14, 1597–1617.
+22.   Zhang, A.W.; Deng, N.; Shen, C.Y.; Hao, R.; Liu, J.; Wang, Y.; Long, Z. Survey study on Chinese commercial kitchen exhaust
+      fume systems in Tianjin. Build. Environ. 2020, 171, 106629.
+23.   Gao, M.X.; Zhu, Y.; Yao, X.; Shi, J. Dust removal performance of two‐stage electrostatic precipitators and its influencing factors.
+      Powder Technol. 2019, 348, 13–23.
+24.   Li, S.S.; Zhang, S.Y.; Pan, W.X.; Long, Z.; Yu, T. Experimental and theoretical study of the collection efficiency of the two‐stage
+      electrostatic precipitator. Powder Technol. 2019, 356, 1–10.
+25.   Zhu, Y.; Chen, C.; Shi, J.W.; Chen, M.; Shangguan, W. Experimental investigation of the effect of collection length in a
+      two‐stage electrostatic precipitator for removal of PM2.5. Chem. Eng. J. 2021, 421, 127797.
+26.   Wang, L.N.; Xiang, Z.Y.; Stevanovic, S.; Ristovski, Z.; Salimi, F.; Gao, J.; Wang, H.; Li, L. Role of Chinese cooking emissions on
+      ambient air quality and human health. Sci. Total Environ. 2017, 589, 173–181.
+27.   Gao, J.; Cao, C.; Zhang, X. Volume‐based size distribution of accumulation and coarse particles (PM0.1–10) from cooking fume
+      during oil heating. Build. Environ. 2013, 59, 575–580.
+28.   Jaworek, A.; Marchewicz, A.; Sobczyk, A.T.; Krupa, A.; Czech, T. Two‐stage electrostatic precipitators for the reduction of
+      PM2.5 particle emission. Prog. Energy Combust. Sci. 2018, 67, 206–233.
+29.   Liu, Y.; Dong, J.K.; Wang, Y.; Zheng, W.; Jiang, Y. Numerical investigation on the influence of natural make‐up air in Chi‐
+      nese‐style residential kitchen on indoor environment in a partitioned household. Sustain. Energy Technol. Assess. 2021, 46,
+      101244.
+30.   Benchikh, L.H.A.E.; Poncet, S.; Fellouah, H. CFD modeling of the CO2 capture by range hood in a full‐scale kitchen. Build.
+      Environ. 2020, 183, 107168.
+31.   Xie, W.H.; Gao, J.; Lv, L.P.; Cao, C.; Hou, Y.; Wei, X.; Zeng, L. Exhaust rate for range hood at cooking temperature near the
+      smoke point of edible oil in residential kitchen. J. Build. Eng. 2022, 45, 103545.
+32.   Zhao, Y.; Chen, C.; Zhao, B. Is oil temperature a key factor influencing air pollutant emissions from Chinese cooking? Atmos.
+      Environ. 2018, 193, 190–197.
+33.   Liu, Y.; Li, H.X.; Feng, G.H. Simulation of inhalable aerosol particle distribution generated from cooking by Eulerian approach
+      with RNG k‐epsilon turbulence model and pollution exposure in a residential kitchen space. Build. Simul. 2017, 10, 135–144.
+34.   Choi, H.Y.; Park, Y.G.; Ha, M.Y. Numerical simulation of the wavy collecting plate effects on the performance of an electro‐
+      static precipitator, Powder Technol. 2021, 382, 232–243.
+35.   Gao, W. Numerical simulation of particle migration in electrostatic precipitator with different electrode configurations. Powder
+      Technol. 2020, 361, 238–247.
+

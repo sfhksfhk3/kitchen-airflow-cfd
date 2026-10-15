@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "python_packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "gmsh": "4.15.2",
+    "meshio": "5.3.5",
+    "matplotlib": "3.10.8",
+    "plotly": "7.1.0",
+    "pypdf": "6.10.0",
+    "markdown-it-py": "4.2.0",
+    "playwright": "1.62.0",
+    "pillow": "12.3.0"
+  },
+  "openfoam": "OpenCFD v2406",
+  "docker_image_digest": "sha256:dd5aa20630a55722663bf83ba0cb74870cba130081303e32e3865007fa2aa35a",
+  "browser": "/usr/bin/chromium",
+  "font": "Noto Sans CJK",
+  "OpenFOAM_RR_J_kmol_K": 8314.47006650545,
+  "density_export_constant_verification": "OpenCFD2406 fundamentalConstants.C NA and etc/controlDict k; exported cell mass independently matches native diagnostics to ~1e-10 relative"
+}

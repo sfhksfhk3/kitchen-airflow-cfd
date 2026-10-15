@@ -1,0 +1,52 @@
+{
+  "overall_status": "COMPLETED",
+  "updated_utc": "2026-10-15T12:52:04.333609+00:00",
+  "latest_user_request": "接續已保存工作，避免重算已完成時段，完成OpenFOAM油滴／熱流比較及交付",
+  "original_assets_preserved": [
+    "/workspace/kitchen_compare",
+    "/workspace/kitchen_sim"
+  ],
+  "project": "/workspace/kitchen_openfoam",
+  "solver": "OpenCFD OpenFOAM2406 transient finite volume, custom kitchenAerosolFoam",
+  "primary_cases_completed": 8,
+  "primary_end_time_s": 240,
+  "sensitivity_cases_completed": 4,
+  "sensitivity_end_time_s": 140,
+  "heat_each_burner_W": 2000,
+  "cooking_heat_and_emission_stop_s": 120,
+  "independent_diameters_um": [
+    0.1,
+    0.3,
+    1,
+    3,
+    10
+  ],
+  "particle_mass_balance_passed_cases": 8,
+  "maximum_particle_mass_balance_relative_error": 4.352747908891667e-10,
+  "numerical_sensitivity_rows": 20,
+  "delivered_files": [
+    "deliverables/openfoam_oil_analysis_zh.pdf",
+    "deliverables/kitchen_oil_openfoam_interactive_3d.html",
+    "deliverables/all_figures_1to1.pdf",
+    "deliverables/openfoam_results.zip",
+    "deliverables/openfoam_cases_sources.zip"
+  ],
+  "archive_hashes_file": "deliverables/archive_verification.json",
+  "progress_logs": [
+    "batch_resume.log",
+    "regrid_resume.log",
+    "regrid_terminal.log",
+    "finish_pipeline_final.log",
+    "viewer_color_review.log"
+  ],
+  "scientific_limits": [
+    "Numerical checks are not experimental validation.",
+    "Assumed fan operating volumes, not a fully coupled fan/duct prediction.",
+    "Strict thin-cell mesh quality checks retain failed items; complete-history grid independence not demonstrated.",
+    "Closed-door reconstructed energy residuals remain material; late-stage refinement and smaller-step sensitivity provided.",
+    "No pan/board solid conduction or storage, flame radiation, phase change, coagulation or inertial impaction.",
+    "Walkway is inside kitchen; no external residential corridor geometry."
+  ],
+  "remaining_tasks": [],
+  "resume_instruction": "All authorized calculation/export work completed. Reuse deliverables; do not rebuild completed cases. Native restart state is latest time directory including aerosolState."
+}

@@ -1,0 +1,3 @@
+kitchenAerosolSimpleFoam.C
+
+EXE = /workspace/kitchen_openfoam/bin/kitchenAerosolSimpleFoam

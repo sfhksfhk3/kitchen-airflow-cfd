@@ -1,0 +1,113 @@
+{
+  "room": {
+    "length": 3.3,
+    "depth": 1.65,
+    "height": 2.2
+  },
+  "counter": {
+    "x0": 0.7,
+    "depth": 0.6,
+    "height": 0.9
+  },
+  "hood": {
+    "x0": 1.55,
+    "x1": 2.45,
+    "y0": 0.0,
+    "y1": 0.3,
+    "z": 1.6,
+    "width": 0.9,
+    "depth_assumed": 0.3
+  },
+  "burners": [
+    [
+      1.8,
+      0.3,
+      0.9
+    ],
+    [
+      2.2,
+      0.3,
+      0.9
+    ]
+  ],
+  "doors": {
+    "width": 0.9,
+    "height": 2.2,
+    "y0": 0.7,
+    "y1": 1.6,
+    "closed_gap_m": 0.005,
+    "homogenized_inlet_height_m": 0.1
+  },
+  "fan": {
+    "free_delivery_m3_s": 0.5,
+    "max_static_Pa": 1300,
+    "curve_assumption": "p=1300*(1-(Q/0.5)^2)",
+    "discharge_coefficient_assumed": 0.6
+  },
+  "physics": {
+    "rho": 1.184,
+    "cp": 1006.0,
+    "ambient_C": 25.0,
+    "gravity": 9.81,
+    "beta": 0.003354,
+    "nu_molecular": 1.56e-05,
+    "nu_t_assumed": 0.005,
+    "Pr_t": 0.85,
+    "alpha_molecular": 2.2e-05,
+    "sensible_heat_each_W": 2000.0,
+    "wall_heat_transfer_W_m2K": 3.0
+  },
+  "cases": [
+    "both_open",
+    "both_closed",
+    "left_open",
+    "right_open"
+  ],
+  "case_labels": {
+    "both_open": "兩門全開",
+    "both_closed": "兩門全關（每門底縫 5 mm）",
+    "left_open": "左開右關",
+    "right_open": "右開左關"
+  },
+  "assumptions_zh": [
+    "房間 3.3×1.65×2.2 m；可用檯面長 2.6 m，自 x=0.7 m 至3.3 m。",
+    "每個燃氣爐向空氣放熱 2000 W，雙爐同時使用共4000 W，為使用者更新值。",
+    "頂吸煙機寬0.9 m、深0.3 m，距灶面0.7 m；前緣只在煙機寬度內設長10 cm向下45°擋板。",
+    "擋板厚度未提供，按2 mm薄板幾何近似，使用貼合擋板的四面體網格。",
+    "高櫃深0.6 m，上櫃深0.3 m；門沿深度方向位置 y=0.7–1.6 m 仍按草圖估計。",
+    "各門宽0.9m高2.2m；全關按每扇門底5mm縫，室內入流仍以0.10m高帶鋪展，未解析門縫噴流。",
+    "風機曲線仍採二次假設 p=1300[1−(Q/0.5)²]、孔口係數0.6，未含风管和滤网阻力。",
+    "固定有效渦黏性0.005m²/s、湍流普朗特數0.85、示蹤物Sc_t=0.7，皆未經量測校準。",
+    "油煙為無沉降的被動氣體示蹤物，兩爐等量；濃度以總排放率歸一化，不作真實mg/m³或健康風險判斷。",
+    "示蹤物釋放120s後停止，清除階段保持風機與4000W熱負荷不變；不是熄火後完整瞬態熱衰減。",
+    "入口環境25°C、无室外風壓，牆壁向25°C環境以3 W/m²K散熱。"
+  ],
+  "numerics": {
+    "element": "P1/P1 tetrahedral",
+    "momentum": "SUPG/PSPG + grad-div 0.5 m²/s + energy backflow stabilization",
+    "heat": "Galerkin with symmetric conservative algebraic edge diffusion",
+    "mesh_target_m": 0.16,
+    "purpose": "preliminary conditional scenario comparison"
+  },
+  "upper_cabinet_depth_m": 0.3,
+  "baffle": {
+    "length_m": 0.1,
+    "down_angle_deg": 45.0,
+    "thickness_m_assumed": 0.002,
+    "extent": "only hood width 0.9m",
+    "origin": "hood front underside"
+  },
+  "tracer": {
+    "total_release_reference_units_s": 1.0,
+    "source_equal_share": true,
+    "molecular_diffusivity_m2_s": 1e-05,
+    "Sc_t": 0.7,
+    "cooking_duration_s": 120.0,
+    "clearance_duration_s": 900.0,
+    "dt_s": 1.0,
+    "interpretation": "passive gas-like tracer, no droplet deposition, normalized concentration per unit total source rate; hold heat and flow constant during tracer decay"
+  },
+  "layout": "center",
+  "layout_label": "檯面中央",
+  "layout_center_x_m": 2.0
+}

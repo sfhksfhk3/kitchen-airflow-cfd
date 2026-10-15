@@ -1,0 +1,18 @@
+[
+  {
+    "case": "center_both_closed",
+    "physical_time_s": 21.6364816703,
+    "maxCo": 12,
+    "maxDeltaT_s": 0.04,
+    "recorded_utc": "2026-10-15T11:19:26.739415+00:00",
+    "requirement": "Validate against maxCo3 and maxDeltaT0.02 on matched saved state"
+  },
+  {
+    "case": "corner_both_closed",
+    "physical_time_s": 10.1148105626,
+    "maxCo": 12,
+    "maxDeltaT_s": 0.04,
+    "recorded_utc": "2026-10-15T11:38:56.888452+00:00",
+    "requirement": "Validate against maxCo3 and maxDeltaT0.02 on matched saved state"
+  }
+]

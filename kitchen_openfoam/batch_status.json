@@ -1,0 +1,66 @@
+[
+  {
+    "case": "center_both_closed",
+    "status": "complete",
+    "returncode": 0,
+    "last_time_s": 240.0,
+    "runtime_wall_s": 49.29989695549011,
+    "log": "/workspace/kitchen_openfoam/cases/center_both_closed/run_20261015_124147.log"
+  },
+  {
+    "case": "center_both_open",
+    "status": "complete",
+    "returncode": 0,
+    "last_time_s": 240.0,
+    "runtime_wall_s": 15.376617193222046,
+    "log": "/workspace/kitchen_openfoam/cases/center_both_open/run_20261015_124147.log"
+  },
+  {
+    "case": "center_left_open",
+    "status": "complete",
+    "returncode": 0,
+    "last_time_s": 240.0,
+    "runtime_wall_s": 0.739513635635376,
+    "log": "/workspace/kitchen_openfoam/cases/center_left_open/run_20261015_124456.log"
+  },
+  {
+    "case": "center_right_open",
+    "status": "complete",
+    "returncode": 0,
+    "last_time_s": 240.0,
+    "runtime_wall_s": 1140.588538646698,
+    "log": "/workspace/kitchen_openfoam/cases/center_right_open/run_20261015_113559.log"
+  },
+  {
+    "case": "corner_both_closed",
+    "status": "complete",
+    "returncode": 0,
+    "last_time_s": 240.0,
+    "runtime_wall_s": 1783.6476492881775,
+    "log": "/workspace/kitchen_openfoam/cases/corner_both_closed/run_20261015_113636.log"
+  },
+  {
+    "case": "corner_both_open",
+    "status": "complete",
+    "returncode": 0,
+    "last_time_s": 240.0,
+    "runtime_wall_s": 1263.8816030025482,
+    "log": "/workspace/kitchen_openfoam/cases/corner_both_open/run_20261015_115500.log"
+  },
+  {
+    "case": "corner_left_open",
+    "status": "complete",
+    "returncode": 0,
+    "last_time_s": 240.0,
+    "runtime_wall_s": 1510.0483572483063,
+    "log": "/workspace/kitchen_openfoam/cases/corner_left_open/run_20261015_120620.log"
+  },
+  {
+    "case": "corner_right_open",
+    "status": "complete",
+    "returncode": 0,
+    "last_time_s": 240.0,
+    "runtime_wall_s": 1539.0921308994293,
+    "log": "/workspace/kitchen_openfoam/cases/corner_right_open/run_20261015_121604.log"
+  }
+]

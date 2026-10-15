@@ -1,0 +1,1578 @@
+Lawrence Berkeley National Laboratory
+Lawrence Berkeley National Laboratory
+
+Title
+THERMOPHORESIS OF PARTICLES IN A HEATED BOUNDARY LAYER
+
+Permalink
+https://escholarship.org/uc/item/22f5r6cz
+
+Author
+Talbot, L.
+
+Publication Date
+1979-11-01
+
+
+
+
+ eScholarship.org                           Powered by the California Digital Library
+                                                            University of California
+                                                                                    LBL-1 0113 (!
+                                                                                     Preprint
+
+
+
+
+           Submitted to the Journal of Fluid Mechanics
+
+
+           THERMOPHORESIS OF PARTICLES IN A HEATED BOUNDARY LAYER
+
+
+           L. Talbot, R. K. Cheng, R. W. Schefer, and D. R. Willis
+
+
+           November 1979
+
+
+
+
+   TWO-WEEK LOAN COPY
+This is a         Circulating Copy
+which may                      two weeks.
+    a personal               copy, call
+Tech. Info. Division, Ext. 6782.
+
+
+
+
+          Prepared for the U.S. Department of Energy under Contract W-7405-ENG-48
+                                     DISCLAIMER
+
+This document was prepared as an account of work sponsored by the United States
+Government. While this document is believed to contain com~ct information, neither the
+United States Government nor any agency thereof, nor the Regents of the University of
+California, nor any of their employees, makes any wan·amy, express or implied, or
+assumes any legal responsibility for the accuracy, completeness, or usefulness of any
+information, apparatus, product, or process disclosed, or represents that its use would not
+infringe privately owned rights. Reference herein to any specific commercial product,
+process, or service by its trade name, trademark, manufacturer, or otherwise, does not
+necessarily constitute or imply its endorsement, recommendation, or favoring by the
+United States Government or any agency thereof, or the Regents of the University of
+California. The views and opinions of authors expressed herein do not necessarily state or
+reflect those of the United States Government or any agency thereof or the Regents of the
+University of California.
+        Thermophoresis of particles in a heated
+                    boundary layer
+
+                           by
+
+                      L. TALBOT
+         Mechanical Engineering Department and
+            Lawrence Berkeley Laboratory,
+              University of California
+             R. K. CHENG and R. W. SCHEFER
+             lawrence Berkeley Laboratory
+                   and D. R. WILLIS
+           Mechanical Engineering Department,
+              University of California
+
+
+
+
+   A laser-Doppler velocimeter study of velocity profiles in
+the laminar boundary layer adjacent to a heated flat plate
+revealed that the seed particles used for the LDV measurements
+were driven away from the plate surface by thermophoretic
+forces. causing a particle-free region within the boundary
+layer of approximately one half the boundary layer thickness,
+Measurements of the thickness of this region were compared
+with particle trajectories calculated according to several
+theories for the thermophoretic force. It was found that the
+theory of Brock, with an improved value for the thermal slip
+coefficient, gave the best a~reement with experiment for low
+Knudsen numbers, ~/R = O(lo- ). where ~ is the mean free path
+and R the particle radius.
+   Data obtained by other experimenters over a wider ranqe of
+Knudsen numbers are compared, and a fitting formula for the
+thermophoretic force useful over the entire range 0 ~ ~/R ~ oo
+is proposed which agrees within 20-25% with the majority of
+the available data.
+1.   Introduction
+
+     The application of Laser-Doppler-Velocimetry (LDV) to gas flows
+requires the introduction of seeding particles as light scatterers.
+fur accurate LDV measurements, the seed particles must follow the fluid
+flow faithfully.    Workers in the field, as for example, Durst, Melling
+and Whitelaw (1976) have called attention to many of the kinds of forces
+acting on seed particles which might cause their motions to depart from
+the fluid motion.    The force of chief concern in most applications is
+the viscous drag force, but others, such as electrostatic, gravity,
+centrifugal, acoustic, diffusiophoretic and thermophoretic forces could
+conceivably play a role in influencing particle motion.      In what follows,
+we describe an experiment in which the thermophoretic force plays a
+dominant role, and in fact severely limits the application of the LDV
+technique.   However, the experiment does provide an opportunity to
+estimate the magnitude of the thermophoretic force and to compare it with theo-
+retical predictions under conditions which apparently have not been
+investigated before.    The literature on thermophoresis which is rather
+extensive contains a number of conflicting results, both theoretical and
+experimental.   We have therefore, in additon to reporting our own results,
+undertaken what we hope will be a useful review of the existing theo-
+retical and experimental work on this problem.
+
+
+
+
+2.   Theoretical Background
+
+      Thermophores is is the term describing the phenomenon wile rein sma 11
+particles, such as soot particles, aerosols or the like, when suspended
+                                                                                2
+
+
+in a gas in which there exists a temperature gradient ~T. experience a
+force in the direction negative to that of ~T. A common example of the
+phenomenon is the blackening of the glass globe of a kerosene lantern;
+the temperature gradient established between the flame and the globe
+drives the carbon particles produced in the combustion process towards
+the globe, where they deposit.   Thermophoresis is of practical importance
+in many industrial applications, such as in thermal precipitators, which
+are somet·j mes more effective than e1ectros tati c precipitators in removing
+sub-micron sized particles from gas streams.
+     The fundamental physical processes responsible for the phenomenon
+of thermophoresis were first investigated by Maxwell (cf. Kennard, 1938),
+in an attempt to explain the radiometer effect.    Maxwell showed that at
+an unequally heated solid boundary in contact with a gas, if the mean
+free path is not negligibly small in comparison to a characteristic
+dimension of the solid. molecules impinging obliquely on a small element
+of area of the boundary will deliver more tangential momentum to the wall
+if they come from the hotter region of the gas than if they come from the
+colder region (unless the reflection is specular),     The net result of
+this unequal tangential momentum transfer is that a shear stress is
+exerted by the gas on the wall in the direction opposite to ~~~ the
+temperature gradient parallel to the wall in the gas,     Also, since an
+equal and opposite shear stress is exerted by the wall upon the gas, a
+flow of the gas adjacent to the wall, called thermal slip or thermal
+creep, occurs in the direction toward the hotter regions, unless a
+pressure gradient is imposed to resist the motion,
+     One of the earliest attempts to apply these ideas to the calculation
+of forces on spherical particles in a gas at rest in which there exists
+                                                                              3
+
+
+a temperature gradient is that of Epstein (1929) who derived expression
+for.the thermophoretic force and the velocity acquired by the particle
+in the slip flow regime (Knudsen number A/R :'51), * For this regime
+Epstein derived the following expression for the thermophoretic force
+FT on a spherical particle,
+
+
+                                                                       (1)
+
+
+
+
+in which R is the radius of the particle, ~ is the gas viscosity, p the
+gas density, v = ~/p, T0 the mean gas temperature in the vicinity of
+the particle, ~T the temperature gradient in the gas, and kg and kp the
+thermal conductivities of the gas and particle respectively, ** We shall
+see shortly how this result is related to that obtained from a more
+complete theory,
+     Epstein's result has been found to be in reasonably good agreement
+with experiments for A/R :'51 for particles of low thermal conductivity,
+such that kg/k p - 0(1), but it seriously underestimates the thermal
+force on particles of high thermal conductivity, kp >>kg, which
+according to (1) should experience much smaller forces (cf, Schadt and
+
+*We shall use for the mean free path the viscosity-based value~ A= 2w/pc
+ with c = I&RT/TI the mean mo1ecular speed~ and~ the specific gas constant.
+
+** In the case of polyatomic gases, one should use the translationa1
+                                                       11              11
+
+
+
+
+  thermal conductivity, which in the simple kinetic theory is given by
+                                                                                     4
+
+
+Cadle, 1 1), For example, thermophoretic fo~ces on sodium chloride
+particles nearly two orders of magnitude larger than is predicted by (l)
+have been reported by Schadt and Cadle and Derjaguin et al, (1966),
+        A number of attempts have been made to improve upon the Epstein
+analysis in order to resolve the discrepancy between theory and experi-
+ment for high thermal conductivity particles.          These attempts fall into
+three categories;
+  (i)     11
+               hydrodynamic 11 analysis based on Navier-Stokes-Fourier theory.
+          with slip-corrected boundary conditions;
+ (ii)     analysis based on higher-order kinetic theory approximations to the
+          continuum equations and boundary conditions;
+(iii)     analysis which employs phenomenological equations based on postu-
+          lates of irreversible thermodynamics.
+Of these three approaches, the first is the simplest (and as we shall
+see, the one which yields the most satisfactory results), hence it will
+be of use to outline briefly the method employed,
+        The hydrodynamic analysis was first carried out in a complete form
+by Brock (1962).         The problem is posed as follows.   An ambient temperature
+distribu on in the gas is assumed of the form (taking Vin the
+x-direction)
+
+
+
+
+                                                                             ( 2)
+
+
+
+
+where spherical polar coordinates r~ e, with origin at the center of the
+stationary spherical particle are employed, and e is measured from the
+                                                                              5
+
+
+positive x-axis.   The temperature fields in the gas and in the particle
+are assumed to obey Laplace's equation~
+
+
+
+
+                                                                       ( 3)
+
+
+
+
+together with the heat flux boundary condition at the surface of the
+sphere
+
+
+
+
+                                                                       (4)
+
+
+
+
+and the temperature-jump boundary condition
+
+
+
+
+                                                                       (5)
+
+
+
+
+where Ct is a numerical factor of order unity which must be obtained
+from kinetic theory,   Its actual value as well as those of other boundary
+condition coefficients will be given subsequently.
+     The gas velocity field in the neighborhood of the sphere is assumed
+to be governed by the Navier-Stokes equations in the Stokes approximation.
+Using the Stokes stream function ~we have
+                                                                           6
+
+
+
+
+                                                                    ( 6)
+
+
+
+
+                                        u    =          ~           (7)
+                                         e       r sine Br
+
+
+
+with the boundary condition at r + oo being
+
+
+
+
+                                                                    (8)
+
+
+
+
+where U is the free stream velocity~ assumed to be in the x-direction,
+The radial velocity boundary condition at the surface of the sphere is
+the usual one9
+
+
+
+
+                           ( ur ) r"'R ~ 0
+                                                                   (9a)
+
+
+
+
+However, the tangential velocity boundary condition, incorporating the
+effects of velocity slip and thermal slip, is
+
+
+
+
+                                                                   (9b)
+                                                                                   7
+
+
+The first term on the right hand side is the velocity slip correction
+boundary condition, with em being the momentum exchange coefficient.
+The second     rm represents the contribution    thermal slip to the gas
+velocity at the surface of the sphere, with Cs being the thermal slip
+coefficient.    Both em and C5 are numerical factors of order unity which
+must be obtained from kinetic theory.
+     The system of equations and boundary conditions (2) - (9), when
+solved for the force F in the x-direction on the sphere, yields the
+result
+
+
+
+
+                                                                         ( 10)
+
+
+
+
+The first term on the right hand side of (10) is Fv, the familiar
+Basset (1888) slip correction to the Stokes viscous drag formula.       The
+Basset formula is accurate only for ~/R $ 0.1, and experiments      r
+A/R < 1 favor the Stokes-Cunningham expression
+
+
+
+                               6n· J.1 U R
+                           F = -..6.-~~                                  ( 11 a)
+                            V   l+A.l
+                                        R
+
+
+
+which in actuality is a low Knudsen number approximation to the Millikan
+drag formula
+                                                                                 8
+
+
+                       F =      6n H U R                                 (llb)
+                        V l + ~(A+Be-C R/A)
+
+
+
+in which the constants have the values A= 1.20, B = 0.41, C = 0.88,
+when the mean free path is defined as    A = 2~/pc.
+     The second term on the right hand side of (10) is FT. the thermo-
+phoretic force on the spherical particle caused by the thermal slip
+effect.   We note that FT is in the negative x-direction, opposite to the
+direction of VT.    If Fv and Fr are the only forces acting on the particle,
+then Fv + FT = 0, and the value of U which yields this equality, the
+thermophoretic velocity UT, is thus (with a minus sign added to change
+the frame of reference to that of the particle moving with respect to a
+stationary gas)
+
+
+
+
+                                                                         ( 12)
+
+
+
+
+Although UT is the quantity of concern to many investigators dealing with
+thermophoresis, in the general case when the particle may be undergoing
+acceleration or deceleration, or subjected to additional forces,
+FT + Fv   * 0 and both force components must be separately identified.
+     The expression for FT contained in (10) was first obtained by Brock.
+Although he chose reasonable values for em and Ct (the best kinetic
+theory values for complete accommodation appear to be em"" 1.14, Ct = 2.18,
+obtained by Loyalka and Ferziger, 1967, Loyalka, 1968), he used the value
+                                                                                 9
+
+
+Cs ~ 3/4~ a value first obtained by Maxwell on the basis of simple
+mean free path arguments,     More refined kinetic theory analysis by
+Ivchenko and Yalamov (1971) yielded the result Cs = 1,17. for complete
+thermal accommodation.
+     Brock's result~ with Cs ~ 3/4. is found not to be in good agreement
+with experiment for particles of high thermal conductivity. although the
+discrepancy is much less than that obtained using the Epstein result,
+The latter, incidentally, may be seen to be a limiting form of Brock's
+result.  If we take k /kp >> A/R. which could be the case for particles
+                     9
+of low thermal conductivity in the near-continuum regime, then with
+Cs = 3/4 we obtain from the second term on the right hand side of (10)
+the Epstein result (l),     This explains why Epstein 1 s result was generally
+accepted for many years, until data on particles for which kg/k p << 1
+became available.   Epstein's formula is in fact the formal limit A/R = 0
+of the hydrodynamic theory,     However, for particles of high thermal
+conductivity, k /kp << 1, we observe that as soon as A/R departs signi-
+               9
+ficantly from zero the A/R terms in FT will dominate over the terms in
+k /kp, and FT will be widely different from the Epstein limit. As an
+ 9
+example. for sodium chloride particles in air. k /kp ~ 0.004. and hence
+                                                9
+                            2
+even for A/R as small as 10- the terms in A/R are the controlling ones,
+This behavior is similar in some aspects to that found in singular
+perturbation problems,
+     The Brock analysis. being based on the continuum equations with
+slip-corrected boundary conditions. can be expected to be applicable,
+roughly speaking. only for A/R $ 0.1. since this is the limit of
+applicability of the Basset drag formula.      In an attempt to extend the
+theory to higher Knudsen number Dwyer (1967) calculated FT according
+                                                                                 10
+
+
+to the 13-moment equations of Grad.      He found good agreement with
+experiment for particles of low thermal conductivity, but found that the
+analysis predicted an initial reversal of the force FT in the near-
+continuum regime for particles of high thermal conductivity~ because of
+a property of the 13-moment equations wherein heat transfer normal to a
+boundary gives rise to normal stresses on the boundary.      This reversal
+in FT is not observed in the experiments.
+     Vestner, KUbel and Waldmann (1975) used a set of moment equations
+similar to those employed by Dwyer, but with different boundary condi-
+tions which involved unknown surface interaction coefficients. and which
+they determined by fitting to experimental data,      Thus a self-consistent
+test of their results is not possible.
+     A quite different approach was used by Derjaguin and Yalamov (1965~
+1966) who presented a theory of thermophoresis based on an application
+of irreversible thermodynamics and Onsager's reciprocity relations.
+first to the problem of thermo-molecular pressure drop in a capillary,
+and then extended by (questionabl~ analogy to a partition of porous
+spheres.   They obtain for the thermophoretic velocity
+
+
+
+
+                                                                        ( 1 3)
+
+
+
+
+It is seen that this expression is similar to (12)~ except for missing
+the factor (1+2 em A/R), if Cs = 1 ,5,    The corresponding thermophoretic
+force would be obtained by inserting this expression for the velocity UT
+into the Basset drag formula,
+                                                                                      11
+
+    Derjaguin and Yalamov are critical of Brock's work but for totally
+unjustifiable reasons~ since it is a self-consistent first-order Knudsen
+number calculation whose only flaw is the use of Maxwell's first estimate
+for the value of C5 • They also make a statement regarding " ... the false-
+ness of the very foundations of Epstein's theory .. ,   11
+                                                             ,   which as was shown
+earlier is in fact a particular limit of the hydrodynamic theory~ and
+they assert quite i ncorrect1y that ''.,, the coefficient in the thermal
+slip formula must have a value about 35 times smaller than that obtained
+by Maxwell,"   It is of course quite a different matter to question
+whether a first-order theory adequately describes a particular phenomenon,
+than to assert that such a theory is fundamentally incorrect.             It may
+be noted that on theoretical grounds, the information derived from analysis
+based on the Onsager relations cannot exceed that obtained at the
+Navier-Stokes level of approximation within the framework of kinetic theory,
+since the assumed linear relationships between fluxes and gradients are
+valid only to this approximation.   Moreover~   irreversible thermodynamics
+yields no information on the surface interaction coefficients.
+     It would of course be desirable to have an expression for the
+thermophoretic force (or velocity) which could be employed over the entire
+range of Knudsen number 0 ~ A/R ~ oo ,   However, it seems unlikely that
+this will be achievable through theoretical analysis, though possibly
+Monte-Carlo type numerical modelling might provide some useful results.
+A much simpler approach, one which has been successful in other rarefied
+gas dynamics problems, is that of constructing an 'interpolation formula
+which matches the theory in the near-continuum and free molecular
+(collisionless) limits.   The collisionless limit for FT (Waldmann, 1959,
+1961) is, for complete thermal accommodation (see Appendix),
+                                                                                              12
+
+
+                                      32 R2                      R2 (VT)x
+        1i m
+        1-./R-?OO
+                    Fr   = Fr = ~ ~
+                             00   15 -c kg (VT) X = - 21r JJ v 1/\    T
+                                                                       0
+                                                                                      ( 14)
+
+
+
+
+and the near-continuum limit is~ from Brock,
+
+
+
+
+                                                                                      ( 15)
+
+
+
+
+Now, although there is no justification for doing so, if we examine the
+limit         (15) as A/R + oo, we find fortuitously that except for the
+multiplicative factor (C 5 /Cm)' it is identical to (14),                  Since Cs/Cm ~
+(1 .17)/(1 .14) = 1,03, only a 3 percent error is involved in using (15)
+in the limit A/R + oo, and this suggests that (15) itself might represent
+a useful interpolation formula,                  To obtain an expression for the thermo-
+phoretic velocity, which might be useful over the entire range of
+Knudsen number, then, we can equate FT to the Millikan drag formula, or
+the slightly simpler expression
+
+
+
+                                  F. ::: _      6n ]J U R                             ( 16)
+                                  V                  9    A
+                                             1 + -( 4+n /2T 'R
+
+
+
+which is exact in the limits A/R = 0 and~= oo, and differs by less than
+10 percent from the Millikan formula over the entire range of A/R.                    Then
+                                                                                     13
+
+
+equating (15) and (16) and changing the sign of U as before we obtain
+for the thermophoretic velocity,
+
+
+
+
+                                                                           ( l ?a)
+
+
+
+
+The analogous expression obtained by using the Millikan formula is
+
+
+
+
+                                                                           ( l7b)
+
+
+
+
+3.   Experimental Background
+
+     Most recent experimental determinations of the thermophoretic force
+or velocity have been carried out by one of two methods.      One method
+employs a modified Millikan cell (Rosenblatt and LaMer, 1946; Schmitt,
+1959; Schadt and Cadle, 1961) wherein a charged particle is held at rest
+or its velocity measured under the combined action of gravity, thermal
+and electrostatic forces.      The other method (Derjaguin et al, 1976)
+involves the observation of particles moving along a closed narrow channel,
+either horizontal or vertical, under the action of a parallel or transverse
+temperature gradient. A difficulty in both of these methods is that the
+                                                                                 14
+
+
+gas through which the particles move may not itself be at rest, due to
+free convection and thermal creep effects~ and corrections for such
+gas motions may have to be made.     Also, microscopic observations of
+particle trajectories can be very tedious.
+     The measurements of thermophoretic velocities by Derjaguin et al.
+(1976) using both the horizontal and vertical slit methods and a jet
+method were found to be correlated by the formula
+
+
+
+
+                uT = -                                                   ( 18)
+
+
+
+
+which is the Derjaguin-Yalamov result with the factor 3 revised downward
+to 2.2 (implying a value of C5 ~ l .1, close to the theoretical value).
+We shall discuss these and other experiments subsequently.
+
+
+
+
+4.   Present Experiment
+
+      Our experimental work on thermophoresis had its inception as part
+of a study on catalyzed combustion in laminar boundary layer flow over
+a heated flat plate.      As part of this study, it was decided to use LDV
+to measure the velocity distribution within the boundary layer.      It was
+quickly discovered, however, that this was impractical because the
+thermophoretic forces on the seeding particles introduced for the LDV
+measurements were sufficiently large to cause significant migration of
+of the particles away from the plate, with the result that a substantial
+portion of the boundary layer was in effect devoid of particles.
+                                                                                  15
+
+
+However, it appeared that despite the farlure of the LDV technique to
+yield velocity measurements within the inner portions of the boundary
+layer, the data obtained might prove useful in terms of a quantitative
+measurement of the thermophoretic force, and this has in fact turned out
+to be the case.
+     The 11 parti cl e~free" region which we observed and reported earlier
+(Schefer, et al., 1978) is exemplified by the data on particle count
+rate within the boundary layer shown in figure l.     In the absence of
+thermophoresis, the particle count rate in a variable-density boundary
+layer should have the same variation withy as pu/(pu)    00
+                                                              ,   where p and u
+are the fluid density and x-component of velocity and the subscript oo
+denotes free stream conditions,   Under the influence of appreciable
+thermophoretic forces, the seed particles through the boundary layer are
+driven away from the wall.   However, due to the variation in the temper-
+ature gradient aT/8y across the boundary layer, particles close to the
+wall experience larger thermophoretic forces than those in outer region,
+and as a consequence the observed particle count rate in the outer
+region is higher than would be predicted by pu/(pu)oo scaling, but drops
+to essentially zero approximately midway through the boundary layer.
+One observes that in the outer region of the boundary layer, where the
+particle count rate was adequate. the LDV n~asurements were in good
+agreement with the theoretically calculated velocity profile.           lhe
+thickness of the particle-free region, which we define as the locus of
+the surface within the boundary layer where the particle count rate
+drops to essentially zero, is proportional to the average thermophoretic
+force acting on the particles, and thus this average force can be studied
+under varying conditions of wall temperature Tw and free stream velocity
+                                                                               16
+
+
+
+U by means of the LDV system.
+00•
+
+
+
+      The details of the expe mental set-up have been reported earlier
+(Robben, et al .• 1977).   The flat plate is a 15 mm thick, 75 mm x 75 mm
+square quartz plate with a sharp leading edge.     Surface heating is
+achieved through the use of     ve vacuum-deposited platinum heating strips.
+The plate is placed in a vertical stream of air originating from a 50 mm
+diameter convergent nozzle attached to a stagnation chamber.     The
+system is capable of producing values ofTw up to 1300°K, and Uoo up to
+about 4 m/s.
+      The laser velocimeter is of the intersecting dual-beam type with
+real fringes.   It consists of an argon ion laser operated at 514 nm.
+an equal optical path beam splitter which produces a beam separation of
+50 mm. and a 250 mm focal length focussing lens.     The radius of the
+measuring volume created by the intersecting beams is approximately 100 vm.
+The light scattered from the particles is detected by an RCA 931A photo-
+multiplier oriented at 30° from the forward direction.     Doppler bursts
+are observed on an oscilloscope. and their frequencies measured with a
+TSI 1090 tracker unit.
+      Aluminum oxide particles of nominally 2.0 vm diameter were used as
+the seed particles,   These particles are manufactured (Linde Co.) as
+abrasives for polishing, and have a quite uniform size distribution.
+The particles were suspended in water which was atomized by a collision-
+type atomizer. producing individual particle-carrying droplets which
+were introduced into the stagnation chamber by an airstream.     The water
+surrounding the particles evaporated rapidly, leaving the particles
+dispersed throughout the flow exiting from the stagnation chamber. To
+ensure that the particles did not form into clusters in this process,
+                                                                            17
+
+
+
+size distribution of the particles emerging from the stagnation chamber
+was measured by means of a "Virtual Impactor 11 particle-sizing device
+developed at the Lawrence Berkeley Laboratory.   It was found that 80
+percent by weight of the particles were less than 3 ~m in diameter, with
+the average being approximately 2 vm.
+     Experimental results were obtained over a range of wall temperatures
+from 670 to l280°K, at free stream velocities of from 1.2 to 4.4 m/s.
+The temperature gradient at the wall, (VT)yw• was of the order of
+10 6°K/m under these conditions. The Knudsen ~umber A/R based on a
+particle radius of 1 ~m varied from about 0.15 near the wall to 0.07
+in the free stream,   Most of the measurements were made with the plate
+surface heating beginning at the leading edge, but some measurements
+were obtained with the heating started at 13 mm downstream from the
+leading edge in order to investigate whether the leading edge had any
+specific effect on the thickness of the particle-free region.
+     The outer edge of the particle free region was established by
+scanning velocity profiles at different axial stations along the plate,
+from 4 mm to 40 mm from its leading edge.   The LDV system was first set
+to track in the free stream, where the particle count rate was typically
+about 600 sec- 1 , and then the probe volume was traversed across the
+boundary layer towards the plate surface.   The boundary of the particle-
+free region was established as the y-1ocation within the boundary layer
+where the frequency tracker ceased to track a Doppler frequency,     The
+uncertainty in the determination of this location was about 100 ~m,
+which was essentially the diameter of the probe measuring volume,
+     Typically results for the case of heating over the entire plate
+surface are shown in figure 2.   The particle-free region thickness oPF
+                                                                              18
+
+
+
+appears to scale with that of the hydrodynamic boundary layer, since the
+loci of u;uoo = 0,5 for the three cases shown fit the data quite nicely,
+The ratio 8pF/6BL of the thickness of the particle-free region to the
+boundary layer thickness appears to be sensibly independent of Tw and Uoo
+at least over the range of values of these parameters encompassed by the
+data.    The error bounds for the data for Tw = 870°K are representative
+   all of the data.
+        Results for surface heating beginning at x "' 13 mm are shovm in
+figure 3.     (The curves represent a theoreti ca 1 result which will be
+described subsequently.)     The effect of the leading edge on 8PF may be
+assessed by comparing the value of 8PF at equal distances downstream
+from the location where heating was initiated,      For example, the value
+of 6PF at x "' 27 mm for the data of figure 1 with Uoo = 3.5 m/sec,
+Tw = 870°K~ may be estimated to be 6PF ~ .96 mm, whereas from figure 2
+we estimate that at x = 40 mm, 8PF ~ .90 mm.      These two values of 6PF
+agree within the uncertainty of measurement, and thus it may be concluded
+that the plate leading edge does not have a specific influence on the
+thickness of the particle-free region.
+
+
+
+
+        The theoretical calculation of 6PF as a function of x is relatively
+straightforward, given the magnitudes of the forces Fv and FT acting on
+a particle~ since 6PF(x) is analogous to the trajectory of a typical
+particle entering the boundary layer at a position y ~ 0, very close to
+the wall.     The lateral motion of such a particle, assuming it to be
+spherical, is governed by the equation
+                                                                                   19
+
+
+                    4      3      d v
+                    3 1T R Pp crf "' FT + Fy                               ( 19)
+
+
+
+
+where Pp is the particle density, and vp the particle velocity relative
+to the fluid, in they-direction.        We assume that the particle velocity
+in the x-direction is the same as u, the fluid velocity, so that the
+x-component of the particle relative velocity is zero.       If vp is deter-
+
+mined, then given u and v from boundary layer calculations, the particle
+trajectory may be calculated.      Since our Knudsen numbers were of the
+order of 10-l or smaller, the viscous force Fv as given by either the
+Basset, Stokes-Cunningham or Millikan formulas were about the same. We chose
+to use the Basset expression.      Various expressions available for FT,
+as discussed earlier, were employed.
+     A finite difference computer code (Schefer, 1979) previously
+developed to solve the equations of fluid flow over a heated plate was
+modified to calculate particle trajectories.       In the finite difference
+scheme, the flow field was divided into a rectangular grid of ~x and ~y,
+of variable grid size.     At each x = m ~x location, the boundary layer
+profile was calculated to obtain the local values of p, T, ~~ , v. kg•
+u and v.   Using these local values, the finite difference form of (19)
+was solved to obtain vp.       Test particles were inserted in the free
+stream ahead of the plate evenly spaced at 0.05 mm in y from Yp = 0.05 mm
+to 2 mm, thus giving forty separate particle trajectories.       Since the
+laser probe measuring volume was approximately 100 vm in diameter the
+initial location Yp "' .05 mm chosen for the 11 Wall test particle"
+represents the minimum y-distance for the LDV measurements. For each
+                                                                                     20
+
+particle~   they-location as a function of x was calculated from Yp,n =
+Yp,n.-l + VpL'lt, where L\t = um~n"'"'l/L\:x and ~,n"l is the flow velocity in
+the x-di recti on      x-grid location m and particle location YP,n-l'      Inter-
+polation between mesh pain       was used to obtain local properties.     The
+particle properties were taken to be kp = 30.25 J/m sec°K, and pp = 4.0 x
+10 3 kg/m 3 . For these particles, kg/kp = 0(10- 3), thus they are repre-
+sentative of the higher conductivity case.       The overall uncertainty in the
+trajectory calculations is estimated to be less than 5 percent.
+      Figure 4 shows a few of the particle trajectories calculated for
+the case of Tw = 870°K, Uoo = 3.5 mjsec, with heating beginning at the
+leading edge.       The Brock expression for FT given by the second term on
+the right hand side of (10) was us        (of course, replacing (VT)x by aT;ay
+and using local values of the flow properties obtained from the boundary
+layer calculations) with coefficients Cs = 1.17, em= 1.14, and Ct = 2.18,
+The trajectory for the test particle inserted closest to the wall, at
+y = 0.05 mm,    may be compared with our measured values of oPF"      It can be
+seen that near the leading edge, this wall-particle trajectory is in
+reasonably good agreement with the data.       However, at downstream locations
+oPF seems to be larger than is predicted by the calculation.         This down-
+stream underprediction of oPF was also found in other comparisons.
+      One explanation for the poorer agreement between the ca1culated
+wall-particle trajectory and the measured values of oPF at downstream
+locations is that the method used for determination of oPF tends to
+report the position within the boundary layer where the particle count
+rate starts to decrease, rather than where the count rate falls to zero.
+Near the leading edge, the decrease in particle count rate occurs quite
+abruptly and steeply and therefore the error involved is relatively small.
+                                                                                 21
+
+
+Farther downstream the decrease in particle count rate within the boundary
+layer occurs more gradually with decreasing distance from the plate
+surface, and the error in the location of oPF can be significantly
+greater.   Thus the data in this region can be expected to represent an
+upper bound on oPF'
+     A few of the computed particle trajectories in the case where
+heating was initiated 13 mm downstream from the leading edge of the plate
+are shown in figure 3, the expression used for FT being the same as
+before.    The agreement between the wall particle trajectory and the
+measured values of oPF is very satisfactory, although sliqht under-
+prediction of oPF is evident at x = 40 mm.     It is interesting to note
+that within the region where there is no wall heating there is still an
+outward displacement of the particle due to the fluid drag on the par-
+ticles associated with the v-component of velocity.
+     Wall particle trajectories for the experimental conditions of
+figure 3 were also calculated according to the formulas proposed by
+Oerjaguin and Yalamov (13) and by Derjaquin et al. (18), using the
+Basset drag formula to convert UT to FT.     These trajectories are plotted
+in figure 5, alonq with the trajectories obtained from the Brock formula with
+Cs = 1.17 and 3/4~ and the experimental data.    The comparison between theory
+and experiment favors the Brock formula with Cs = 1.17, although there
+is not too much difference between the several theoretical curves.      The
+reason for this is that the present experiments are restricted to the
+Knudsen number range A/R $ 10-l, and in this region the theories differ
+from one another mainly in the value of Cs employed.
+                                                                              22
+
+
+5.   Dependence of FT and UT on ~/R
+
+     We have seen that the present experiments do not provide much
+information on the dependence of PT or UT on Knudsen number.      We there-
+fore shall examine the results of other experiments in an attempt to
+assess the useful ness of Cl5) or C1   n in describing the thermophoreti c
+phenomenon over a wide range of ~/R.
+      Rosenblatt and LaMer were apparently the first investigators to
+study the thermal forces on ·individual droplets using a modified
+Millikan cell.     They worked with tricresyl phosphate (TCP), a low con-
+ductivity liquid, in air, and covered the range 0 ~ ~/R ~ 1 .5.     They
+concluded that their data were in reasonable agreement with the Epstein
+formula.    A similar conclusion was reached by Saxton and Ranz (1952)
+using paraffin and castor oil droplets. More recently. measurements
+were reported by Schmitt on silicone oil droplets in argon (kq/kp = .135)
+which covered the range 0 ~ A/R < 3. Schmitt•s data for the thermo-
+phoretic force on six different sized droplets collapse into one curve
+(cf. his figures 6 and 7) when expressed in terms of the reduced force
+FT/R 2VT ~· ~/R.     We have plotted his data as the dashed curve in
+figure 6.
+      Schadt and Cadle performed experiments similar to Schmitt•s on
+several aerosols, of both high and low thermal conductivity.      Their
+data on mercury droplets in air (k /kp = .00226) cover the widest range
+                                  9
+of Knudsen number among the high conductivity aerosols they studied
+and we have shown their individual data points in figure 6.     Schadt and
+Cadle used the Stokes-Cunningham drag formula to determine the droplet
+radii, and we have indicated by arrows how much the data points are
+displaced upward if the Millikan formula is used instead.      Also plotted
+                                                                                23
+
+
+as a dotted line in the figure is the mean of the data they obtained with
+TCP droplets.
+        fbr comparison~ we have plotted in figure 6 ~/R 2 vT as given by (15)
+and by Epstein•s formula (l) for both the Schmitt and the Schadt-Cadle
+data.    It is seen that whereas the Epstein formula is in rough agreement
+with the Schmitt data and with Schadt and Cadle 1 s TCP data~at least for
+A/R < 1, it gives values nearly two orders of magnitude smaller than the
+Schadt-Cadle mercury data.     On the other hand, (15) agrees well with the
+trends of both the Schmitt and Schadt-Cadle data, and in both cases
+gives values about 20-25 percent above the experimental values (taking
+into account the Millikan correction to the Schadt-Cadle results).       The
+Waldmann A/R + ro asymptotes differ for the two plots of (15) because of
+the differing properties of the gases in which the particles were sus-
+pended in the two experiments.
+        Comparison can also be made with the data of Derjaguin et al. (1966,
+1976) on oil and NaCl aerosols.     These authors report their results in
+terms of the thermophoretic velocity UT as shown in figure 7, which is
+a replot of figure 2 of their paper.     Also plotted for comparison are
+curves giving u7 T0 /vVT according to (l?a) and (18).     (An obvious
+plotting error in figure 2 of their 1976 paper has been corrected.)        It
+is seen that these data are in better agreement with the Derjaguin et al,
+correlation than with the presently-proposed fitting formula,      The fact
+that the u7 data fall for the most part considerably above the collision-
+less limit implies that the corresponding thermal forces exceed FTro'
+In fact, if we insert the expression for UT given by (18) into the
+Millikan drag formula, we obtain the curves shown in figure 6 identified
+as Derjaguin et a1.     Evidently, the data of Derjaguin et al. are in
+                                                                                  24
+
+
+
+substantial disagreement with the Schmitt and Schadt-Cadle data.          The
+correlation formula (18) would appear to have incorrect behavior for
+large A/R since it predicts velocities (and forces) about double the
+collisionless limit values.     It is not clear from the information given
+in their paper how Derjaguin et al. (1966) determined the size and
+speed of fall of their aerosol droplets.       The Basset formula. the use of which
+is implied in the paper by Derjaguin and Yalamov, becomes inaccurate
+for A/R ~ 0.1. and this in fact as noted earlier fixes the range of
+validity of the self-consistent hydrodynamic theory.         Since. as we have
+already observed, results such as (18) which derive from arguments
+based on irreversible thermodynamics cannot in principle yield informa-
+tion beyond that obtained from Navier-Stokes theory, the range of
+validity of (18) might also be expected to be 0 ~ A/R ~ 0.1.          From a
+comparison of their correlation formula with Brock's result (12), with
+Cs = 1.1 used in both cases, Derjaguin et al. (1976) conclude that the
+inclusion of isothermal velocity slip (which gives rise to the factor
+( 1 + 2CmA/R) in the denominator of ( 12)) 11 • • • dras ti ca lly impairs the
+agreement between theory and experiment 11 , by which we understand that
+they believe that the phenomenon of velocity slip should be ignored.
+This is an unwarranted conclusion, however, since it is based on the
+use of Brock's result far beyond its range of applicability.          The truth
+of the matter is that we do not as yet have any data in the range
+0 ~ A/R ~ 0.1 which are sufficiently accurate to permit us to distin-
+guish decisively bebieen (12) and (18), given the same values of Cs and
+ct in the two equations.
+     l~e   are unable to offer an explanation for the discrepancies between
+the Derjaguin et al. data and those of Schmitt and Schadt-Cadle.          The
+                                                                               25
+
+
+former authors suggest that the differences may be ascribed to greater
+errors due to natura 1 convection inherent in the Mi 11 i kan cell method
+as compared to their methods but their arguments are hardly persuasive.
+The fact that their data appear to asymptote for large A/R to values
+considerably in excess of the collisonless limit suggests that the
+converse might in fact be the case.
+     Although our fitting formula (15) appears to be reasonably satis-
+factory for the entire range 0 ~ A/R ~ oo, it is interesting to examine
+what changes result from assuming that the molecule-surface interactions
+do not correspond to the perfectly diffuse, complete thermal accommoda-
+tion case.   It is difficult to imagine that gas molecules reflected from
+the surface of a liquid droplet or an irregularly shaped NaCl crystal
+could contain any significant specular component, which would result in
+an altered value of em.    It is however conceivable that molecules
+arriving from regions of the gas having differing temperatures might
+not fully accommodate to the particle temperature, thus resulting in a
+value of the thermal accommodation coefficient a less than unity.      (See
+the Appendix for the kinetic theory definition of this coefficient.)
+     In the near-continuum regime, a enters into the values of both Ct
+and Cs,   The first of these is given by Loyalka, for Maxwell molecules.
+as
+
+
+
+                   ct "' 1 ~(2 ~a)(l + 0. 162la)                        (20)
+
+
+
+
+and the second, according to Ivchenko and Yalamov, is given by
+                                                                             26
+
+
+                    C ~ l (0 .6264 + 0. 3736a)                        (21)
+                     s 2 1.2528 + 0,0306a
+
+
+
+A reduction in the value of a to less than unity in the near-continuum
+regime (A/R « l) would mainly affect the value of Fr given by (15)
+through a reduction in the value of C5 , thus lowering the value of FT.
+However, for values of A/R of 0(1)~ since Ct increases as a is decreased,
+the decrease in Cs would be offset to greater or lesser degree. depending
+on the value of k /kp• by the increase in the ratio of the two factors
+                 9
+containing Ct in the expression for Fr.
+     On the other hand, it is shown in the Appendix to this paper that
+if a more general model than was employed by Waldmann is used to analyze
+the free-molecular thermophoretic drag, a lovvering of a results in an
+increase in Fr in the limit A/R + oo,   Thus it appears that no signifi-
+cant overall improvement in the fit provided by (15) would be achieved
+by abandoning the very plausible assumption that a= 1.
+
+
+
+
+                           Acknowledgement
+
+     The authors acknowledge with gratitude the contributions of
+Dr. Y. C. Agrawal and Dr. F. Robben to this work in its early stages.
+This work was supported by the Division of Basic Energy Sciences of
+the U.S, Department of Energy under Contract No. W-7405-ENG-48.
+                                                                                  27
+
+
+Appendix:   Free molecular thermophoretic sphere drag with incomplete
+            thermal accommodation
+
+     In order to calculate the free molecular thermophoretic drag force
+it is necessary to model the manner in which molecules are emitted from
+the surface,   Waldmann chose to use Maxwell's classical model in which
+a fraction of the molecules are reflected specularly, and the rest are
+reflected with a Maxwellian distribution characterized by the wall
+temperature,   Waldmann's rather surprising conclusion was that the
+thermophoretic drag was independent of the fraction specularly reflected,
+In the subsequent analysis a somewhat different model is chosen,       The
+reflected molecules are assumed to be reemitted with a Maxwellian
+distribution specified by a (varying) temperature Te which will only be
+equal to the wall temperature if there is complete thermal accommodation,
+This model assumes complete momentum accommodation but allows for the
+possibility of incomplete thermal accommodation,       This model is probably
+more realistic than Waldmann 1 s for actual particle surfaces with mole-
+cules having very different masses from those of the gas molecules.
+     The sphere is considered at rest in a stream where the distribution
+function for molecules striking the body is given by the Chapman-Enskog
+expression (for monatomic molecules)
+
+
+                                             c       < 0                 (A 1 )
+                                                 n
+
+
+where c is the nondimensional molecular speed and cn is the velocity
+normal to the surface measured positive out of the surface and
+
+
+                                                                         (A2)
+                                                                               28
+
+
+where~   is the molecular speed and Dis the (small) nondimensional
+parameter
+
+
+
+
+                                                                        (A3)
+
+
+
+
+It is assumed that the free stream temperature gradient is in the
+x-direction.   When expressed in terms of the mean free path it is found
+that
+
+
+                                                                        (A4)
+
+
+
+The unperturbed distribution function is given by
+
+
+
+
+                                                                        (A5)
+
+
+
+
+It is assumed that the molecules are reflected from the surface with a
+Maxwelli.an distribution specified by a variable local number density
+nand temperature Te9 i.e.
+                                                                               29
+
+
+Neglecting second order small quantities this is written
+
+
+
+
+                                                   cn > 0               (A6)
+
+
+
+
+where                        and
+
+
+
+
+In general both ~n;n 0 and ~Te/T 0 are functions of the position on the
+body which is defined by the angle S~ figure A.
+        A relationship between ~njn 0 and ~Te/Te is established by imposing
+the condition that the normal velocity of the gas is zero on the surface
+of the sphere.     This becomes
+
+
+
+
+                                                                        (A7)
+
+
+
+
+and as there is no net flux due to f = f 0
+                                                                        30
+
+
+Using the coordinate sys tern shown in figure A
+
+
+
+
+              cX = - c(cosecosS + sinecos¢sinS)                 (A9)
+
+and
+              3    n          2 2
+           f d ~ =
+            0      3 2 exp(-cj )c de sineded¢
+                   Tf
+
+
+
+The first integral in (A8) is now readily shown to be zero as
+
+                        2Tf
+
+                   J d¢ ex
+                   0
+                                   = -   2nc cosecoss
+
+and
+                        00        2
+                      4  2
+                   J c (c -5/2)e-c de = 0
+                   0
+
+
+The second integral in (A8) is therefore also zero and using
+
+                                   2                    2
+                   ~ c5 e-c de = 2 ~ c3 e-c de
+                    0                          0
+
+
+it is found that
+
+
+
+                                                                (AlO)
+
+
+or
+
+                              6n   _l('6Te)
+                                    2     T
+                                           0
+Consequently the outgoing distribution function can be rearranged as
+
+
+
+
+                                                                       (A 11 )
+
+
+
+
+The remaining unknown quantity, ~Te/T 0 , is determined by using the
+definition of the thermal accommodation coefficient
+
+
+
+
+                                                                       (A12)
+
+
+
+
+where f* has the same value as f for incoming molecules but corresponds
+to reemission with a Maxwellian distribution function characterized by
+the actual surface temperature Tp(R,S),    In addition Tp has to satisfy
+
+
+                                          0< r < R                     (Al3)
+
+
+and the energy balance at the surface, namely
+
+
+
+
+                                                                       (Al4)
+
+
+
+
+Using (Al), (A9) and (All) the energy transport out of the surface
+reduces to
+                                                                                 32
+
+
+
+                                                                        (AlS)
+
+
+
+
+The formal solution of (Al3), (Al4) and (Al5) is
+
+
+
+
+                                                                        (A 16)
+
+
+
+
+where H is given by
+
+
+
+
+         H"" (5Til/ 2/B)D/(l + 2Til/ 2k T /(p (2kT /m) 3/ 2 Ra))        (Al?)
+                                       p 0   0    0
+
+
+
+
+In the free molecular limit the second term in the denominator is >> 1 and
+
+
+
+                                     3/2
+
+         H
+             "' (L)(D p ( 2kT /m )
+                16
+                        0      0
+                            kp T0
+                                           Rex) = _ ]_ kg Ra
+                                                    2 kp T
+                                                               (.rr)
+                                                                8x oo
+                                                                        (A 18)
+                                                           0
+
+and (A16) simplifies to
+
+
+
+
+using X = - rcosS.
+                                                                               33
+
+
+However9 it is sufficient to note that as VR + oo, H/D + 0 so (A15)
+reduces to
+
+
+
+
+                                                                      (A 19)
+
+
+
+
+Finally the force in the x-direction per unit area on an element of the
+surface is given by
+
+
+
+
+                                                                      (A20)
+
+
+
+
+which on using (Al), (A8) and (A20) reduces to
+
+
+
+
+      dFx               ( D           2     5 l/?.      2       )
+      dA = (p 0 kT 0 /m) TI 112 (l+cos S) t n      D cos S(l-a)       (A21)
+                         4
+
+
+
+The total force in the x-direction is then
+
+
+
+                 n ( dF )      2
+      Fx =          dAx     (2nR sinS)dS
+             J
+             0
+
+
+
+                                                 1 2
+         =
+              · 2 }(p
+             (2nR   · kT /m) ( TI D (2+2/3)
+                                      .       5n I 0(2/3)(1-a))
+                                            t ·
+                      0 0
+                              4 112             32
+                                                                                  34
+
+
+
+Using the definition of D and c = (8kT 0 /nm) 112 this reduces to
+
+
+
+
+                             32)(R 2) (aT)( . 5n )
+                   F = -
+                    x       (15 c kg -ax 1 + -32 ( l-a)
+                             -· -                                         (A22)
+
+
+
+
+The term (5n/32)(1-a) represents an increase in the free molecular drag
+over the value obtained by Waldmann in the case when (effectively)
+a = 1 or Te = Tp (R ~ 0f.J ) = To ,
+                                                                                35
+
+                             References
+
+l.    Basset, A. B. 1888 A treatise on hydrodynamics. Vol. 2, p. 270.
+         Deighton, Bell &Co., Cambridge. Reprinted by Dover Publications,
+         New York~ 1961.
+2.    Brock, J. R. 1962 J, Colloid Sci }I. 768,
+3.    Derjaguin, B. V. & Yalamov, Yu. 1965 J. Colloid Sci ~. 555 and
+        1966 J. Colloid Sci ~. 256.
+4.    Derjaguin, B. V., Storozhilova, A.I. & Rabinovich, Ya. I. 1966
+        J. Colloid Interf. Sci. ~~ 35,
+5.    Derjaguin, B. V., Rabinovich, Ya. I., Storozhilova, A. I. &
+        Scherbina, G. I. 1976 J. Colloid Interf. Sci.~~ 451.
+6.    Durst, Fq Melling, A., & ~Jhitela~tl, J. H. 1976 Principles and
+        practice of 1aser-Dopp ler anemometryA Academic Press, N.Y.
+ 7.   Dwyer, H. A. 1967 Phys. Fluids JQ, 976.
+8.    Epstein, P. S, 1929 Z. Physik 54, 537.
+ 9.   Ivchenko, I. N. &Yalamov, Yu. I. 1971 Russ. J. Phys. Chern~. 317.
+10.   Kennard, E. H. 1938 Kinetic theory of gases.    ~1cGraw-Hill   Book
+         Co. N.Y.
+11.   Loyalka, S. K. &Ferziger, J. H. 1967 Phys. Fluids lQ, 1833.
+12.   Loyalka, S. K. 1968 J. Chern. Phys. 48, 5432.
+13.   Robben, F., Schefer, R., Agrawal, Y. &Namer, I, 1977 Catalyzed
+         combus on in a flat plate boundary layer I. Experimental
+         measurements and comparison with numerical calculations,
+         Western States Section, Combustion Institute Paper No. 77-37,
+         Stanford, CA, Also Lawrence Berkeley Laboratory Report 6841,
+14.   Rosenblatt, P. & LaMer, V. K. 1946 Phys. Rev. ZQ, 385.
+15.   Saxton, R, L, & Ranz, W. E. 1952 J. Appl. Phys. 23, 917.
+16,   Schadt, C, F, & Cradle, R. D,    J. Phys. Chern. §E_, 1689,
+
+17.   Schefer, R. W., Agrawal, Y,, Cheng, R. K,, Robben, F. & Talbot, L. 1978
+         Motion of particles in a thermal boundary layer, Lawrence
+         Berkeley Laboratory Report-7843.
+18.   Schefer, R, W. 1979 Combustion and Flame, in press,
+19.   Schmitt, K. H. 1959 Z, Naturfor. 14a, 870.
+                                                                       36
+
+
+References (cont' d)
+
+20.   Vestner, H., KObel, M. &Waldmann, L. 1975 Nuevo Cim. 258~ 405.
+21.   Waldmann~   L. 1959 Z. Naturfor. 14a, 590.
+22. Waldmann, l. 1961 in Rarefied Gas Dynamics (l. Talbot, ed.).
+       Academic Press, N.Y., 323.
+  L.,
+  (l)
+-+-
+             I .0
+  (l)
+
+
+  0
+  !!-.
+  0
+  c._
+             OaB
+  !!-.
+
+
+
+
+  ~
+  !,.,_,     0$6                 u                                                               ---1
+-o
+  0
+
+ c::
+                                u                                                                               ro
+                                                                                                              0::
+  ~
+  0                                                                  u                                        -!-)
+                                                                                                                c
+                                                                                                                :::>
+.....c::l
+             04                                                                                         300   u
+                                                                                                                0
+
+
+-a
+  (l)                                                                u)                                         <I.J
+                                                                                                              ,.._
+                                                                                                                u
+                                                                                                              .,.....
+  t--....1
+
+  0
+
+  L...
+             02                                                                                         150
+  0
+                    i
+                        -   -                    I            I           I               I         I 0
+             010
+                    0                 LO            2.0                                  3.0
+                                     1stance ab e plate (                          )
+                                                                                       XBL 779-2009
+Fig. l                                  , pa   cle count rate,     mass       ux                                        w
+                                                                                                                        '-!
+                                        =l     oK,    = 2.62   '
+             2
+
+
+
+
+......__..
+   >,
+
+             l
+
+
+
+
+             0~------~------~------~------~------~------~~------~------~---J
+                                               x(
+                 g. 2 Measured          free region, oPF• as a     on              lead1
+                      edge                comme     at x = 0;          °K, Uoo =
+                         = 11    =    =     °K,    = 3.0    .    curves represe            = 0.5
+                          in
+                                                                                                   w
+                                                                                                   ro
+     3
+
+
+
+
+     2
+
+
+
+
+--
+E
+E
+-'
+>,
+
+
+
+
+         0   10
+
+.Fig. 3                      hea    be   nning   x < 13 mm,
+                           3.5     . Curves        test       cles
+                      different    locations     edge, usi           k
+                  cs : : 1 . 17.
+          2
+
+
+
+
+..--..
+   E
+   E
+...__,.
+   >,
+
+
+      l       I   ·-
+
+
+
+
+     0 ~------~------~--------~------~------~--------L-------~-------L~
+                                                          X
+   Fig. 4         Meas        plate surface heatinq be nninq at x =    =     °K,     = 3.5    .        s are
+                  trajecto   culated       st pa   cles inserted i     ow at     fferent y-locations     tream
+                              edge, usi           k      ssion        C5 = 1.17.
+
+
+                                                                                                                 ~
+                                                                                                                 0
+         2
+
+
+
+
+...__.
+ »                                                                                                       --------------
+                                                                ------ -·-·-·-·-·-·-
+                                                                            _   ....... ¢li""""' _ _ _
+
+
+
+
+                                                         ;"'
+                                                               ...~.,~ .. ~ .
+
+                                                    ~-------------------
+
+         0
+                                               20
+                                                    x(
+Fig. 5       tween meas      values                        expe                                                             wa 11
+                   es caicul             nq to several                                                                  curves:
+             ,    =    1.17;          • Cs-=         ;                                                      t         equa on (18);
+             n        lamov,      uation { 3).
+
+
+
+
+                                                                                                                                      +::>
+                                                                                                                                  42
+
+
+
+
+          10.
+                                        !   I
+                                      ff
+                                (eJI
+           8.
+                                I1:   (f)
+
+
+
+
+L()
+  0        6.
+      X
+
+
+
+
+Fig. 6 Reduced thermophoretic force as a function of Knudsen number. Data: o, Schadt &Cadle, NaCl; ---- Schadt & Cadle, TCP;
+       ----Schmitt, snicone oil. Analytical results: ---equation (lSi, (a) Schadt-Cadle data, (b) Schmitt data;
+                ---Epstein formula, equation (l), (c) Schmitt data, (d) Schadt-Cadle d a t a ; - . - · - Derjaguin et al., from
+                equation (18), (e) oil droplets, (f) NaCI.
+                                                                                   43
+
+
+
+
+1.0
+
+
+
+
+0.5
+
+
+
+
+  0
+      0                                             2                          3
+                                        AIR
+Fig. 7 Thermophoreti c ve 1ocity as a function of Knudsen number. Derjagui n
+       data; 0 oil droplets; o NaCl aerosol.           equation (l7a),
+       (a) oil droplets, (b) NaCl; ----equation (18), (c) oil droplets,
+       (d) NaCl;-- ·--·--Waldmann limit A/R + oo,
+                                                     44
+
+
+
+
+    +
+     n
+
+
+
+
+                                                 X
+
+
+
+
+Fig. A Notation for freemolecular integration.
+
