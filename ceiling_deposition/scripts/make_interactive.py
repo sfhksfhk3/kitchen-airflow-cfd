@@ -6,9 +6,9 @@ from process_ceiling import ROOT,OUT,size_weights,DS
 from foam_mesh import mesh_geometry
 from visualize_ceiling import main_cases,label
 
-def main():
+def main(output_path=None, case_names=None, scenario_text=None):
  data={}
- cases=main_cases()+[f'{l}_closed_stick{a}' for l in ['corner','center'] for a in ['0.1','0.5']]
+ cases=case_names if case_names is not None else main_cases()+[f'{l}_closed_stick{a}' for l in ['corner','center'] for a in ['0.1','0.5']]
  for case in cases:
   if not (OUT/case/'summary.json').exists():continue
   f=pd.read_csv(OUT/case/('ceiling_complete_event_faces.csv' if (OUT/case/'ceiling_complete_event_faces.csv').exists() else 'ceiling_faces.csv'));s=json.loads((OUT/case/'summary.json').read_text());g=mesh_geometry(ROOT/'runs'/case);ids=f.original_face_id.to_numpy(dtype=int)
@@ -36,6 +36,10 @@ def main():
  for(const id of ['case','gsd','dose','days','events','clean'])document.querySelector('#'+id).addEventListener('change',render);document.querySelector('#top').onclick=()=>Plotly.relayout('plot',{'scene.camera':{eye:{x:0,y:0,z:2.5},up:{x:0,y:1,z:0},projection:{type:'orthographic'}}});document.querySelector('#angle').onclick=()=>Plotly.relayout('plot',{'scene.camera':{eye:{x:1.5,y:-1.8,z:1.7},up:{x:0,y:0,z:1},projection:{type:'perspective'}}});render();</script></html>'''
  scale=[[i/(len(sequential.Inferno)-1),c] for i,c in enumerate(sequential.Inferno)]
  html=html.replace('__PLOTLY__',po.get_plotlyjs()).replace('__DATA__',payload).replace('__COLORS__',json.dumps(scale))
- (ROOT/'ceiling_deposition_interactive_3d.html').write_text(html)
+ if scenario_text:
+  html=html.replace('驗證未收斂：後段粗／細分支相差約27倍，不能作材料積油量設計值。',scenario_text['warning'])
+  html=html.replace('沿用原OpenFOAM網格與瞬態流場；顯示油滴真正離開空氣、附著在天花的質量。',scenario_text['intro'])
+  html=html.replace('參考情境為兩爐合計14.4 mg/min、排放120秒，即28.8 mg；僅為商用文獻外推，非這個住家的量測。',scenario_text['reference'])
+ (Path(output_path) if output_path else ROOT/'ceiling_deposition_interactive_3d.html').write_text(html)
  print('interactive cases',len(data),'bytes',len(html.encode()))
 if __name__=='__main__':main()

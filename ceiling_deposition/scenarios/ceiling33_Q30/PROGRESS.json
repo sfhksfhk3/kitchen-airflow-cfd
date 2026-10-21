@@ -1,0 +1,18 @@
+{
+  "status": "RUNNING",
+  "completed": 1,
+  "expected": 8,
+  "cases": [
+    {
+      "case": "corner_both_open_T33_Q30",
+      "end_s": 240.0,
+      "Q_late_m3_min": 30.000000100495818,
+      "hood_static_suction_late_Pa": 22.155262201210654,
+      "maximum_suction_Pa": 282.969387234,
+      "exceeds_fan_max_1300Pa": false,
+      "air_mass_residual_abs_p95_kg_s": 7.229894349835e-09,
+      "energy_residual_abs_p95_W": 30.57311918445,
+      "ceiling_fixed_C": 33
+    }
+  ]
+}

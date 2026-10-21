@@ -1,0 +1,17 @@
+[
+  {
+    "case": "baseline",
+    "cpu_seconds": 6.18,
+    "wall_seconds": 14.68757532499967
+  },
+  {
+    "case": "dic",
+    "cpu_seconds": 6.45,
+    "wall_seconds": 12.317249609999635
+  },
+  {
+    "case": "symmetric",
+    "cpu_seconds": 5.57,
+    "wall_seconds": 15.065860392000104
+  }
+]

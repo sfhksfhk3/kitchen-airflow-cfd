@@ -1,0 +1,49 @@
+{
+  "scenario": "ceiling33_Q30",
+  "specified_actual_hood_flow_m3_min": 30,
+  "flow_m3_s": 0.5,
+  "fan_max_static_pressure_Pa": 1300,
+  "ceiling_temperature_C": 33,
+  "initial_air_and_makeup_temperature_C": 25,
+  "heat_to_air_W_per_burner": 2000,
+  "burners": 2,
+  "source_on_s": [
+    0,
+    120
+  ],
+  "observation_end_s": 240,
+  "closed_door_gap_m": 0.005,
+  "prescribed_flow_warning": "Flow imposed at hood; pressure requirement is diagnosed. This is not a validated fan operating point; real duct/filter losses absent.",
+  "particle_diameters_um": [
+    0.1,
+    0.3,
+    1,
+    3,
+    10
+  ],
+  "particle_density_kg_m3": 850,
+  "mass_median_diameter_um": 2.5,
+  "assumed_gsd": 1.5,
+  "aerosol_mass_rate_reference_per_burner_mg_min": 1.8,
+  "aerosol_mass_rate_reference_two_burners_mg_min": 3.6,
+  "aerosol_mass_rate_sensitivity_per_burner_mg_min": [
+    1.1,
+    2.2,
+    7.2
+  ],
+  "reference_event_emitted_mg": 7.2,
+  "rate_interpretation": "Residential Chinese POA paper reports 1.1–2.2 mg/min per dish experiment; applying 1.8 per active burner and adding two sources is an engineering extrapolation, not a measured two-wok emission factor. 7.2 mg/min/head is prior commercial-kitchen CFD assumed oil-droplet reference, retained as separate high-loading scenario. These are sensitivity scenarios, not bounds/confidence intervals on all cooking emissions. POA includes organic aerosol rather than chemically measured pure grease.",
+  "ceiling_sticking_probability_sensitivity_all_materials": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "materials_have_calibrated_sticking_probability": false,
+  "condensation_modelled": false,
+  "primary_output": "mg deposited per mg emitted; five independent monodisperse responses mixed by assumed mass-size distribution",
+  "air_max_dt_open_door_s": 0.1,
+  "air_max_dt_closed_doors_s": 0.04,
+  "time_step_note": "Early opened-door pilot intervals used original maxCo3/maxDt0.05; long opened-door runs use maxCo6/maxDt0.1. Closed maxCo12/maxDt0.04. Native frame interval2s plus checkpoints. Full-event air timestep independence not demonstrated.",
+  "air_max_courant_open": 6,
+  "air_max_courant_closed": 12
+}

@@ -1,0 +1,9 @@
+case,identical_cell_centres,identical_cell_volumes,identical_points,identical_neighbour,identical_internal_faces,external_face_permutation_only,ceiling_temperature_C
+center_both_closed_T33_Q30,True,True,True,True,True,True,33
+center_both_open_T33_Q30,True,True,True,True,True,True,33
+center_left_open_T33_Q30,True,True,True,True,True,True,33
+center_right_open_T33_Q30,True,True,True,True,True,True,33
+corner_both_closed_T33_Q30,True,True,True,True,True,True,33
+corner_both_open_T33_Q30,True,True,True,True,True,True,33
+corner_left_open_T33_Q30,True,True,True,True,True,True,33
+corner_right_open_T33_Q30,True,True,True,True,True,True,33

@@ -1,0 +1,2 @@
+case,end_s,Q_late_m3_min,hood_static_suction_late_Pa,maximum_suction_Pa,exceeds_fan_max_1300Pa,air_mass_residual_abs_p95_kg_s,energy_residual_abs_p95_W,ceiling_fixed_C
+corner_both_open_T33_Q30,240.0,30.000000100495818,22.155262201210654,282.969387234,False,7.229894349835e-09,30.57311918445,33

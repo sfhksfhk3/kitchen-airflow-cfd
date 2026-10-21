@@ -1,0 +1,2 @@
+kitchenCeilingAirFoam.C
+EXE = /workspace/kitchen-airflow-cfd/ceiling_deposition/bin/kitchenCeilingAirFoam
