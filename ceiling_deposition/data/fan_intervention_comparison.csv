@@ -1,0 +1,3 @@
+layout,scope,Q_baseline_m3_s,Q_boost_m3_s,Q_increase_percent,deposition_baseline_reference_mg,deposition_boost_reference_mg,deposition_reduction_percent,difference_mg
+corner,100.0–140 s matched air restart and old aerosol initial state; 120 s source off; not a whole-meal flow sweep,0.2261007480718245,0.2713865873101954,20.029053253722594,3.430465889292653e-07,3.089584833214732e-06,-800.6312649422063,2.7465382442854667e-06
+center,100.2502366522–140 s matched air restart and old aerosol initial state; 120 s source off; not a whole-meal flow sweep,0.22386194921431535,0.2689191231560332,20.12721416026899,1.805612720645106e-07,3.7989488493922904e-06,-2003.9665959126658,3.61838757732778e-06

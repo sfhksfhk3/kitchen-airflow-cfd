@@ -1,0 +1,12 @@
+{
+  "offline_browser_cases": 12,
+  "size_distributions_each_case": 3,
+  "external_HTTP_requests": [],
+  "javascript_errors": [],
+  "interactive_mass_matches_CSV": true,
+  "zero_emission_returns_zero": true,
+  "long_term_cleaning_mass_balance": "PASS",
+  "PDF_pages": 12,
+  "report_front_page_nonconvergence_warning": true,
+  "square_figures": 9
+}

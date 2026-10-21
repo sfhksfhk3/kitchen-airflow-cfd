@@ -1,0 +1,7 @@
+runs/
+tail_sources/
+flow_sensitivity/
+bin/
+verification/*.log
+**/Make/linux*/
+__pycache__/

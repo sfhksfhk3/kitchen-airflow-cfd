@@ -1,0 +1,42 @@
+[
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_fanwindow_baseline",
+    "start": 100.0,
+    "end": 140,
+    "dt": 0.1,
+    "useSavedInitialAerosols": true
+  },
+  {
+    "source": "/workspace/kitchen-airflow-cfd/ceiling_deposition/flow_sensitivity/corner_both_closed_Qtarget120",
+    "name": "corner_fanwindow_boost",
+    "start": 100.0,
+    "end": 140,
+    "dt": 0.1,
+    "useSavedInitialAerosols": true
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_closed",
+    "name": "center_fanwindow_baseline",
+    "start": 100.2502366522,
+    "end": 140,
+    "dt": 0.1,
+    "useSavedInitialAerosols": true
+  },
+  {
+    "source": "/workspace/kitchen-airflow-cfd/ceiling_deposition/flow_sensitivity/center_both_closed_Qtarget120",
+    "name": "center_fanwindow_boost",
+    "start": 100.2502366522,
+    "end": 140,
+    "dt": 0.1,
+    "useSavedInitialAerosols": true
+  },
+  {
+    "source": "/workspace/kitchen-airflow-cfd/ceiling_deposition/flow_sensitivity/corner_both_closed_heatOff100",
+    "name": "corner_fanwindow_heatOff",
+    "start": 100,
+    "end": 140,
+    "dt": 0.1,
+    "useSavedInitialAerosols": true
+  }
+]

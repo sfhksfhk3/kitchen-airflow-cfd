@@ -1,0 +1,8 @@
+{
+  "case": "center_closed_stick0.1",
+  "algebraic_H_s": 1000000000000.0,
+  "method": "frozen-terminal-flow linear clearance resolvent; H is not a physical observation time",
+  "remaining_fraction_of_tail_input_max": 3.9270517054531706e-11,
+  "max_relative_mass_error": 2.679733244242511e-14,
+  "tail_case": "/workspace/kitchen-airflow-cfd/ceiling_deposition/runs/center_closed_stick0.1_clearance_1e12"
+}

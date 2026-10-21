@@ -1,0 +1,21 @@
+{
+  "event_description_zh": "沿用既有短週期：兩爐同開120秒，停止後繼續排風至240秒。不是一頓完整中餐的實測排放量。",
+  "daily_events": [1, 2],
+  "report_days": [30, 180, 365],
+  "emitted_mass_per_event_mg": [1, 7.2, 28.8, 115.2],
+  "primary_display_emitted_mg": 1,
+  "reference_total_rate_mg_min": 14.4,
+  "reference_active_minutes": 2,
+  "absolute_rate_factors": [0.25, 1, 4],
+  "cleaning_interval_days": 30,
+  "cleaning_efficiency_assumed": 0.9,
+  "cleaning_efficiency_sensitivity": [0.5, 0.9, 0.99],
+  "cleaning_timing": "end of day; report both post-clean stock and peak before cleaning",
+  "between_events_assumptions": "All counted deposits remain attached until scheduled cleaning; no resuspension, aging, oxidation, drip, or vapour condensation. Each event has identical flow and particle-size distribution. Residual airborne mass after 240 s is reported separately, not silently assigned to ceiling.",
+  "materials": [
+    {"id": "gypsum_matte", "label_zh": "防潮石膏板＋普通啞光乳膠漆", "sticking_probabilities": [0.1, 0.5, 1.0]},
+    {"id": "gypsum_satin", "label_zh": "防潮石膏板＋耐擦洗 Satin 廚衛漆", "sticking_probabilities": [0.1, 0.5, 1.0]},
+    {"id": "coated_aluminium", "label_zh": "烤漆鋁板", "sticking_probabilities": [0.1, 0.5, 1.0]}
+  ],
+  "material_note_zh": "三種材料使用同一附著率範圍，沒有量測資料支持為某種漆指定較低附著率，亦沒有把可擦洗性當作低沉積。此輪不改材料導熱或表面溫度；另以天花溫差敏感度呈現。所有長期數值為累積模型情境，不是黃變、厚度或壽命預測。"
+}

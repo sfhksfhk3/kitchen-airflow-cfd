@@ -1,0 +1,16 @@
+{
+  "zero_drift_limit": "PASS",
+  "advective_limit": "PASS",
+  "opposing_gravity_suppression": "PASS",
+  "monotonic_normal_drift": "PASS",
+  "implicit_box_mass_conservation_error_kg": 1.5418646617988436e-21,
+  "materials_no_invented_alpha_ranking": "PASS",
+  "units": {
+    "Y": "dimensionless",
+    "phi": "kg/s",
+    "J_dep": "kg/(m2 s)",
+    "M_dep_native": "kg/m2",
+    "M_dep_CSV": "mg/m2",
+    "normalized_M": "(mg/m2)/(mg emitted)"
+  }
+}

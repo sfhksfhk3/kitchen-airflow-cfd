@@ -1,0 +1,15 @@
+{
+  "completed_transient_runs": 43,
+  "completed_clearance_integrals": 13,
+  "primary_cases_with_full_event": 8,
+  "worst_transient_relative_mass_error": 3.433032186642506e-11,
+  "worst_clearance_relative_mass_error": 6.524278614500006e-11,
+  "VTK_complete_event_files_read": 12,
+  "ceiling_grid_sensitivity": "FAILED_ROBUSTNESS_COARSE_FINE_LATE_BRANCHES_DIFFER_ABOUT_27X",
+  "full_history_grid_independence": "NOT_DEMONSTRATED",
+  "strict_mesh_checks": "FAILED_2_CHECKS_IN_REUSED_COARSE_MESH",
+  "experimental_ceiling_deposition_calibration": "NOT_AVAILABLE",
+  "condensable_vapour_model": "NOT_INCLUDED",
+  "native_replay_and_closed_forms": "PASS",
+  "physical_absolute_prediction_confidence": "LOW; conditional model response, not a measured grease exposure or paint-aging prediction"
+}

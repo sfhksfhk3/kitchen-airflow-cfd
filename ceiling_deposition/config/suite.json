@@ -1,0 +1,207 @@
+[
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_open",
+    "name": "corner_both_open"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_open",
+    "name": "corner_both_open_parallel",
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_both_closed"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_both_closed_parallel",
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_left_open",
+    "name": "corner_left_open"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_left_open",
+    "name": "corner_left_open_parallel",
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_right_open",
+    "name": "corner_right_open"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_right_open",
+    "name": "corner_right_open_parallel",
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_open",
+    "name": "center_both_open"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_open",
+    "name": "center_both_open_parallel",
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_closed",
+    "name": "center_both_closed"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_closed",
+    "name": "center_both_closed_parallel",
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_left_open",
+    "name": "center_left_open"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_left_open",
+    "name": "center_left_open_parallel",
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_right_open",
+    "name": "center_right_open"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_right_open",
+    "name": "center_right_open_parallel",
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_closed_stick0.1",
+    "ceilingSticking": 0.1,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_closed_stick0.5",
+    "ceilingSticking": 0.5,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_closed_dt005",
+    "dt": 0.05,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_closed",
+    "name": "center_closed_stick0.1",
+    "ceilingSticking": 0.1,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_closed",
+    "name": "center_closed_stick0.5",
+    "ceilingSticking": 0.5,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_closed",
+    "name": "center_closed_dt005",
+    "dt": 0.05,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_window_frames20",
+    "start": 110,
+    "end": 140,
+    "impactionMode": "parallel",
+    "stride": 20
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_window_ScT05",
+    "start": 110,
+    "end": 140,
+    "impactionMode": "parallel",
+    "SchmidtT": 0.5
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_window_ceiling_cold5",
+    "start": 110,
+    "end": 140,
+    "impactionMode": "parallel",
+    "wallTemperatureOffsetK": -5
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_window_ceiling_warm5",
+    "start": 110,
+    "end": 140,
+    "impactionMode": "parallel",
+    "wallTemperatureOffsetK": 5
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_window_no_thermo",
+    "start": 110,
+    "end": 140,
+    "impactionMode": "parallel",
+    "thermophoresisFactor": 0
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_window_no_inertia",
+    "start": 110,
+    "end": 140,
+    "impactionMode": "parallel",
+    "inertiaFactor": 0,
+    "impactionFactor": 0
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_window_coeff05",
+    "start": 110,
+    "end": 140,
+    "impactionMode": "parallel",
+    "coefficientUpdateSeconds": 0.5
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_window_quad144",
+    "start": 110,
+    "end": 140,
+    "impactionMode": "parallel",
+    "wallQuadrature": 144
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/corner_both_closed",
+    "name": "corner_gridwindow_coarse",
+    "start": 110,
+    "end": 140,
+    "dt": 0.1,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/sensitivity/corner_both_closed_grid",
+    "name": "corner_gridwindow_fine",
+    "start": 110,
+    "end": 140,
+    "dt": 0.1,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/cases/center_both_closed",
+    "name": "center_gridwindow_coarse",
+    "start": 110,
+    "end": 140,
+    "dt": 0.1,
+    "impactionMode": "parallel"
+  },
+  {
+    "source": "/workspace/kitchen_openfoam/sensitivity/center_both_closed_grid",
+    "name": "center_gridwindow_fine",
+    "start": 110,
+    "end": 140,
+    "dt": 0.1,
+    "impactionMode": "parallel"
+  }
+]

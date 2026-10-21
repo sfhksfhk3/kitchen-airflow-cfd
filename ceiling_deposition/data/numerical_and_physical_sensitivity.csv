@@ -1,0 +1,14 @@
+test,scope,baseline,variant,relative_change_percent
+corner_time_step_0.1_to_0.05,full 0–240 s aerosol replay,5.479701784032582e-08,5.97761039026903e-08,9.086417944993187
+corner_late_mesh_refinement,"110–140 s short source pulse, existing coarse/fine coupled flows; not full-history grid independence",5.779702033415547e-09,1.5956131710725652e-07,2660.718739214362
+center_time_step_0.1_to_0.05,full 0–240 s aerosol replay,1.2026899387533897e-06,1.1897569611907542e-06,-1.0753376365683076
+center_late_mesh_refinement,"110–140 s short source pulse, existing coarse/fine coupled flows; not full-history grid independence",1.8088204319299646e-08,4.932984020842991e-07,2627.182827971279
+corner_window_ScT05,110–140 s matched-window aerosol/closure sensitivity,5.779702033415547e-09,6.989347656723019e-09,20.929203898641568
+corner_window_ceiling_cold5,110–140 s matched-window aerosol/closure sensitivity,5.779702033415547e-09,5.876489268661371e-09,1.6746059690663229
+corner_window_no_thermo,110–140 s matched-window aerosol/closure sensitivity,5.779702033415547e-09,5.7754917534640314e-09,-0.07284596899933549
+corner_window_no_inertia,110–140 s matched-window aerosol/closure sensitivity,5.779702033415547e-09,4.498998994996528e-11,-99.22158634320846
+corner_window_frames20,110–140 s matched-window aerosol/closure sensitivity,5.779702033415547e-09,7.973114708337982e-09,37.950272561477114
+corner_window_coeff05,110–140 s matched-window aerosol/closure sensitivity,5.779702033415547e-09,5.779327104716625e-09,-0.006486990103538037
+corner_window_ceiling_warm5,110–140 s matched-window aerosol/closure sensitivity,5.779702033415547e-09,5.748041453656814e-09,-0.5477891347285158
+corner_window_quad144,110–140 s matched-window aerosol/closure sensitivity,5.779702033415547e-09,5.780738515304303e-09,0.01793313708498001
+heat_to_air_off_from100,100–140 s matched coupled-air intervention; warm initial state and emissions until120 retained,3.430465889292653e-07,3.4294569938514604e-07,-0.029409866582308375

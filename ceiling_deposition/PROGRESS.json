@@ -1,0 +1,17 @@
+{
+  "status": "IMPLEMENTATION_AND_RUNS_COMPLETE__PHYSICAL_VALIDATION_LIMITED",
+  "date": "2026-10-21",
+  "transient_runs_complete": 43,
+  "clearance_integrals_complete": 13,
+  "original_fields_preserved": true,
+  "mass_conservation": "PASS",
+  "ceiling_deposition_grid_robustness": "FAILED: late coarse/fine branches differ about27x; not full-history grid convergence",
+  "original_mesh_strict_check": "2 failed checks",
+  "report": "reports/ceiling_deposition_analysis_zh.pdf",
+  "next_work_for_design_grade_quantification": [
+    "time-resolved flow output and full-history grid/near-wall convergence",
+    "measured fan operating point and makeup air",
+    "oil mass-size emission measurement and ceiling coupon calibration",
+    "vapour/particle composition and condensation model if total grease is required"
+  ]
+}

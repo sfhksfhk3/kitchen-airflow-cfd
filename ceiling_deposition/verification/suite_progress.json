@@ -1,0 +1,240 @@
+[
+  {
+    "name": "corner_both_open",
+    "wall_seconds": 147.99177156399992,
+    "max_relative_mass_error": 1.3204215186466334e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_both_closed",
+    "wall_seconds": 190.5158110819999,
+    "max_relative_mass_error": 1.309072403694643e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_both_open_parallel",
+    "wall_seconds": 180.64693447900004,
+    "max_relative_mass_error": 1.3204215186466334e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_left_open",
+    "wall_seconds": 165.91594302600004,
+    "max_relative_mass_error": 1.0739733948941e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_both_closed_parallel",
+    "wall_seconds": 186.49981615699994,
+    "max_relative_mass_error": 1.3091462591065001e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_right_open",
+    "wall_seconds": 151.910458381,
+    "max_relative_mass_error": 1.4149269036308001e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_left_open_parallel",
+    "wall_seconds": 105.55523033600002,
+    "max_relative_mass_error": 1.0739733948941e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_right_open_parallel",
+    "wall_seconds": 109.78286737600001,
+    "max_relative_mass_error": 1.4149269036308001e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_both_open",
+    "wall_seconds": 105.79105820600012,
+    "max_relative_mass_error": 1.207787091904e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_both_open_parallel",
+    "wall_seconds": 115.6300479250001,
+    "max_relative_mass_error": 1.207787091904e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_both_closed",
+    "wall_seconds": 226.70814130099984,
+    "max_relative_mass_error": 7.4027494944668e-12,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_both_closed_parallel",
+    "wall_seconds": 228.134637936,
+    "max_relative_mass_error": 7.4027494944668e-12,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_left_open_parallel",
+    "wall_seconds": 154.634171896,
+    "max_relative_mass_error": 9.219100256197668e-12,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_left_open",
+    "wall_seconds": 191.47816688199987,
+    "max_relative_mass_error": 9.219100256197668e-12,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_right_open",
+    "wall_seconds": 173.43859017600016,
+    "max_relative_mass_error": 7.4257554552534e-12,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_right_open_parallel",
+    "wall_seconds": 168.09889997200003,
+    "max_relative_mass_error": 7.4262724431362e-12,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_closed_stick0.1",
+    "wall_seconds": 132.74711062000006,
+    "max_relative_mass_error": 1.3091462591065001e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_closed_stick0.5",
+    "wall_seconds": 133.61671683399982,
+    "max_relative_mass_error": 1.3091462591065001e-11,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "center_closed_stick0.1",
+    "wall_seconds": 111.9640423840001,
+    "max_relative_mass_error": 7.4027494944668e-12,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_closed_dt005",
+    "wall_seconds": 181.31993135899984,
+    "max_relative_mass_error": 2.2970676363627003e-11,
+    "end_s": 240.0,
+    "status": "PASS"
+  },
+  {
+    "name": "center_closed_stick0.5",
+    "wall_seconds": 120.88660032000007,
+    "max_relative_mass_error": 7.4027494944668e-12,
+    "end_s": 239.99999999999,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_window_frames20",
+    "wall_seconds": 16.050601283000105,
+    "max_relative_mass_error": 2.4959011761052245e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_window_ScT05",
+    "wall_seconds": 12.765753930999836,
+    "max_relative_mass_error": 2.4888830655956495e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_window_ceiling_cold5",
+    "wall_seconds": 11.203690860999814,
+    "max_relative_mass_error": 2.4571917083771728e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_window_ceiling_warm5",
+    "wall_seconds": 12.526375529999768,
+    "max_relative_mass_error": 2.4571917083771728e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_window_no_thermo",
+    "wall_seconds": 13.126010391999898,
+    "max_relative_mass_error": 2.4572563318625224e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_window_no_inertia",
+    "wall_seconds": 13.91840358499985,
+    "max_relative_mass_error": 2.4330612989453715e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_window_coeff05",
+    "wall_seconds": 14.733145030000287,
+    "max_relative_mass_error": 2.4571917083771728e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_window_quad144",
+    "wall_seconds": 13.367327956000281,
+    "max_relative_mass_error": 2.4571917083771728e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "center_closed_dt005",
+    "wall_seconds": 181.2799118209996,
+    "max_relative_mass_error": 1.5519846996055e-11,
+    "end_s": 240.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_gridwindow_coarse",
+    "wall_seconds": 13.15701310400027,
+    "max_relative_mass_error": 2.4571917083771728e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "center_gridwindow_coarse",
+    "wall_seconds": 13.177195327999925,
+    "max_relative_mass_error": 2.2530719675326408e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "corner_gridwindow_fine",
+    "wall_seconds": 39.27534742299986,
+    "max_relative_mass_error": 3.433032186642506e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  },
+  {
+    "name": "center_gridwindow_fine",
+    "wall_seconds": 37.29336706599997,
+    "max_relative_mass_error": 2.6746109625079604e-11,
+    "end_s": 140.0,
+    "status": "PASS"
+  }
+]
