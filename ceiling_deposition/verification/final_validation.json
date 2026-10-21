@@ -11,5 +11,6 @@
   "experimental_ceiling_deposition_calibration": "NOT_AVAILABLE",
   "condensable_vapour_model": "NOT_INCLUDED",
   "native_replay_and_closed_forms": "PASS",
-  "physical_absolute_prediction_confidence": "LOW; conditional model response, not a measured grease exposure or paint-aging prediction"
+  "physical_absolute_prediction_confidence": "LOW; conditional model response, not a measured grease exposure or paint-aging prediction",
+  "clearance_regularization_relative_change": -3.657622260622162e-08
 }

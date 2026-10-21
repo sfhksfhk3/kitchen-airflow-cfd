@@ -107,7 +107,7 @@ OpenCFD OpenFOAM 2406、自訂 buoyantPimpleFoam 衍生求解器、瞬態 PIMPLE
 
 ## 8. 實際驗證結果與可信程度
 
-低成本20秒流程先通過才進入正式批次。量綱、零漂移／順逆重力極限、混合箱收支、非負濃度、逐面積分、VTK讀取和每步油滴質量收支已核對。完成瞬態案例{v['completed_transient_runs']}個，清空積分{v['completed_clearance_integrals']}個。最差瞬態相對收支誤差{fmt(v['worst_transient_relative_mass_error'])}，清空積分{fmt(v['worst_clearance_relative_mass_error'])}。這是**離散收支驗證，不是物理實驗驗證**。
+低成本20秒流程先通過才進入正式批次。量綱、零漂移／順逆重力極限、混合箱收支、非負濃度、逐面積分、VTK讀取和每步油滴質量收支已核對。完成瞬態案例{v['completed_transient_runs']}個，清空積分{v['completed_clearance_integrals']}個。最差瞬態相對收支誤差{fmt(v['worst_transient_relative_mass_error'])}，清空積分{fmt(v['worst_clearance_relative_mass_error'])}。清空積分的10⁹／10¹²代數尺度比較亦已核對，未以未清空量直接配給天花。這是**離散收支驗證，不是物理實驗驗證**。
 
 {table(ss)}
 

@@ -43,6 +43,12 @@ def main():
    assert ar.GetRange()[0]>=0
   count+=1
  validation={'completed_transient_runs':len(runs),'completed_clearance_integrals':len(tails),'primary_cases_with_full_event':sum(get(f'{l}_{d}_parallel',True) is not None for l in ['corner','center'] for d in ['both_open','both_closed','left_open','right_open']),'worst_transient_relative_mass_error':max([x['max_relative_mass_error'] for x in runs],default=0),'worst_clearance_relative_mass_error':max([x['max_relative_mass_error'] for x in tails],default=0),'VTK_complete_event_files_read':count,'ceiling_grid_sensitivity':'FAILED_ROBUSTNESS_COARSE_FINE_LATE_BRANCHES_DIFFER_ABOUT_27X','full_history_grid_independence':'NOT_DEMONSTRATED','strict_mesh_checks':'FAILED_2_CHECKS_IN_REUSED_COARSE_MESH','experimental_ceiling_deposition_calibration':'NOT_AVAILABLE','condensable_vapour_model':'NOT_INCLUDED','native_replay_and_closed_forms':'PASS','physical_absolute_prediction_confidence':'LOW; conditional model response, not a measured grease exposure or paint-aging prediction'}
+ markers=[]
+ for H in ['1e+09','1e+12']:
+  fp=ROOT/'verification'/f'corner_both_closed_parallel_clearance_{H}.json'
+  if fp.exists():
+   mm=json.loads(fp.read_text());bb=pd.read_csv(Path(mm['tail_case'])/'diagnostics/ceiling_budget.csv').sort_values('diameter_um');markers.append(float(np.array(json.loads((ROOT/'config/emission_scenario.json').read_text())['mass_weights'])@bb.ceiling_kg.to_numpy()))
+ if len(markers)==2:validation['clearance_regularization_relative_change']=markers[0]/markers[1]-1
  (ROOT/'verification/final_validation.json').write_text(json.dumps(validation,indent=2));print(json.dumps(validation,indent=2))
  if len(rows)==8 and count>=12:
   assert all(abs(sum(r[k] for k in ['ceiling_fraction','other_wall_fraction','hood_fraction','left_fraction','right_fraction','airborne_fraction'])-1)<1e-7 for r in rows)
