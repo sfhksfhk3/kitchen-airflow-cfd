@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "zip_members": 466,
+  "native_members": 31981,
+  "native_all_8_primary_240s_air_and_replay_markers_present": true,
+  "files": [
+    {
+      "file": "ceiling33_Q30_review.zip",
+      "bytes": 26283343,
+      "sha256": "6e8e7e9ab274e09f4fbd8a4dcf7f9691631162b4ea00b3fe599786897baa6012"
+    },
+    {
+      "file": "ceiling33_Q30_native_cases.tar.gz",
+      "bytes": 2129305531,
+      "sha256": "19faf3fbb32308222b5ea9a5b0702aed8b609715d15498ac3dd69def7304bbca"
+    }
+  ],
+  "github_branch": "feature/ceiling-grease-deposition",
+  "source_report_data_commit": "9f15502440dc83355ccfbcf7114ff2f77891b452",
+  "archive_location": "Local deliverables directory; these two archives are not GitHub release assets.",
+  "interpretation": "Export integrity passed. Physical deposition, material ranking and real fan operating point not validated."
+}
