@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "scope": "Export integrity only; physical deposition is not validated by these checks.",
+  "cases": [
+    {
+      "case": "corner_both_open_T33_Q30",
+      "faces": 533,
+      "area_m2": 4.24499999999997,
+      "total_unit_mg_per_mg": 6.213362594022664e-26,
+      "budget_fraction_sum": 1.0000000000017648,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "center_both_open_T33_Q30",
+      "faces": 550,
+      "area_m2": 4.244999999999972,
+      "total_unit_mg_per_mg": 4.799284991646536e-25,
+      "budget_fraction_sum": 1.0000000000074776,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "corner_both_closed_T33_Q30",
+      "faces": 533,
+      "area_m2": 4.24499999999997,
+      "total_unit_mg_per_mg": 2.683433405270062e-05,
+      "budget_fraction_sum": 1.0000000000008458,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "center_both_closed_T33_Q30",
+      "faces": 550,
+      "area_m2": 4.244999999999972,
+      "total_unit_mg_per_mg": 5.071687971660982e-05,
+      "budget_fraction_sum": 1.0000000000073246,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "corner_left_open_T33_Q30",
+      "faces": 533,
+      "area_m2": 4.24499999999997,
+      "total_unit_mg_per_mg": 3.3631339992683034e-22,
+      "budget_fraction_sum": 1.0000000000017326,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "center_left_open_T33_Q30",
+      "faces": 550,
+      "area_m2": 4.244999999999972,
+      "total_unit_mg_per_mg": 1.449482591344283e-21,
+      "budget_fraction_sum": 1.000000000007507,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "corner_right_open_T33_Q30",
+      "faces": 533,
+      "area_m2": 4.24499999999997,
+      "total_unit_mg_per_mg": 8.803710248332281e-23,
+      "budget_fraction_sum": 1.0000000000017972,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "center_right_open_T33_Q30",
+      "faces": 550,
+      "area_m2": 4.244999999999972,
+      "total_unit_mg_per_mg": 4.0248955554776825e-22,
+      "budget_fraction_sum": 1.0000000000074905,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "corner_both_closed_T33_Q30_stick0.1",
+      "faces": 533,
+      "area_m2": 4.24499999999997,
+      "total_unit_mg_per_mg": 2.6869626187575486e-06,
+      "budget_fraction_sum": 1.0000000000008307,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "corner_both_closed_T33_Q30_stick0.5",
+      "faces": 533,
+      "area_m2": 4.24499999999997,
+      "total_unit_mg_per_mg": 1.34269544663808e-05,
+      "budget_fraction_sum": 1.0000000000008402,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "center_both_closed_T33_Q30_stick0.1",
+      "faces": 550,
+      "area_m2": 4.244999999999972,
+      "total_unit_mg_per_mg": 5.08045796905642e-06,
+      "budget_fraction_sum": 1.0000000000072866,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    },
+    {
+      "case": "center_both_closed_T33_Q30_stick0.5",
+      "faces": 550,
+      "area_m2": 4.244999999999972,
+      "total_unit_mg_per_mg": 2.538275283407412e-05,
+      "budget_fraction_sum": 1.0000000000073033,
+      "last_physical_VTK_time_s": 239.99999999999065,
+      "status": "PASS"
+    }
+  ],
+  "long_term_rows": 4320
+}

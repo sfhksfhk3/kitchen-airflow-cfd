@@ -1,0 +1,10 @@
+{
+  "ambient_density_kg_m3": 1.1839156390372152,
+  "total_gap_area_m2": 0.009000000000000001,
+  "volume_rate_m3_s": 0.5,
+  "gap_mean_speed_m_s": 55.55555555555555,
+  "assumed_discharge_coefficient": 1,
+  "orifice_pressure_estimate_Pa": 1827.0303071561957,
+  "formula": "DeltaP=0.5*rho*(Q/(Cd*A))^2",
+  "scope": "Sharp-opening engineering estimate at25C, no fan curve, no external duct loss, no pressure-recovery model. Not actual installed fan operating point or validation of oil deposition."
+}

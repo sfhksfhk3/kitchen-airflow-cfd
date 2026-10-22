@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "ui_csv_comparisons": 38,
+  "offline_external_http_requests": [],
+  "javascript_errors": [],
+  "pdf_pages": 13,
+  "square_figures": 8,
+  "square_pdf_pages": 8,
+  "scope": "Presentation and output consistency only; not physical validation."
+}

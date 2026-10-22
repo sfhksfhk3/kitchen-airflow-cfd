@@ -1,0 +1,5 @@
+test,scope,base_ceiling_fraction,test_ceiling_fraction,relative_change_percent
+_dt005,full-history dt 0.1 to 0.05 s,2.682290504810752e-05,2.8672567365813937e-05,6.895831433578881
+_frames4,full-history flow-frame 2 to 4 s,2.682290504810752e-05,3.9834798906553114e-05,48.510382582007615
+startup20_mesh_and_initialization,0–20 s coarse/fine startup diagnostic; fine uses one-time initial flux projection and differs in startup stepping. NOT an isolated mesh-convergence test,8.471573196490219e-06,4.4445999292784065e-05,424.6487076473362
+matched_startup10,"0–10s, both start from rest and zero oil, no initial flux projection, common maxCo12/maxDt0.04/dtInitial0.002; actual adaptive air time steps differ. Not a full-event mesh/GCI validation.",1.7107883827384884e-06,1.3022241617118267e-05,661.1836594467248

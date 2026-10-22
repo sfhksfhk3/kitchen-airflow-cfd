@@ -1,0 +1,38 @@
+[
+  {
+    "smoother": "dic",
+    "field": "U",
+    "max_abs_difference": 0.050184484999999945,
+    "relative_max_difference": 0.0009228533979539931
+  },
+  {
+    "smoother": "dic",
+    "field": "T",
+    "max_abs_difference": 0.04572920000003933,
+    "relative_max_difference": 0.00012014870937444165
+  },
+  {
+    "smoother": "dic",
+    "field": "p",
+    "max_abs_difference": 0.15489000000525266,
+    "relative_max_difference": 1.5555041080249149e-06
+  },
+  {
+    "smoother": "symmetric",
+    "field": "U",
+    "max_abs_difference": 0.04923248899999999,
+    "relative_max_difference": 0.0009053469366754013
+  },
+  {
+    "smoother": "symmetric",
+    "field": "T",
+    "max_abs_difference": 0.22295890000003737,
+    "relative_max_difference": 0.0005858012840488495
+  },
+  {
+    "smoother": "symmetric",
+    "field": "p",
+    "max_abs_difference": 0.17059000000881497,
+    "relative_max_difference": 1.713173515350786e-06
+  }
+]

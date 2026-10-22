@@ -1,0 +1,47 @@
+{
+  "max_aerosol_relative_mass_error": 3.7954794666084e-11,
+  "particle_mass_conservation_pass": true,
+  "unsteady_full_event_mesh_convergence_demonstrated": false,
+  "original_strict_mesh_failures_retained": true,
+  "empirical_wall_deposition_calibration": false,
+  "gas_phase_condensation_included": false,
+  "sensitivity": [
+    {
+      "test": "_dt005",
+      "scope": "full-history dt 0.1 to 0.05 s",
+      "base_ceiling_fraction": 2.682290504810752e-05,
+      "test_ceiling_fraction": 2.8672567365813937e-05,
+      "relative_change_percent": 6.895831433578881
+    },
+    {
+      "test": "_frames4",
+      "scope": "full-history flow-frame 2 to 4 s",
+      "base_ceiling_fraction": 2.682290504810752e-05,
+      "test_ceiling_fraction": 3.9834798906553114e-05,
+      "relative_change_percent": 48.510382582007615
+    },
+    {
+      "test": "startup20_mesh_and_initialization",
+      "scope": "0–20 s coarse/fine startup diagnostic; fine uses one-time initial flux projection and differs in startup stepping. NOT an isolated mesh-convergence test",
+      "base_ceiling_fraction": 8.471573196490219e-06,
+      "test_ceiling_fraction": 4.4445999292784065e-05,
+      "relative_change_percent": 424.6487076473362
+    },
+    {
+      "test": "matched_startup10",
+      "scope": "0–10s, both start from rest and zero oil, no initial flux projection, common maxCo12/maxDt0.04/dtInitial0.002; actual adaptive air time steps differ. Not a full-event mesh/GCI validation.",
+      "base_ceiling_fraction": 1.7107883827384884e-06,
+      "test_ceiling_fraction": 1.3022241617118267e-05,
+      "relative_change_percent": 661.1836594467248
+    }
+  ],
+  "interpretation": "Functionally working, conservative unit-response screening; absolute deposition and material ranking NOT validated.",
+  "max_reconstructed_energy_p95_W": 375.7530196745997,
+  "max_reconstructed_energy_p95_percent_of_4000W": 9.393825491864993,
+  "thermal_validation_complete": false,
+  "matched_startup10_ratio": 7.611836594467248,
+  "max_replay_air_continuity_L1_p95_kg_s": 0.029048637499998226,
+  "max_cell_Stokes": 1.4462905432216,
+  "native_last_ceiling_yplus_max": 1277.441736,
+  "near_wall_layer_resolved": false
+}

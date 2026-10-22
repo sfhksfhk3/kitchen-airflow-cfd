@@ -2,7 +2,7 @@
 
 > **2026-10-21 天花沉積研究擴展：** [程式、報告及資料](ceiling_deposition/README_zh.md)。已實作逐面沉積與長期情境；**後段粗／細分支約相差27倍，尚不能作材料積油量設計值**。原v1.0.0模型與成果保留。
 
-> **33°C／30m³/min更新：** [獨立情境與文獻依據](ceiling_deposition/scenarios/ceiling33_Q30/README.md)。新熱邊界已實作，八工況正計算；粗／細網格的20秒混合啟動診斷相差5.25倍，尚未證明網格收斂。進度以該情境的PROGRESS.json為準。
+> **33°C／30m³/min更新已完成計算：** [中文報告](ceiling_deposition/scenarios/ceiling33_Q30/analysis_zh.pdf) · [離線3D](ceiling_deposition/scenarios/ceiling33_Q30/interactive_3d.html) · [重現與文獻](ceiling_deposition/scenarios/ceiling33_Q30/README.md)。八個門／爐位工況及敏感度已有輸出；匹配初始化的10秒粗細網格沉積差7.61倍，尚未通過定量驗證。全關門30m³/min需約1.88kPa，超過1300Pa。
 
 
 從三視圖建立廚房模型，比較兩道門的開關和灶台靠左／置中對油煙滯留的影響。專案保留初版有限元、八工況示蹤比較、櫃側受熱與材料條件比較，以及最新 OpenFOAM 油滴模型。

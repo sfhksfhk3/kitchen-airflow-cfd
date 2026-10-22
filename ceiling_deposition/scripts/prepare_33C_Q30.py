@@ -49,6 +49,7 @@ def prepare(layout,doors,fine=False,end=240):
  gg=mesh_geometry(out)
  assert np.array_equal(g['points'],gg['points']);assert np.array_equal(g['owner'][:n],gg['owner'][:n]);assert abs(gg['area'][gg['ceiling_ids']].sum()-4.245)<1e-8
  (out/'boundary_update.json').write_text(json.dumps(dict(source=str(source),ceiling_temperature_C=33,prescribed_flow_m3_min=30,flow_mode='prescribed outlet velocity; required pressure diagnosed, NOT a promise that 1300 Pa fan achieves this flow',old_ceiling_face_ids=list(map(int,sorted(ids))),new_ceiling_face_ids=gg['ceiling_ids'].tolist(),points_unchanged=True,cell_topology_unchanged=True,internal_faces_unchanged=True,end_s=end),indent=2))
+ (out/'air.foam').touch()
  return out
 if __name__=='__main__':
  for layout in ['corner','center']:

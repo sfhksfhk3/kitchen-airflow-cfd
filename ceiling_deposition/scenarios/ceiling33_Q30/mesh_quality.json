@@ -1,0 +1,10 @@
+{
+  "coarse": {
+    "failed_checks": 2,
+    "log": "../../verification/mesh_T33_corner_coarse.log"
+  },
+  "fine": {
+    "failed_checks": 1,
+    "log": "../../verification/mesh_T33_corner_fine.log"
+  }
+}

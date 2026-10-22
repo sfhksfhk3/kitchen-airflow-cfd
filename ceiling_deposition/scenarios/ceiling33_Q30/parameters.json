@@ -45,5 +45,14 @@
   "air_max_dt_closed_doors_s": 0.04,
   "time_step_note": "Early opened-door pilot intervals used original maxCo3/maxDt0.05; long opened-door runs use maxCo6/maxDt0.1. Closed maxCo12/maxDt0.04. Native frame interval2s plus checkpoints. Full-event air timestep independence not demonstrated.",
   "air_max_courant_open": 6,
-  "air_max_courant_closed": 12
+  "air_max_courant_closed": 12,
+  "ambient_reference_pressure_Pa": 101325,
+  "door_external_pressure_difference_Pa": 0,
+  "additional_building_leakage_included": false,
+  "external_duct_filter_losses_included": false,
+  "emission_unit_response_kg_s_per_independent_bin": 1e-09,
+  "monodisperse_bins_are_independent_not_additive_sources": true,
+  "other_wall_sticking_probability_assumed": 1,
+  "hood_runs_through_residual_clearance": true,
+  "deposited_mass_represents": "Mass of oil-like primary-organic droplets as a grease proxy; chemical grease fraction unknown, no vapour condensation added."
 }

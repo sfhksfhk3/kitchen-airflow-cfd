@@ -19,11 +19,12 @@
   "rate_per_burner_mg_min": 1.8,
   "total_rate_mg_min": 3.6,
   "total_rate_ug_s": 60,
-  "interpretation": "7.2 mg/min/頭取自商用中式廚房CFD文獻的0.12 mg/s油滴源。2.5µm質量中位徑參考六道中式菜餚研究；GSD1.5及離散化權重為本次工程假設。五個單粒徑響應先分別求解，再線性重組。這不是完整超細粒子數分布，也不是PM2.5濃度。",
+  "interpretation": "1.8mg/min/head is an explicitly selected residential Chinese primary-organic-aerosol example, extrapolated to two simultaneous burners. Mass-median2.5um and assumed GSD1.5 retained; not pure grease or PM2.5 measurement.",
   "rate_sensitivity_factors": [
-    0.25,
+    0.6111111111111112,
     1,
-    4
+    1.2222222222222223,
+    4.0
   ],
   "width_sensitivity_gsd": [
     1.2,

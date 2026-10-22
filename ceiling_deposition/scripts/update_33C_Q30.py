@@ -7,7 +7,7 @@ from run_suite import run_one
 import process_ceiling as pc
 import clearance_integral as ci
 PARAM=json.loads((S/'parameters.json').read_text())
-REF=json.loads((ROOT/'config/emission_scenario.json').read_text());REF.update(label_zh='中式住家一次有機氣膠排放外推，非純油脂實測',rate_per_burner_mg_min=1.8,total_rate_mg_min=3.6,total_rate_ug_s=60)
+REF=json.loads((ROOT/'config/emission_scenario.json').read_text());REF.update(label_zh='中式住家一次有機氣膠排放外推，非純油脂實測',rate_per_burner_mg_min=1.8,total_rate_mg_min=3.6,total_rate_ug_s=60,interpretation='1.8mg/min/head is an explicitly selected residential Chinese primary-organic-aerosol example, extrapolated to two simultaneous burners. Mass-median2.5um and assumed GSD1.5 retained; not pure grease or PM2.5 measurement.',rate_sensitivity_factors=[1.1/1.8,1,2.2/1.8,7.2/1.8])
 (S/'emission_scenario.json').write_text(json.dumps(REF,ensure_ascii=False,indent=2))
 pc.REF=REF;ci.REF=REF
 pc.OUT=S/'results';pc.OUT.mkdir(exist_ok=True);ci.OUT=pc.OUT

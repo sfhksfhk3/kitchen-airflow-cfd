@@ -1,0 +1,8 @@
+{
+  "case": "corner_left_open_T33_Q30",
+  "algebraic_H_s": 1000000000000.0,
+  "method": "frozen-terminal-flow linear clearance resolvent; H is not a physical observation time",
+  "remaining_fraction_of_tail_input_max": 1.156067107377371e-11,
+  "max_relative_mass_error": 7.949121847628616e-14,
+  "tail_case": "/workspace/kitchen-airflow-cfd/ceiling_deposition/runs/corner_left_open_T33_Q30_clearance_1e12"
+}

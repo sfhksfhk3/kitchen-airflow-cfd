@@ -25,7 +25,8 @@ def run_flow(c,end=240):
    m=re.search(r'value\s+nonuniform\s+List<scalar>\s+(\d+)\s*\((.*?)\)\s*;',block,re.S);assert m,f;v=np.fromstring(m[2],sep=' ');assert len(v)==len(ids),(f,len(v),len(ids))
   pressure.append(dict(time_s=float(f.name),suction_vs_same_height_ambient_Pa=float(np.average(ambient-v,weights=area))))
  assert pressure,c
- pd.DataFrame(pressure).sort_values('time_s').to_csv(c/'diagnostics/hood_static_pressure_last20s.csv',index=False)
+ (S/'pressure_history').mkdir(exist_ok=True)
+ pd.DataFrame(pressure).sort_values('time_s').to_csv(S/'pressure_history'/(c.name+'.csv'),index=False)
  suction=float(np.mean([x['suction_vs_same_height_ambient_Pa'] for x in pressure]))
  result=dict(case=c.name,end_s=float(d.time_s.max()),Q_late_m3_min=float(late.Qhood_m3_s.mean()*60),hood_static_suction_late_Pa=suction,maximum_101325_minus_hood_pressure_Pa=float(d.hood_pressure_drop_Pa.max()),exceeds_fan_max_1300Pa=bool(suction>1300),air_mass_residual_abs_p95_kg_s=float(d.air_mass_residual_kg_s.abs().quantile(.95)),energy_residual_abs_p95_W=float(d.energy_balance_W.abs().quantile(.95)),ceiling_fixed_C=33)
  assert abs(result['Q_late_m3_min']-30)<.03,result
